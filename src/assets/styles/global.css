@@ -1,0 +1,108 @@
+@font-face {
+  font-family: 'AllRoundGothic';
+  src: url('../fonts/Fontspring-DEMO-allroundgothic-xlig.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AllRoundGothic';
+  src: url('../fonts/Fontspring-DEMO-allroundgothic-lig.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AllRoundGothic';
+  src: url('../fonts/Fontspring-DEMO-allroundgothic-book.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AllRoundGothic';
+  src: url('../fonts/Fontspring-DEMO-allroundgothic-text.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AllRoundGothic';
+  src: url('../fonts/Fontspring-DEMO-allroundgothic-demi.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AllRoundGothic';
+  src: url('../fonts/Fontspring-DEMO-allroundgothic-semi.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AllRoundGothic';
+  src: url('../fonts/Fontspring-DEMO-allroundgothic-bold.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@import "tailwindcss";
+
+
+/* Define font and color variables */
+:root {
+  --font-heading: 'AllRoundGothic', sans-serif;
+  --bg-color: #f7f4ef;
+  --text-color: #2b2a2a;
+  --accent-color: #eecd13;
+
+  --font-size-large: 2.5rem;
+  --font-size-small: 1rem;
+}
+
+/* Apply font globally */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-heading);
+  font-weight: 600 ;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  margin: 4%;
+  margin-top: 2%;
+}
+
+@layer utilities {
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(5px) translateX(-1px);
+    }
+    50% {
+      transform: translateY(-5px) translateX(1px);
+    }
+  }
+
+  .animate-float {
+    animation: float 2s ease-in-out infinite;
+  }
+}
+
+/* Short wiggle on hover */
+@keyframes wiggle {
+  0%, 100% {
+    transform: scale(1.05) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.08) rotate(3deg);
+  }
+}
+
+.animate-float {
+  animation: float 5s ease-in-out infinite;
+}
+
+.animate-wiggle {
+  animation: wiggle 1s ease-in-out;
+}

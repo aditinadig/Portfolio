@@ -1,0 +1,72 @@
+[
+  {
+    "role": "UX Developer Intern",
+    "company": "LPS Health",
+    "location": "Chicago, IL",
+    "duration": "May 2025 – Aug 2025",
+    "highlights": [
+      "Redesigned and rebuilt the LPS Health website to align with brand guidelines.",
+      "Led complete UI/UX overhaul: layout, accessibility, mobile responsiveness.",
+      "Collaborated with stakeholders to simplify user flows and improve clarity.",
+      "Currently working on SEO strategy, convention flyers, and blog features."
+    ],
+    "tools": ["WordPress", "HTML", "CSS", "Figma", "Lighthouse", "SEO tools"]
+  },
+  {
+    "role": "Cloud Analyst",
+    "company": "Oracle",
+    "location": "Bangalore, India",
+    "duration": "Aug 2022 – Jun 2024",
+    "highlights": [
+      "Worked on Visual Builder Studio (VBS) to create scalable frontend and middleware apps.",
+      "Designed UI modules, REST API integrations, and bug fixes in agile sprints.",
+      "Received award for exceptional cross-team support on the BHE-HCM project."
+    ],
+    "tools": ["JavaScript", "VBS", "REST APIs", "Oracle Cloud", "Agile"]
+  },
+  {
+    "role": "Research Assistant (AI in Manufacturing)",
+    "company": "University of Illinois Chicago",
+    "location": "Chicago, IL",
+    "duration": "Dec 2024 – May 2025",
+    "highlights": [
+      "Developed mobile 3D printer using ArmPi Pro with Raspberry Pi + Arduino.",
+      "Implemented inverse kinematics, real-time path planning, and extrusion control.",
+      "Focused on software-hardware integration using Ubuntu, Pronterface, and Marlin."
+    ],
+    "tools": ["Python", "Ubuntu", "Arduino", "Raspberry Pi", "SLERP", "G-code"]
+  },
+  {
+    "role": "Assistant Manager – CRM2",
+    "company": "JSW Steel",
+    "location": "Bellary, India",
+    "duration": "Aug 2022 – Aug 2023",
+    "highlights": [
+      "Led mechanical team for 3.3 MTPA Pickling Line and Tandem Cold Mill.",
+      "Oversaw daily operations, SOP updates, and SAP-based inventory management.",
+      "Ensured 24/7 production continuity and handled failure diagnostics and maintenance."
+    ],
+    "tools": ["SAP", "Process Engineering", "Mechanical Systems", "Safety Audits"]
+  },
+  {
+    "role": "Lean Management Intern",
+    "company": "Maini Precision Products",
+    "location": "Bangalore, India",
+    "duration": "Jan 2022 – Mar 2022",
+    "highlights": [
+      "Conducted 5S audits and process optimization studies in manufacturing units.",
+      "Contributed to lean R&D documentation for precision parts."
+    ],
+    "tools": ["Lean", "5S", "Value Stream Mapping"]
+  },
+  {
+    "role": "Full Stack Intern",
+    "company": "TVAST IT Solutions",
+    "location": "Bangalore, India",
+    "duration": "Aug 2021 – Sep 2021",
+    "highlights": [
+      "Modeled and surveyed Brushless DC motors using CAD tools."
+    ],
+    "tools": ["Fusion 360", "AutoCAD", "Solid Edge"]
+  }
+]
