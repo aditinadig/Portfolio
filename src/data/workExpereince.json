@@ -1,72 +1,42 @@
 [
   {
-    "role": "UX Developer Intern",
+    "role": "Frontend and Workflow Lead",
     "company": "LPS Health",
     "location": "Chicago, IL",
-    "duration": "May 2025 – Aug 2025",
+    "duration": "May 2025 – Present",
     "highlights": [
-      "Redesigned and rebuilt the LPS Health website to align with brand guidelines.",
-      "Led complete UI/UX overhaul: layout, accessibility, mobile responsiveness.",
-      "Collaborated with stakeholders to simplify user flows and improve clarity.",
-      "Currently working on SEO strategy, convention flyers, and blog features."
+      "Led full redesign and redevelopment of LPS Health’s website to match brand guidelines and improve engagement.",
+      "Enhanced accessibility and mobile responsiveness across all pages.",
+      "Optimized performance using Lighthouse, SEO strategies, and supported Google Ads visibility.",
+      "Contributed to content strategy for social media and wellness campaigns.",
+      "Streamlined internal documentation and workflow for smoother team coordination."
     ],
-    "tools": ["WordPress", "HTML", "CSS", "Figma", "Lighthouse", "SEO tools"]
+    "tools": ["HTML", "CSS", "WordPress", "Figma", "Lighthouse", "Google Analytics", "SEO tools"]
   },
   {
     "role": "Cloud Analyst",
     "company": "Oracle",
-    "location": "Bangalore, India",
+    "location": "Bengaluru, Karnataka, India",
     "duration": "Aug 2022 – Jun 2024",
     "highlights": [
-      "Worked on Visual Builder Studio (VBS) to create scalable frontend and middleware apps.",
-      "Designed UI modules, REST API integrations, and bug fixes in agile sprints.",
-      "Received award for exceptional cross-team support on the BHE-HCM project."
+      "Built Redwood-style UIs using Visual Builder Studio for Oracle’s internal BHE Services dashboard.",
+      "Created reusable UI components and integrated REST APIs, reducing dev time by 30%.",
+      "Resolved over 100 bugs pre-release, reducing post-release issues by 40%.",
+      "Worked cross-functionally in Agile sprints to deliver cloud application features.",
+      "Contributed to both BHE Services and BHE-HCM projects, earning an Employee Recognition Award."
     ],
-    "tools": ["JavaScript", "VBS", "REST APIs", "Oracle Cloud", "Agile"]
+    "tools": ["VBS", "JavaScript", "HTML", "CSS", "REST APIs", "JIRA"]
   },
   {
-    "role": "Research Assistant (AI in Manufacturing)",
-    "company": "University of Illinois Chicago",
-    "location": "Chicago, IL",
-    "duration": "Dec 2024 – May 2025",
-    "highlights": [
-      "Developed mobile 3D printer using ArmPi Pro with Raspberry Pi + Arduino.",
-      "Implemented inverse kinematics, real-time path planning, and extrusion control.",
-      "Focused on software-hardware integration using Ubuntu, Pronterface, and Marlin."
-    ],
-    "tools": ["Python", "Ubuntu", "Arduino", "Raspberry Pi", "SLERP", "G-code"]
-  },
-  {
-    "role": "Assistant Manager – CRM2",
-    "company": "JSW Steel",
-    "location": "Bellary, India",
-    "duration": "Aug 2022 – Aug 2023",
-    "highlights": [
-      "Led mechanical team for 3.3 MTPA Pickling Line and Tandem Cold Mill.",
-      "Oversaw daily operations, SOP updates, and SAP-based inventory management.",
-      "Ensured 24/7 production continuity and handled failure diagnostics and maintenance."
-    ],
-    "tools": ["SAP", "Process Engineering", "Mechanical Systems", "Safety Audits"]
-  },
-  {
-    "role": "Lean Management Intern",
-    "company": "Maini Precision Products",
-    "location": "Bangalore, India",
-    "duration": "Jan 2022 – Mar 2022",
-    "highlights": [
-      "Conducted 5S audits and process optimization studies in manufacturing units.",
-      "Contributed to lean R&D documentation for precision parts."
-    ],
-    "tools": ["Lean", "5S", "Value Stream Mapping"]
-  },
-  {
-    "role": "Full Stack Intern",
-    "company": "TVAST IT Solutions",
-    "location": "Bangalore, India",
+    "role": "Software Engineer Intern",
+    "company": "Softora Technologies",
+    "location": "Bengaluru, Karnataka, India",
     "duration": "Aug 2021 – Sep 2021",
     "highlights": [
-      "Modeled and surveyed Brushless DC motors using CAD tools."
+      "Built dashboards and forms for internal portals using JavaScript and Node.js with Express.",
+      "Redesigned homepage UI in Figma and implemented it using modern CSS (Flexbox, Grid).",
+      "Integrated REST APIs to streamline data flow and improve frontend-backend communication."
     ],
-    "tools": ["Fusion 360", "AutoCAD", "Solid Edge"]
+    "tools": ["JavaScript", "HTML", "CSS", "Node.js", "Express", "Figma", "REST APIs"]
   }
 ]

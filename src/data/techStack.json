@@ -1,0 +1,42 @@
+{
+  "UI and UX Design": [
+    { "name": "Figma", "icon": "https://cdn-icons-png.flaticon.com/512/5968/5968705.png" },
+    { "name": "Adobe Suite", "icon": "https://cdn-icons-png.flaticon.com/512/5968/5968520.png" },
+    { "name": "HTML5", "icon": "https://cdn-icons-png.flaticon.com/512/732/732212.png" },
+    { "name": "CSS3", "icon": "https://cdn-icons-png.flaticon.com/512/732/732190.png" },
+    { "name": "SCSS", "icon": "https://cdn-icons-png.flaticon.com/512/5968/5968358.png" }
+  ],
+  "Frontend Development": [
+    { "name": "JavaScript", "icon": "https://cdn-icons-png.flaticon.com/512/5968/5968292.png" },
+    { "name": "TypeScript", "icon": "https://cdn-icons-png.flaticon.com/512/5968/5968381.png" },
+    { "name": "React", "icon": "https://cdn-icons-png.flaticon.com/512/1126/1126012.png" },
+    { "name": "Astro", "icon": "https://astro.build/assets/favicon.ico" }
+  ],
+  "Backend Development": [
+    { "name": "Python", "icon": "https://cdn-icons-png.flaticon.com/512/5968/5968350.png" },
+    { "name": "Java", "icon": "https://cdn-icons-png.flaticon.com/512/226/226777.png" },
+    { "name": "C/C++", "icon": "https://cdn-icons-png.flaticon.com/512/6132/6132222.png" },
+    { "name": "Express.js", "icon": "https://cdn-icons-png.flaticon.com/512/919/919831.png" },
+    { "name": "Flask", "icon": "https://cdn-icons-png.flaticon.com/512/5968/5968381.png" },
+    { "name": "Spring Boot", "icon": "https://cdn-icons-png.flaticon.com/512/919/919842.png" },
+    { "name": "Socket.IO", "icon": "https://cdn-icons-png.flaticon.com/512/919/919841.png" },
+    { "name": "GraphQL", "icon": "https://cdn-icons-png.flaticon.com/512/5968/5968350.png" }
+  ],
+  "Databases": [
+    { "name": "PostgreSQL", "icon": "https://cdn-icons-png.flaticon.com/512/5968/5968342.png" },
+    { "name": "MongoDB", "icon": "https://cdn-icons-png.flaticon.com/512/919/919836.png" },
+    { "name": "MySQL", "icon": "https://cdn-icons-png.flaticon.com/512/528/528260.png" },
+    { "name": "Firebase", "icon": "https://cdn-icons-png.flaticon.com/512/5968/5968352.png" },
+    { "name": "Redis", "icon": "https://cdn-icons-png.flaticon.com/512/919/919836.png" }
+  ],
+  "DevOps and Cloud": [
+    { "name": "AWS", "icon": "https://cdn-icons-png.flaticon.com/512/873/873120.png" },
+    { "name": "Docker", "icon": "https://cdn-icons-png.flaticon.com/512/919/919853.png" },
+    { "name": "Kubernetes", "icon": "https://cdn-icons-png.flaticon.com/512/5968/5968344.png" }
+  ],
+  "Productivity Tools": [
+    { "name": "Git", "icon": "https://cdn-icons-png.flaticon.com/512/2111/2111288.png" },
+    { "name": "Jira", "icon": "https://cdn-icons-png.flaticon.com/512/5968/5968705.png" },
+    { "name": "Oracle VBS", "icon": "https://cdn-icons-png.flaticon.com/512/5968/5968313.png" }
+  ]
+}

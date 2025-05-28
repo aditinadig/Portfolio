@@ -9,10 +9,15 @@ const Navbar = () => {
       </a>
 
       {/* Right: Navigation Links */}
-      <ul className="flex gap-6 text-sm uppercase text-zinc-400">
+      <ul className="flex gap-8 text-sm uppercase text-zinc-400">
         <li>
-          <a href="/work" className="hover:text-zinc-500 transition-colors">
-            Work
+          <a href="#tech-stack" className="hover:text-zinc-500 transition-colors">
+            Tech Stack
+          </a>
+        </li>
+        <li>
+          <a href="#experience" className="hover:text-zinc-500 transition-colors">
+            Experience
           </a>
         </li>
         <li>
