@@ -1,0 +1,69 @@
+@font-face {
+  font-family: 'All Round Gothic';
+  src: url('./all_round_gothic/All_Round_Gothic_Book.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'All Round Gothic';
+  src: url('./all_round_gothic/All_Round_Gothic_Book_Oblique.otf') format('opentype');
+  font-weight: 400;
+  font-style: oblique;
+}
+
+@font-face {
+  font-family: 'All Round Gothic';
+  src: url('./all_round_gothic/All_Round_Gothic_Demi.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'All Round Gothic';
+  src: url('./all_round_gothic/All_Round_Gothic_Demi_Oblique.otf') format('opentype');
+  font-weight: 600;
+  font-style: oblique;
+}
+
+@font-face {
+  font-family: 'All Round Gothic';
+  src: url('./all_round_gothic/All_Round_Gothic_Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'All Round Gothic';
+  src: url('./all_round_gothic/All_Round_Gothic_Medium_Oblique.otf') format('opentype');
+  font-weight: 500;
+  font-style: oblique;
+}
+
+@font-face {
+  font-family: 'All Round Gothic';
+  src: url('./all_round_gothic/All_Round_Gothic_Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'All Round Gothic';
+  src: url('./all_round_gothic/All_Round_Gothic_Bold_Oblique.otf') format('opentype');
+  font-weight: 700;
+  font-style: oblique;
+}
+
+@font-face {
+  font-family: 'All Round Gothic';
+  src: url('./all_round_gothic/All_Round_Gothic_XLig.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'All Round Gothic';
+  src: url('./all_round_gothic/All_Round_Gothic_XLig_Oblique.otf') format('opentype');
+  font-weight: 300;
+  font-style: oblique;
+}
