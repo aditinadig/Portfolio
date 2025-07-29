@@ -1,0 +1,59 @@
+{
+  "values": [
+    {
+      "icon": "🧼",
+      "title": "Clarity over complexity",
+      "description": "I aim for interfaces and code that make sense at a glance — no unnecessary layers."
+    },
+    {
+      "icon": "🎯",
+      "title": "Function + Feel — never one without the other",
+      "description": "What works should also feel good. I design for both usability and delight."
+    },
+    {
+      "icon": "🧠",
+      "title": "Testing like a user, building like a dev",
+      "description": "I instinctively test for friction and usability — not just technical correctness."
+    },
+    {
+      "icon": "🌱",
+      "title": "Adaptability, ownership, and the hunger to improve",
+      "description": "I evolve with the project, take initiative, and keep pushing quality forward."
+    },
+    {
+      "icon": "🔁",
+      "title": "Full-circle thinking — done means complete from all angles",
+      "description": "I don’t ship unless every detail — UX, logic, performance, and polish — is complete."
+    },
+    {
+      "icon": "🧩",
+      "title": "Structure, readability, and clean code always",
+      "description": "I write clean, readable code that’s easy to understand and maintain."
+    },
+    {
+      "icon": "🛡️",
+      "title": "Security is a default, not an afterthought",
+      "description": "I build with security in mind from the very first line — validation, auth, and more."
+    },
+    {
+      "icon": "🔍",
+      "title": "Pixel-perfect attention to detail",
+      "description": "1px off? I see it. And fix it. Transitions, spacing, states — they all matter."
+    },
+    {
+      "icon": "🎨",
+      "title": "Design sense meets developer sense",
+      "description": "I understand both design intent and dev feasibility — and balance the two."
+    },
+    {
+      "icon": "🤝",
+      "title": "Independence with collaboration where it matters",
+      "description": "I move fast on my own, but collaborate deeply where alignment is key."
+    },
+    {
+      "icon": "🚀",
+      "title": "Reliable delivery with pride and thoroughness",
+      "description": "I build every feature like it’s mine — and make sure it works, beautifully."
+    }
+  ]
+}

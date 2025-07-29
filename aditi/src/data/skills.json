@@ -1,0 +1,55 @@
+{
+  "languages": [
+    { "name": "JavaScript", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+    { "name": "TypeScript", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
+    { "name": "Python", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+    { "name": "Java", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" },
+    { "name": "SQL", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
+    { "name": "HTML", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
+    { "name": "CSS", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" }
+  ],
+  "frontend": [
+    { "name": "React", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+    { "name": "Astro", "icon": "https://cdn.simpleicons.org/astro/000" },
+    { "name": "Tailwind CSS", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" },
+    { "name": "SCSS", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" },
+    { "name": "MUI", "icon": "https://cdn.simpleicons.org/mui/007FFF" },
+    { "name": "Framer Motion", "icon": "https://cdn.simpleicons.org/framer/000000" },
+    { "name": "Vite", "icon": "https://cdn.simpleicons.org/vite/646CFF" }
+  ],
+  "backend": [
+    { "name": "Express.js", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" },
+    { "name": "Flask", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" },
+    { "name": "Node.js", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
+    { "name": "REST APIs", "icon": "https://cdn.simpleicons.org/openapiinitiative/6BA539" },
+    { "name": "GraphQL", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg" },
+    { "name": "Supabase", "icon": "https://cdn.simpleicons.org/supabase/3FCF8E" },
+    { "name": "Firebase", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" }
+  ],
+  "devops_tools": [
+    { "name": "Docker", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
+    { "name": "AWS", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" },
+    { "name": "CI/CD", "icon": "https://cdn.simpleicons.org/gitlab/FC6D26" },
+    { "name": "Netlify", "icon": "https://cdn.simpleicons.org/netlify/00C7B7" },
+    { "name": "GitHub Actions", "icon": "https://cdn.simpleicons.org/githubactions/2088FF" },
+    { "name": "VBS/VBCS", "icon": "https://cdn.simpleicons.org/oracle/F80000" },
+    { "name": "Postman", "icon": "https://cdn.simpleicons.org/postman/FF6C37" },
+    { "name": "Notion", "icon": "https://cdn.simpleicons.org/notion/000000" },
+    { "name": "Figma", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" }
+  ],
+  "other": [
+    { "name": "Stripe Integration", "icon": "https://cdn.simpleicons.org/stripe/635BFF" },
+    { "name": "Google Maps API", "icon": "https://cdn.simpleicons.org/googlemaps/4285F4" },
+    { "name": "Lighthouse", "icon": "https://cdn.simpleicons.org/googlelighthouse/000000" },
+    { "name": "SEO", "icon": "https://cdn.simpleicons.org/google/34A853" },
+    { "name": "Accessibility", "icon": "https://cdn.simpleicons.org/w3c/005A9C" }
+  ],
+  "cs_concepts": [
+    { "name": "Distributed Systems", "icon": "https://cdn.simpleicons.org/protocolsio/1A1A1A" },
+    { "name": "JWT Auth", "icon": "https://cdn.simpleicons.org/jsonwebtokens/000000" },
+    { "name": "SHA-256", "icon": "https://cdn.simpleicons.org/gnupg/0093DD" },
+    { "name": "OAuth2", "icon": "https://cdn.simpleicons.org/oauth/2C5DC2" },
+    { "name": "RBAC", "icon": "https://cdn.simpleicons.org/microsoftazure/0078D4" },
+    { "name": "Input Sanitization", "icon": "https://cdn.simpleicons.org/vercel/000000" }
+  ]
+}

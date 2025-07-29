@@ -1,6 +1,7 @@
 [
   {
     "title": "Frontend & Workflow Lead",
+    "icon": "",
     "company": "LPS Health",
     "location": "Chicago, IL",
     "type": "Internship",
@@ -18,6 +19,7 @@
   },
   {
     "title": "Cloud Analyst",
+    "icon": "",
     "company": "Oracle India Pvt. Ltd.",
     "location": "Bengaluru, India",
     "type": "Full Time",
@@ -34,6 +36,7 @@
   },
   {
     "title": "Software Developer Intern",
+    "icon": "",
     "company": "Softora Technologies",
     "location": "Remote, India",
     "type": "Internship",

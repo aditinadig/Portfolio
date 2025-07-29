@@ -1,0 +1,56 @@
+[
+  {
+    "title": "Full-Stack Luggage Booking Web App",
+    "cover": "",
+    "technologies": ["React", "Supabase", "Stripe", "Google Maps API", "Tailwind CSS"],
+    "role": "Frontend Developer",
+    "duration": "May 2025 – Present",
+    "description": "A production-ready luggage delivery platform with real-time address selection, dynamic pricing, Stripe payments, and session-tracked orders.",
+    "highlight": "Designed, built, and tested every feature like the end user I am."
+  },
+  {
+    "title": "UX Research: Tech Support for Older Adults",
+    "cover": "",
+    "technologies": [],
+    "role": "UX Researcher",
+    "duration": "Jan 2024 – Present",
+    "description": "Studied how older adults prefer and interact with video-based tech support.",
+    "highlight": "Merged design empathy with real user needs — identifying pain points and usability gaps."
+  },
+  {
+    "title": "Distributed Object Store with Integrity",
+    "cover": "",
+    "technologies": ["Python", "Docker", "SHA-256", "Reed-Solomon"],
+    "role": "Backend Developer",
+    "duration": "Jan 2025 – May 2025",
+    "description": "Simulated a fault-tolerant distributed storage system using Docker and erasure coding.",
+    "highlight": "Built the integrity-checking system and ran client simulations to test node failure recovery."
+  },
+  {
+    "title": "Sweet Home Finder",
+    "cover": "",
+    "technologies": ["React", "Node.js", "Express", "PostgreSQL", "Sequelize", "Socket.IO"],
+    "role": "Full Stack Developer",
+    "duration": "Aug 2024 – Dec 2024",
+    "description": "A web app matching pet adopters with shelters based on preferences.",
+    "highlight": "Built full-stack features like login, CRUD tools, admin dashboards, and live chat between users."
+  },
+  {
+    "title": "HabiTrack – Habit Tracker with Motivation",
+    "cover": "",
+    "technologies": ["React", "Firebase", "MUI"],
+    "role": "Full Stack Developer",
+    "duration": "Aug 2024 – Dec 2024",
+    "description": "An intuitive habit tracker with reminders, milestone animations, and behavior modeling (Fogg’s Model).",
+    "highlight": "Conducted user testing, built dashboards, and focused heavily on visual motivation."
+  },
+  {
+    "title": "MediCARE App for Parkinson’s Detection",
+    "cover": "",
+    "technologies": ["Python", "CNN + SVM", "Streamlit"],
+    "role": "Full Stack Developer",
+    "duration": "Aug 2021 – Jun 2022",
+    "description": "Award-winning project combining voice and handwriting data to detect Parkinson’s with 91.3%+ accuracy.",
+    "highlight": "Spearheaded development, presented at an international conference, and won “Best Project Presentation.”"
+  }
+]
