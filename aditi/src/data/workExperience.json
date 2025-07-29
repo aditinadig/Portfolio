@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Frontend & Workflow Lead",
+    "company": "LPS Health",
+    "location": "Chicago, IL",
+    "type": "Internship",
+    "duration": "May 2025 – Present",
+    "technologies": ["React", "Astro", "Tailwind CSS", "Netlify", "Stripe", "Google Analytics"],
+    "summary": "I rebuilt and redesigned the LPS Health website from scratch — making it cleaner, faster, and way more user-friendly.",
+    "highlights": [
+      "Improved Lighthouse load time by 70% and accessibility score from 40% to 80%",
+      "Built responsive layouts and reusable UI components that just work across all screen sizes",
+      "Integrated Stripe Checkout for donations and set up SEO and analytics to help boost visibility",
+      "Handled everything from landing pages and blogs to payments and newsletter flows — like a one-woman product team",
+      "Worked closely with marketing, designers, and backend folks — always keeping UX at the center"
+    ],
+    "reflection": "This role reflected everything I believe in: polish, clarity, autonomy, and full-circle execution."
+  },
+  {
+    "title": "Cloud Analyst",
+    "company": "Oracle India Pvt. Ltd.",
+    "location": "Bengaluru, India",
+    "type": "Full Time",
+    "duration": "Aug 2022 – Jun 2024",
+    "technologies": ["Oracle VBS", "HTML", "JavaScript", "REST APIs", "Agile"],
+    "summary": "I worked on Oracle’s internal cloud dashboards using Visual Builder Studio, where I built Redwood-style UI components and connected them to backend REST APIs.",
+    "highlights": [
+      "Created reusable frontend modules that reduced dev time by 30%",
+      "Fixed over 100+ bugs, helping slash post-release issues by 40%",
+      "Worked across two teams (BHE Services + BHE HCM) — was handpicked for my frontend strength",
+      "Received Oracle’s Employee Recognition Award for consistent delivery across parallel projects"
+    ],
+    "reflection": "Oracle taught me how to adapt fast, take initiative, and stay cool under pressure — even when the tools were new and the timelines tight."
+  },
+  {
+    "title": "Software Developer Intern",
+    "company": "Softora Technologies",
+    "location": "Remote, India",
+    "type": "Internship",
+    "duration": "Aug 2021 – Sep 2021",
+    "technologies": ["JavaScript", "Express.js", "Node.js", "REST APIs", "Figma"],
+    "summary": "This was my first deep dive into full-stack dev — I built dashboards, forms, and connected REST APIs to real backend logic.",
+    "highlights": [
+      "Helped redesign the homepage using Figma, then brought it to life in code",
+      "Created secure login, form flows, and internal portal features in a team of 3 interns",
+      "Learned to ship fast, test smart, and think about UI from a dev+user perspective"
+    ],
+    "reflection": "This is where I discovered how much I love taking a messy UI and turning it into something simple and sharp."
+  }
+]

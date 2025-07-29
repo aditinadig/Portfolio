@@ -5,8 +5,8 @@ const Hero = () => {
         <h1 className="text-8xl font-extrabold">
           Hi, I'm <span className="text-lilac">Aditi!</span>
         </h1>
-        <h2 className="text-3xl">Frontend Dev. UI Snob. Detail Freak.</h2>
-        <p className="text-xl">
+        <h2 className="text-4xl">Frontend Dev. UI Snob. Detail Freak.</h2>
+        <p className="text-2xl">
           I build clean, intuitive, full-circle experiences — <br />powered by React and polish.
         </p>
         <a

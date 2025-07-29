@@ -1,6 +1,9 @@
 import React from "react";
+import beliefBlocks from "../data/beliefBlocks.json";
 
 const AboutMe = () => {
+  const leftColumn = beliefBlocks.slice(0, 3);
+  const rightColumn = beliefBlocks.slice(3, 6);
   return (
     <section className="px-30 py-10 my-10" id="about-me">
       <div className="flex flex-col gap-6">
@@ -27,68 +30,32 @@ const AboutMe = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {/* Left Column */}
           <div className="space-y-4">
-            <div className="p-6 rounded-2xl bg-white shadow-sm backdrop-blur-sm transition-all duration-300 hover:shadow-md hover:-translate-y-[2px]">
-              <h3 className="text-lg font-semibold tracking-wide text-lilac mb-2">
-                I never leave things halfway.
-              </h3>
-              <p className="text-base  leading-relaxed">
-                Full-circle or nothing. I believe work isn’t “done” until it
-                feels done — refined, complete, and intuitive.
-              </p>
-            </div>
-
-            <div className="p-6 rounded-2xl bg-sunbeam-light shadow-sm backdrop-blur-sm transition-all duration-300 hover:shadow-md hover:-translate-y-[2px]">
-              <h3 className="text-lg font-semibold tracking-wide mb-2">
-                I take ownership — fully.
-              </h3>
-              <p className="text-base leading-relaxed">
-                I work independently and don’t wait for micromanagement. I see
-                what needs to be done, and I take care of it.
-              </p>
-            </div>
-
-            <div className="p-6 rounded-2xl bg-lilac-light shadow-sm backdrop-blur-sm transition-all duration-300 hover:shadow-md hover:-translate-y-[2px]">
-              <h3 className="text-lg font-semibold tracking-wide mb-2">
-                I naturally think like a user.
-              </h3>
-              <p className="text-base leading-relaxed">
-                I don’t just test for bugs — I test for hesitation, confusion,
-                and delight. Real insights come from real empathy.
-              </p>
-            </div>
+            {leftColumn.map((block, index) => (
+              <div
+                key={index}
+                className={`p-6 rounded-2xl shadow-sm backdrop-blur-sm transition-all duration-300 hover:shadow-md hover:-translate-y-[2px] ${block.style}`}
+              >
+                <h3 className="text-lg font-semibold tracking-wide mb-2">
+                  {block.title}
+                </h3>
+                <p className="text-base leading-relaxed text-ink">{block.description}</p>
+              </div>
+            ))}
           </div>
 
           {/* Right Column */}
           <div className="space-y-4">
-            <div className="p-6 rounded-2xl bg-white shadow-sm backdrop-blur-sm transition-all duration-300 hover:shadow-md hover:-translate-y-[2px]">
-              <h3 className="text-lg font-semibold tracking-wide text-lilac mb-2">
-                I adapt with clarity.
-              </h3>
-              <p className="text-base leading-relaxed">
-                Plan changes don’t throw me off — they energize me. I stay
-                flexible, grounded, and focused.
-              </p>
-            </div>
-
-            <div className="p-6 rounded-2xl bg-sunbeam-light shadow-sm backdrop-blur-sm transition-all duration-300 hover:shadow-md hover:-translate-y-[2px]">
-              <h3 className="text-lg font-semibold tracking-wide mb-2">
-                I balance structure and soul.
-              </h3>
-              <p className="text-base leading-relaxed">
-                Code with logic. Design with emotion. I bring both — because
-                that’s what creates real connection.
-              </p>
-            </div>
-
-            <div className="p-6 rounded-2xl bg-lilac-light shadow-sm backdrop-blur-sm transition-all duration-300 hover:shadow-md hover:-translate-y-[2px]">
-              <h3 className="text-lg font-semibold tracking-wide mb-2">
-                I build with security in mind.
-              </h3>
-              <p className="text-base leading-relaxed">
-                From input validation to API design, I never treat security as
-                an afterthought. It’s baked into my process.
-              </p>
-            </div>
+            {rightColumn.map((block, index) => (
+              <div
+                key={index + 3}
+                className={`p-6 rounded-2xl shadow-sm backdrop-blur-sm transition-all duration-300 hover:shadow-md hover:-translate-y-[2px] ${block.style}`}
+              >
+                <h3 className="text-lg font-semibold tracking-wide mb-2">
+                  {block.title}
+                </h3>
+                <p className="text-base leading-relaxed text-ink">{block.description}</p>
+              </div>
+            ))}
           </div>
         </div>
 

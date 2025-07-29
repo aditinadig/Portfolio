@@ -1,0 +1,32 @@
+[
+  {
+    "title": "I never leave things halfway.",
+    "description": "Full-circle or nothing. I believe work isn’t 'done' until it feels done — refined, complete, and intuitive.",
+    "style": "bg-white text-lilac"
+  },
+  {
+    "title": "I take ownership — fully.",
+    "description": "I work independently and don’t wait for micromanagement. I see what needs to be done, and I take care of it.",
+    "style": "bg-sunbeam-light"
+  },
+  {
+    "title": "I naturally think like a user.",
+    "description": "I don’t just test for bugs — I test for hesitation, confusion, and delight. Real insights come from real empathy.",
+    "style": "bg-lilac-light"
+  },
+  {
+    "title": "I adapt with clarity.",
+    "description": "Plan changes don’t throw me off — they energize me. I stay flexible, grounded, and focused.",
+    "style": "bg-white text-lilac"
+  },
+  {
+    "title": "I balance structure and soul.",
+    "description": "Code with logic. Design with emotion. I bring both — because that’s what creates real connection.",
+    "style": "bg-sunbeam-light"
+  },
+  {
+    "title": "I build with security in mind.",
+    "description": "From input validation to API design, I never treat security as an afterthought. It’s baked into my process.",
+    "style": "bg-lilac-light"
+  }
+]
