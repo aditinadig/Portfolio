@@ -61,10 +61,10 @@ const AboutMe = () => {
           {/* Right Column */}
           <div className="space-y-4">
             <div className="p-6 rounded-2xl bg-white shadow-sm backdrop-blur-sm transition-all duration-300 hover:shadow-md hover:-translate-y-[2px]">
-              <h3 className="text-lg font-semibold tracking-wide text-[#B477ED] mb-2">
+              <h3 className="text-lg font-semibold tracking-wide text-lilac mb-2">
                 I adapt with clarity.
               </h3>
-              <p className="text-base text-[#2b2a2a]/90 leading-relaxed">
+              <p className="text-base leading-relaxed">
                 Plan changes don’t throw me off — they energize me. I stay
                 flexible, grounded, and focused.
               </p>
@@ -84,7 +84,7 @@ const AboutMe = () => {
               <h3 className="text-lg font-semibold tracking-wide mb-2">
                 I build with security in mind.
               </h3>
-              <p className="text-base text-[#2b2a2a]/90 leading-relaxed">
+              <p className="text-base leading-relaxed">
                 From input validation to API design, I never treat security as
                 an afterthought. It’s baked into my process.
               </p>
@@ -95,8 +95,8 @@ const AboutMe = () => {
         {/* Signature */}
         <div className="max-w-4xl text-xl md:text-xl italic border-l-4 border-lilac pl-6 leading-relaxed ">
           If your product needs to{" "}
-          <span className="not-italic font-bold text-lilac">feel</span> just
-          as good as it works — I’m your person.
+          <span className="not-italic font-bold text-lilac">feel</span> just as
+          good as it works — I’m your person.
         </div>
       </div>
     </section>
