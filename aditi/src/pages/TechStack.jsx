@@ -2,7 +2,7 @@ import { useState } from "react";
 /* eslint-disable no-unused-vars */
 import { motion, AnimatePresence } from "framer-motion";
 /* eslint-enable no-unused-vars */
-import techData from "../data/TechStack.json";
+import techData from "../data/techStack.json";
 
 const TechStack = () => {
   const categories = Object.entries(techData);
