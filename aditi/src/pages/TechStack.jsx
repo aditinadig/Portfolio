@@ -44,7 +44,7 @@ const TechStack = () => {
                 {/* Header */}
                 <button
                   onClick={() => toggleCategory(index)}
-                  className="w-full text-left px-6 py-4 flex justify-between items-center hover:bg-sunbeam-light transition-colors"
+                  className="w-full text-left px-6 py-4 flex justify-between hover:bg-sunbeam-light transition-colors"
                 >
                   <h3 className="text-xl font-semibold text-lilac tracking-wide">
                     {category.replaceAll("_", " ")}
@@ -65,7 +65,7 @@ const TechStack = () => {
                       className="px-6 overflow-hidden"
                     >
                       <motion.div
-                        className="flex flex-wrap justify-center md:justify-start gap-x-12 gap-y-10 py-6"
+                        className="flex flex-wrap justify-around md:justify-start gap-x-12 gap-y-10 py-6"
                         initial="hidden"
                         animate="visible"
                         variants={{

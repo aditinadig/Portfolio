@@ -23,7 +23,7 @@ const AboutMe = () => {
   return (
     <motion.section
       id="about-me"
-      className="px-30 py-10 my-12"
+      className="px-10 md:px-30 py-10 md:my-12"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.2 }}
@@ -31,7 +31,7 @@ const AboutMe = () => {
       <motion.div className="flex flex-col gap-6">
         {/* Header */}
         <motion.div className="space-y-4" variants={fadeUp} custom={0}>
-          <h1 className="text-5xl md:text-5xl font-extrabold tracking-tight leading-tight">
+          <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight leading-tight">
             I don’t ship it{" "}
             <span className="inline-block bg-lilac/20 px-3 py-1 rounded-xl">
               unless it feels right.
