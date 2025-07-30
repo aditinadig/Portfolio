@@ -60,7 +60,7 @@ const Navbar = () => {
                 <img
                   src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/linkedin.svg"
                   alt="LinkedIn"
-                  className="w-5 h-5 hover:opacity-80 transition"
+                  className="w-5 h-5 hover:opacity-80 mt-0.5 transition"
                 />
               </a>
               <a
