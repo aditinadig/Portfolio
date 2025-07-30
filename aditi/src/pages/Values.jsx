@@ -1,4 +1,6 @@
-import React from "react";
+/* eslint-disable no-unused-vars */
+import { motion } from "framer-motion";
+/* eslint-enable no-unused-vars */
 import values from "../data/values.json";
 
 const Values = () => {
@@ -8,17 +10,27 @@ const Values = () => {
       className="bg-canvas text-ink px-6 py-20 md:px-24 font-sans"
     >
       <div className="max-w-6xl mx-auto">
-        {/* Heading */}
-        <h2 className="text-4xl md:text-5xl font-extrabold mb-14 tracking-tight text-ink">
+        {/* Animated Heading */}
+        <motion.h2
+          className="text-4xl md:text-5xl font-extrabold mb-14 tracking-tight text-ink"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
           What I Believe In
-        </h2>
+        </motion.h2>
 
         {/* Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           {values.values.map((item, i) => (
-            <div
+            <motion.div
               key={i}
               className="group flex gap-4 items-start rounded-2xl bg-white p-5 shadow-[0_2px_10px_rgba(0,0,0,0.04)] transition duration-300 hover:shadow-lg hover:scale-[1.015]"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4, delay: i * 0.1 }}
+              viewport={{ once: true }}
             >
               {/* Icon */}
               <div className="min-w-[3.5rem] h-[3.5rem] flex items-center justify-center rounded-full bg-sunbeam-light text-4xl">
@@ -34,7 +46,7 @@ const Values = () => {
                   {item.description}
                 </p>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
