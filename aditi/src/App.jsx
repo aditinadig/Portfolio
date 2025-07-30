@@ -6,6 +6,7 @@ import Projects from "./pages/Projects";
 import TechStack from "./pages/TechStack";
 import WorkExperience from "./pages/WorkExperience";
 import Values from "./pages/Values";
+import HireMe from "./pages/HireMe";
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
       <TechStack />
       <Projects />
       <Values />
-      {/* <LetsTalk /> */}
+      <HireMe />
     </div>
   );
 }
