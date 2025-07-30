@@ -18,8 +18,8 @@
   @apply bg-canvas;
   @apply text-ink;
   @apply font-sans;
-  @apply py-8;
-  @apply px-16;
+  /* @apply py-8;
+  @apply px-16; */
 }
 
 

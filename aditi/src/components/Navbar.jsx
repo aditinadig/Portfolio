@@ -2,7 +2,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div className="navbar sticky top-0 z-50 bg-canvas">
+    <div className="navbar sticky top-0 z-50 bg-canvas px-20 py-10">
       <div className="flex-1">
         <a href="/" className="text-2xl font-bold">ADITI</a>
       </div>
