@@ -5,6 +5,7 @@ import Hero from "./pages/Hero";
 import Projects from "./pages/Projects";
 import TechStack from "./pages/TechStack";
 import WorkExperience from "./pages/WorkExperience";
+import Values from "./pages/Values";
 
 function App() {
   return (
@@ -15,10 +16,7 @@ function App() {
       <WorkExperience />
       <TechStack />
       <Projects />
-      
-      {/* Add other components like TechStack, Values, LetsTalk as needed */}
-      {/* <TechStack /> */}
-      {/* <Values /> */}
+      <Values />
       {/* <LetsTalk /> */}
     </div>
   );
