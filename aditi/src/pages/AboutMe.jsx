@@ -5,7 +5,7 @@ const AboutMe = () => {
   const leftColumn = beliefBlocks.slice(0, 3);
   const rightColumn = beliefBlocks.slice(3, 6);
   return (
-    <section className="px-30 py-10 my-10" id="about-me">
+    <section className="px-30 py-10 my-12" id="about-me">
       <div className="flex flex-col gap-6">
         {/* Header */}
         <div className="space-y-4">

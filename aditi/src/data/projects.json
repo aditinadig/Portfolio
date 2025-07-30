@@ -1,26 +1,75 @@
 [
   {
+    "title": "CareerCanvas – A Career Growth Platform",
+    "cover": "",
+    "link":"",
+    "technologies": [
+      "React",
+      "Tailwind CSS",
+      "DaisyUI",
+      "Vite",
+      "Framer Motion",
+      "Role-Based Routing",
+      "Responsive Design",
+      "Modular Architecture"
+    ],
+    "role": "Full-Stack Developer",
+    "duration": "July 2025 – Present",
+    "description": "A personalized career guidance platform for users aged 15–35 to explore job roles, map career routes, log experiences, and track progress with goal-based modules.",
+    "highlight": "Crafted an end-to-end, user-first system that adapts to students, job seekers, and professionals alike."
+  },
+  {
     "title": "Full-Stack Luggage Booking Web App",
     "cover": "",
-    "technologies": ["React", "Supabase", "Stripe", "Google Maps API", "Tailwind CSS"],
+    "link":"",
+    "technologies": [
+      "React",
+      "Supabase",
+      "Stripe",
+      "Google Maps API",
+      "Tailwind CSS",
+      "JWT Auth",
+      "Role-Based Access Control",
+      "Vite",
+      "Framer Motion",
+      "Responsive Design"
+    ],
     "role": "Frontend Developer",
     "duration": "May 2025 – Present",
     "description": "A production-ready luggage delivery platform with real-time address selection, dynamic pricing, Stripe payments, and session-tracked orders.",
-    "highlight": "Designed, built, and tested every feature like the end user I am."
+    "highlight": "Built a seamless booking flow with secure payments, real-time address selection, and responsive UI — all optimized for real-world use."
   },
   {
     "title": "UX Research: Tech Support for Older Adults",
     "cover": "",
-    "technologies": [],
+    "link":"",
+    "technologies": [
+      "User Interviews",
+      "Survey Design",
+      "Interaction Analysis",
+      "Accessibility Testing",
+      "Notion",
+      "Affinity Mapping"
+    ],
     "role": "UX Researcher",
-    "duration": "Jan 2024 – Present",
+    "duration": "Jan 2025 – May 2025",
     "description": "Studied how older adults prefer and interact with video-based tech support.",
     "highlight": "Merged design empathy with real user needs — identifying pain points and usability gaps."
   },
   {
     "title": "Distributed Object Store with Integrity",
     "cover": "",
-    "technologies": ["Python", "Docker", "SHA-256", "Reed-Solomon"],
+    "link":"",
+    "technologies": [
+      "Python",
+      "Docker",
+      "SHA-256",
+      "Reed-Solomon Erasure Coding",
+      "Threading",
+      "Data Integrity",
+      "Fault Tolerance",
+      "Socket Programming"
+    ],
     "role": "Backend Developer",
     "duration": "Jan 2025 – May 2025",
     "description": "Simulated a fault-tolerant distributed storage system using Docker and erasure coding.",
@@ -29,7 +78,21 @@
   {
     "title": "Sweet Home Finder",
     "cover": "",
-    "technologies": ["React", "Node.js", "Express", "PostgreSQL", "Sequelize", "Socket.IO"],
+    "link":"",
+    "technologies": [
+      "React",
+      "Node.js",
+      "Express",
+      "PostgreSQL",
+      "Sequelize",
+      "Socket.IO",
+      "REST APIs",
+      "JWT Auth",
+      "Material UI",
+      "Admin Dashboard",
+      "Live Chat",
+      "Role-Based Access Control"
+    ],
     "role": "Full Stack Developer",
     "duration": "Aug 2024 – Dec 2024",
     "description": "A web app matching pet adopters with shelters based on preferences.",
@@ -38,7 +101,18 @@
   {
     "title": "HabiTrack – Habit Tracker with Motivation",
     "cover": "",
-    "technologies": ["React", "Firebase", "MUI"],
+    "link":"",
+    "technologies": [
+      "React",
+      "Firebase",
+      "MUI",
+      "Framer Motion",
+      "Fogg Behavior Model",
+      "Authentication",
+      "Responsive Design",
+      "Firestore",
+      "User Research"
+    ],
     "role": "Full Stack Developer",
     "duration": "Aug 2024 – Dec 2024",
     "description": "An intuitive habit tracker with reminders, milestone animations, and behavior modeling (Fogg’s Model).",
@@ -47,10 +121,22 @@
   {
     "title": "MediCARE App for Parkinson’s Detection",
     "cover": "",
-    "technologies": ["Python", "CNN + SVM", "Streamlit"],
+    "link":"",
+    "technologies": [
+      "Python",
+      "CNN",
+      "SVM",
+      "Streamlit",
+      "Pandas",
+      "Matplotlib",
+      "Data Augmentation",
+      "Signal Processing",
+      "Voice Feature Extraction",
+      "Handwriting Data Analysis"
+    ],
     "role": "Full Stack Developer",
     "duration": "Aug 2021 – Jun 2022",
     "description": "Award-winning project combining voice and handwriting data to detect Parkinson’s with 91.3%+ accuracy.",
-    "highlight": "Spearheaded development, presented at an international conference, and won “Best Project Presentation.”"
+    "highlight": "Led the development, presented at an international conference, and won “Best Project Presentation.”"
   }
 ]
