@@ -7,6 +7,7 @@ import TechStack from "./pages/TechStack";
 import WorkExperience from "./pages/WorkExperience";
 import Values from "./pages/Values";
 import HireMe from "./pages/HireMe";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Projects />
       <Values />
       <HireMe />
+      <Footer />
     </div>
   );
 }
