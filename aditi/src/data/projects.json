@@ -1,8 +1,27 @@
 [
   {
+    "title": "Collaborative Music Rehearsal Platform",
+    "cover": "",
+    "link": "",
+    "technologies": [
+      "React",
+      "Real-time Updates",
+      "Role-Based Access Control",
+      "User Research",
+      "Responsive Design",
+      "Interactive Features",
+      "Survey Design",
+      "UX Research"
+    ],
+    "role": "UI/UX Designer & Frontend Developer",
+    "duration": "Sept 2025 – Present",
+    "description": "A web app that helps music groups organize rehearsals and track who performs which parts during concerts. Built with role-based user interfaces and real-time updates so singers, musicians, and managers see personalized content instantly.",
+    "highlight": "Conducted user research to identify pain points in group rehearsal coordination, then built interactive features with highlighted content tailored to each performer's role."
+  },
+  {
     "title": "CareerCanvas – A Career Growth Platform",
     "cover": "",
-    "link":"",
+    "link": "",
     "technologies": [
       "React",
       "Tailwind CSS",
@@ -21,7 +40,7 @@
   {
     "title": "Full-Stack Luggage Booking Web App",
     "cover": "",
-    "link":"",
+    "link": "",
     "technologies": [
       "React",
       "Supabase",
@@ -42,7 +61,7 @@
   {
     "title": "UX Research: Tech Support for Older Adults",
     "cover": "",
-    "link":"",
+    "link": "",
     "technologies": [
       "User Interviews",
       "Survey Design",
@@ -59,7 +78,7 @@
   {
     "title": "Distributed Object Store with Integrity",
     "cover": "",
-    "link":"",
+    "link": "",
     "technologies": [
       "Python",
       "Docker",
@@ -78,7 +97,7 @@
   {
     "title": "Sweet Home Finder",
     "cover": "",
-    "link":"",
+    "link": "",
     "technologies": [
       "React",
       "Node.js",
@@ -101,7 +120,7 @@
   {
     "title": "HabiTrack – Habit Tracker with Motivation",
     "cover": "",
-    "link":"",
+    "link": "",
     "technologies": [
       "React",
       "Firebase",
@@ -121,7 +140,7 @@
   {
     "title": "MediCARE App for Parkinson’s Detection",
     "cover": "",
-    "link":"",
+    "link": "",
     "technologies": [
       "Python",
       "CNN",
