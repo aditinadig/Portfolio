@@ -1,28 +1,28 @@
 [
   {
-    "title": "Frontend & Workflow Lead",
+    "title": "Web Programmer - Graduate Research Assistant",
     "icon": "",
-    "company": "LPS Health",
+    "company": "UI Health",
     "location": "Chicago, IL",
-    "type": "Internship",
-    "duration": "May 2025 – Present",
+    "type": "Graduate Research Assistant",
+    "duration": "Sept 2025 – Present",
     "technologies": [
-      "React",
-      "Astro",
-      "Tailwind CSS",
-      "Netlify",
-      "Stripe",
-      "Google Analytics"
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "CMS",
+      "Healthcare Compliance",
+      "Accessibility"
     ],
-    "summary": "I rebuilt and redesigned the LPS Health website from scratch — making it cleaner, faster, and way more user-friendly.",
+    "summary": "I develop and maintain responsive websites for UIC Medicine's Otolaryngology department, working directly with medical staff to create user-friendly interfaces and content management systems.",
     "highlights": [
-      "Improved Lighthouse load time by 70% and accessibility score from 40% to 80%",
-      "Built responsive layouts and reusable UI components that just work across all screen sizes",
-      "Integrated Stripe Checkout for donations and set up SEO and analytics to help boost visibility",
-      "Handled everything from landing pages and blogs to payments and newsletter flows — like a one-woman product team",
-      "Worked closely with marketing, designers, and backend folks — always keeping UX at the center"
+      "Built responsive websites for UIC Medicine's Otolaryngology department with medical staff collaboration",
+      "Implemented user-friendly web interfaces and content management systems for healthcare professionals",
+      "Optimized website performance and resolved technical issues across desktop and mobile platforms",
+      "Enhanced accessibility compliance to meet healthcare standards and ADA requirements",
+      "Managed multiple web development projects simultaneously while meeting strict healthcare compliance requirements"
     ],
-    "reflection": "This role reflected everything I believe in: polish, clarity, autonomy, and full-circle execution."
+    "reflection": "Working in healthcare tech has taught me the importance of accessibility, compliance, and building for real users with critical needs."
   },
   {
     "title": "Frontend & Workflow Lead",
