@@ -1,26 +1,25 @@
 [
   {
-    "title": "Web Programmer - Graduate Research Assistant",
+    "title": "Web Developer",
     "icon": "",
     "company": "UI Health",
     "location": "Chicago, IL",
-    "type": "Graduate Research Assistant",
+    "type": "Part-time",
     "duration": "Sept 2025 – Present",
     "technologies": [
+      "React",
       "HTML",
       "CSS",
       "JavaScript",
-      "CMS",
-      "Healthcare Compliance",
-      "Accessibility"
+      "Accessibility",
+      "Responsive Design"
     ],
-    "summary": "I develop and maintain responsive websites for UIC Medicine's Otolaryngology department, working directly with medical staff to create user-friendly interfaces and content management systems.",
+    "summary": "I build and maintain responsive React-based web pages for UIC Medicine's department websites, creating reusable UI components and improving performance and accessibility.",
     "highlights": [
-      "Built responsive websites for UIC Medicine's Otolaryngology department with medical staff collaboration",
-      "Implemented user-friendly web interfaces and content management systems for healthcare professionals",
-      "Optimized website performance and resolved technical issues across desktop and mobile platforms",
-      "Enhanced accessibility compliance to meet healthcare standards and ADA requirements",
-      "Managed multiple web development projects simultaneously while meeting strict healthcare compliance requirements"
+      "Built and maintained responsive React-based web pages for UIC Medicine's department websites",
+      "Developed reusable UI components and page layouts to present clinical, research, and faculty information clearly",
+      "Improved page load speed, mobile usability, and search visibility by fixing layout issues and optimizing images",
+      "Ensured websites worked reliably across browsers and devices while releasing frequent content and UI updates"
     ],
     "reflection": "Working in healthcare tech has taught me the importance of accessibility, compliance, and building for real users with critical needs."
   },
@@ -30,29 +29,30 @@
     "company": "LPS Health",
     "location": "Chicago, IL",
     "type": "Internship",
-    "duration": "May 2025 – Present",
+    "duration": "May 2025 – Aug 2025",
     "technologies": [
       "React",
-      "Astro",
       "Tailwind CSS",
       "Netlify",
       "Stripe",
-      "Google Analytics"
+      "Google Analytics",
+      "GitHub"
     ],
-    "summary": "I rebuilt and redesigned the LPS Health website from scratch — making it cleaner, faster, and way more user-friendly.",
+    "summary": "I redesigned and rebuilt the LPS Health website using React and Tailwind CSS, significantly improving accessibility, page speed, and overall usability.",
     "highlights": [
-      "Improved Lighthouse load time by 70% and accessibility score from 40% to 80%",
-      "Built responsive layouts and reusable UI components that just work across all screen sizes",
-      "Integrated Stripe Checkout for donations and set up SEO and analytics to help boost visibility",
-      "Handled everything from landing pages and blogs to payments and newsletter flows — like a one-woman product team",
-      "Worked closely with marketing, designers, and backend folks — always keeping UX at the center"
+      "Redesigned and rebuilt the website using React and Tailwind CSS, significantly improving accessibility and overall usability",
+      "Built responsive, mobile-first layouts and reusable UI components that worked smoothly across phones, tablets, and desktops",
+      "Improved page speed and search visibility through Lighthouse audits, SEO fixes, and analytics-driven optimizations",
+      "Managed version control and deployments with GitHub and Netlify, allowing fast, low-risk updates",
+      "Integrated Stripe Checkout to enable secure online donations and streamline the payment experience",
+      "Supported content growth through blog and newsletter pages, backlink outreach, and landing page integrations"
     ],
     "reflection": "This role reflected everything I believe in: polish, clarity, autonomy, and full-circle execution."
   },
   {
-    "title": "Cloud Analyst",
+    "title": "Cloud Analyst (Frontend Developer - Oracle Cloud)",
     "icon": "",
-    "company": "Oracle India Pvt. Ltd.",
+    "company": "Oracle",
     "location": "Bengaluru, India",
     "type": "Full Time",
     "duration": "Aug 2022 – Jun 2024",
@@ -60,13 +60,15 @@
       "Oracle VBS",
       "HTML",
       "JavaScript",
+      "CSS",
       "REST APIs",
-      "Agile"
+      "Agile",
+      "JIRA"
     ],
     "summary": "I worked on Oracle’s internal cloud dashboards using Visual Builder Studio, where I built Redwood-style UI components and connected them to backend REST APIs.",
     "highlights": [
       "Created reusable frontend modules that reduced dev time by 30%",
-      "Fixed over 100+ bugs, helping slash post-release issues by 40%",
+      "Found and fixed over 200 bugs before product release, helping reduce post-release issues by 40%",
       "Worked across two teams (BHE Services + BHE HCM) — was handpicked for my frontend strength",
       "Received Oracle’s Employee Recognition Award for consistent delivery across parallel projects"
     ],

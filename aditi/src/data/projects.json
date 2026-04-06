@@ -1,5 +1,23 @@
 [
   {
+    "title": "National Civil Service Exam Preparation Platform",
+    "cover": "",
+    "link": "",
+    "technologies": [
+      "Full Stack",
+      "Real-time News Aggregation",
+      "SCORM",
+      "LMS Integration",
+      "Personalized Learning",
+      "Knowledge Modeling",
+      "React"
+    ],
+    "role": "Full Stack Developer",
+    "duration": "Jan 2026 – Present",
+    "description": "A full-stack learning platform for India's national civil service examination (UPSC) — a multi-stage government selection exam with over one million applicants each year. The platform aggregates real-time news, government updates, and policy content from multiple sources and transforms them into exam-relevant insights.",
+    "highlight": "Built an issue-based knowledge model connecting current events with foundational concepts, historical context, and prior exam questions, with personalized learning flows and SCORM-compatible modules for structured progress tracking."
+  },
+  {
     "title": "Collaborative Music Rehearsal Platform",
     "cover": "",
     "link": "",
@@ -14,7 +32,7 @@
       "UX Research"
     ],
     "role": "UI/UX Designer & Frontend Developer",
-    "duration": "Sept 2025 – Present",
+    "duration": "Sept 2025 – Dec 2025",
     "description": "A web app that helps music groups organize rehearsals and track who performs which parts during concerts. Built with role-based user interfaces and real-time updates so singers, musicians, and managers see personalized content instantly.",
     "highlight": "Conducted user research to identify pain points in group rehearsal coordination, then built interactive features with highlighted content tailored to each performer's role."
   },
