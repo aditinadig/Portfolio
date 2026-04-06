@@ -15,7 +15,7 @@ function App() {
     <div>
       <Navbar />
       <Hero />
-      <MyStory />
+      {/* <MyStory /> */}
       <AboutMe />
       <WorkExperience />
       <TechStack />
