@@ -4,18 +4,18 @@
     "cover": "",
     "link": "",
     "technologies": [
-      "Full Stack",
-      "Real-time News Aggregation",
+      "React",
+      "Node.js",
+      "REST APIs",
+      "LLM API (Groq / Llama)",
+      "Real-time Data Aggregation",
       "SCORM",
-      "LMS Integration",
-      "Personalized Learning",
-      "Knowledge Modeling",
-      "React"
+      "PostgreSQL"
     ],
     "role": "Full Stack Developer",
     "duration": "Jan 2026 – Present",
-    "description": "A full-stack learning platform for India's national civil service examination (UPSC) — a multi-stage government selection exam with over one million applicants each year. The platform aggregates real-time news, government updates, and policy content from multiple sources and transforms them into exam-relevant insights.",
-    "highlight": "Built an issue-based knowledge model connecting current events with foundational concepts, historical context, and prior exam questions, with personalized learning flows and SCORM-compatible modules for structured progress tracking."
+    "description": "A full-stack learning platform for India's national civil service exam (UPSC). I built the data pipeline that aggregates real-time news, government updates, and policy content from multiple sources, transforms them via LLM API calls into exam-relevant insights, and surfaces them through a personalized React frontend.",
+    "highlight": "The core engineering challenge is middleware — designing a pipeline that ingests unstructured content, applies prompt-based transformation via Groq/Llama, maps outputs to an issue-based knowledge model, and serves structured learning data to the UI."
   },
   {
     "title": "Collaborative Music Rehearsal Platform",
@@ -23,18 +23,16 @@
     "link": "",
     "technologies": [
       "React",
+      "Role-Based State Management",
       "Real-time Updates",
-      "Role-Based Access Control",
-      "User Research",
-      "Responsive Design",
-      "Interactive Features",
-      "Survey Design",
-      "UX Research"
+      "REST APIs",
+      "Conditional Data Rendering",
+      "User Research"
     ],
-    "role": "UI/UX Designer & Frontend Developer",
+    "role": "Frontend Developer & UI/UX Designer",
     "duration": "Sept 2025 – Dec 2025",
-    "description": "A web app that helps music groups organize rehearsals and track who performs which parts during concerts. Built with role-based user interfaces and real-time updates so singers, musicians, and managers see personalized content instantly.",
-    "highlight": "Conducted user research to identify pain points in group rehearsal coordination, then built interactive features with highlighted content tailored to each performer's role."
+    "description": "A collaborative rehearsal platform where the data model is the feature — role-based state (singer, musician, manager) determines what each user sees and can do in real time. I designed the data structure for part assignments and reassignment workflows, then built the React interface that responds to those state changes.",
+    "highlight": "The core challenge was designing a role-aware data layer that could push the right subset of rehearsal data to each user type — so the UI stayed simple while the underlying logic handled the complexity."
   },
   {
     "title": "CareerCanvas – A Career Growth Platform",
@@ -42,18 +40,17 @@
     "link": "",
     "technologies": [
       "React",
+      "Node.js",
+      "REST APIs",
+      "TanStack Router",
       "Tailwind CSS",
-      "DaisyUI",
-      "Vite",
-      "Framer Motion",
       "Role-Based Routing",
-      "Responsive Design",
-      "Modular Architecture"
+      "Modular Data Architecture"
     ],
     "role": "Full-Stack Developer",
     "duration": "July 2025 – Present",
-    "description": "A personalized career guidance platform for users aged 15–35 to explore job roles, map career routes, log experiences, and track progress with goal-based modules.",
-    "highlight": "Crafted an end-to-end, user-first system that adapts to students, job seekers, and professionals alike."
+    "description": "A personalized career guidance platform for users aged 15–35. I designed the data model and API structure for career routes, experience logging, and goal tracking — then built the React frontend on top of those endpoints, with role-based routing and adaptive content based on user profile data.",
+    "highlight": "The architecture decision that mattered most was separating content data from user progress state — designing clean API contracts between the data layer and UI modules so each could evolve independently."
   },
   {
     "title": "Full-Stack Luggage Booking Web App",
@@ -62,19 +59,17 @@
     "technologies": [
       "React",
       "Supabase",
-      "Stripe",
+      "Stripe API",
       "Google Maps API",
-      "Tailwind CSS",
       "JWT Auth",
-      "Role-Based Access Control",
-      "Vite",
-      "Framer Motion",
-      "Responsive Design"
+      "Real-time Subscriptions",
+      "Tailwind CSS",
+      "Vite"
     ],
-    "role": "Frontend Developer",
+    "role": "Full Stack Developer",
     "duration": "May 2025 – Present",
-    "description": "A production-ready luggage delivery platform with real-time address selection, dynamic pricing, Stripe payments, and session-tracked orders.",
-    "highlight": "Built a seamless booking flow with secure payments, real-time address selection, and responsive UI — all optimized for real-world use."
+    "description": "A production-ready luggage delivery platform. I designed the Supabase data schema for bookings, pricing rules, and order sessions, integrated the Stripe payment API with server-side confirmation logic, and used Google Maps API for real-time address resolution — then built the React booking UI on top of all three.",
+    "highlight": "The middleware layer does the heavy work: dynamic pricing is calculated from real address data, Stripe webhooks update order state in Supabase, and the UI reflects that state in real time via Supabase subscriptions."
   },
   {
     "title": "UX Research: Tech Support for Older Adults",
@@ -125,15 +120,12 @@
       "Socket.IO",
       "REST APIs",
       "JWT Auth",
-      "Material UI",
-      "Admin Dashboard",
-      "Live Chat",
       "Role-Based Access Control"
     ],
     "role": "Full Stack Developer",
     "duration": "Aug 2024 – Dec 2024",
-    "description": "A web app matching pet adopters with shelters based on preferences.",
-    "highlight": "Built full-stack features like login, CRUD tools, admin dashboards, and live chat between users."
+    "description": "A full-stack pet adoption platform. I designed the PostgreSQL schema and Sequelize ORM models, built the Express REST API layer (authentication, CRUD, admin routes), and implemented Socket.IO for real-time chat between adopters and shelters — then connected the entire data layer to a React frontend.",
+    "highlight": "Designed the full API surface — auth endpoints, role-based access middleware, and real-time messaging — before writing a single UI component. The data model drove every frontend decision."
   },
   {
     "title": "HabiTrack – Habit Tracker with Motivation",
@@ -142,18 +134,16 @@
     "technologies": [
       "React",
       "Firebase",
-      "MUI",
-      "Framer Motion",
-      "Fogg Behavior Model",
-      "Authentication",
-      "Responsive Design",
       "Firestore",
-      "User Research"
+      "Firebase Auth",
+      "Real-time Listeners",
+      "MUI",
+      "Framer Motion"
     ],
     "role": "Full Stack Developer",
     "duration": "Aug 2024 – Dec 2024",
-    "description": "An intuitive habit tracker with reminders, milestone animations, and behavior modeling (Fogg’s Model).",
-    "highlight": "Conducted user testing, built dashboards, and focused heavily on visual motivation."
+    "description": "A habit tracker built on Firebase — I structured the Firestore data model for habits, streaks, and milestones, set up real-time listeners so the UI responds instantly to data changes, and implemented Firebase Auth with session persistence. The frontend animations and dashboards are driven entirely by live data state.",
+    "highlight": "Designed the Firestore document structure to make streak calculations efficient at query time — so the UI never has to compute what the data layer already knows."
   },
   {
     "title": "MediCARE App for Parkinson’s Detection",

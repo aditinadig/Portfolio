@@ -8,20 +8,21 @@
     "duration": "Sept 2025 – Present",
     "technologies": [
       "React",
+      "JavaScript",
+      "REST APIs",
+      "CMS Integration",
       "HTML",
       "CSS",
-      "JavaScript",
-      "Accessibility",
-      "Responsive Design"
+      "Accessibility"
     ],
-    "summary": "I build and maintain responsive React-based web pages for UIC Medicine's department websites, creating reusable UI components and improving performance and accessibility.",
+    "summary": "I build and maintain React-based web pages for UIC Medicine's department websites — integrating CMS data, structuring content pipelines, and ensuring the interface reflects accurate, up-to-date clinical and faculty information.",
     "highlights": [
-      "Built and maintained responsive React-based web pages for UIC Medicine's department websites",
-      "Developed reusable UI components and page layouts to present clinical, research, and faculty information clearly",
-      "Improved page load speed, mobile usability, and search visibility by fixing layout issues and optimizing images",
-      "Ensured websites worked reliably across browsers and devices while releasing frequent content and UI updates"
+      "Integrated CMS APIs to dynamically surface clinical, research, and faculty data across department pages",
+      "Built reusable React components that consume structured content feeds and render them consistently across layouts",
+      "Improved page load speed and search visibility through asset optimization, image handling, and structured data markup",
+      "Ensured cross-browser reliability and accessibility compliance across all pages while shipping frequent content and UI updates"
     ],
-    "reflection": "Working in healthcare tech has taught me the importance of accessibility, compliance, and building for real users with critical needs."
+    "reflection": "Healthcare taught me that data accuracy and interface clarity aren't separate concerns — a broken data feed means a broken user experience for someone who actually needs that information."
   },
   {
     "title": "Frontend & Workflow Lead",
@@ -33,21 +34,21 @@
     "technologies": [
       "React",
       "Tailwind CSS",
+      "Stripe API",
+      "Google Analytics API",
+      "REST APIs",
       "Netlify",
-      "Stripe",
-      "Google Analytics",
       "GitHub"
     ],
-    "summary": "I redesigned and rebuilt the LPS Health website using React and Tailwind CSS, significantly improving accessibility, page speed, and overall usability.",
+    "summary": "I rebuilt the LPS Health website end-to-end — designing the data and integration layer (Stripe payments, analytics pipelines, third-party APIs) alongside the React frontend, functioning as the sole developer across the full stack.",
     "highlights": [
-      "Redesigned and rebuilt the website using React and Tailwind CSS, significantly improving accessibility and overall usability",
-      "Improved page load time by 70% and pushed Lighthouse accessibility score from 40 to 80 through audits, fixes, and asset optimization",
-      "Built responsive, mobile-first layouts and reusable UI components that worked smoothly across phones, tablets, and desktops",
-      "Managed version control and deployments with GitHub and Netlify, allowing fast, low-risk updates",
-      "Integrated Stripe Checkout to enable secure online donations and streamline the payment experience",
-      "Supported content growth through blog and newsletter pages, backlink outreach, and landing page integrations"
+      "Designed and integrated the Stripe Checkout payment flow — handling webhook-based donation confirmation and session state end-to-end",
+      "Built an analytics data pipeline connecting Google Analytics events to content and conversion decisions, driving SEO and UX improvements",
+      "Improved page load time by 70% and pushed Lighthouse accessibility score from 40 to 80 through audits, asset optimization, and structured data fixes",
+      "Integrated third-party APIs for newsletter subscriptions, backlink outreach, and landing page conversion tracking",
+      "Managed deployments and CI via GitHub and Netlify, maintaining fast release cycles as the only developer on the project"
     ],
-    "reflection": "This role reflected everything I believe in: polish, clarity, autonomy, and full-circle execution."
+    "reflection": "This role proved I can own the full product layer — API integrations, data flows, and UI — without a team to hand things off to."
   },
   {
     "title": "Cloud Analyst (Frontend Developer - Oracle Cloud)",
@@ -58,22 +59,22 @@
     "duration": "Aug 2022 – Jun 2024",
     "technologies": [
       "Oracle VBS",
-      "HTML",
-      "JavaScript",
-      "CSS",
       "REST APIs",
+      "JavaScript",
+      "HTML",
+      "CSS",
       "Agile",
       "JIRA"
     ],
-    "summary": "I worked on Oracle’s internal cloud dashboards using Visual Builder Studio, where I built Redwood-style UI components and connected them to backend REST APIs.",
+    "summary": "I built the integration and presentation layer for Oracle’s internal BHE Services cloud dashboards — designing REST API connections, transforming service data into structured UI-ready formats, and building Redwood-style components on top.",
     "highlights": [
-      "Self-taught Oracle Visual Builder Studio — a low-code tool with minimal documentation — and became the go-to person across teams when others got stuck",
-      "Created reusable frontend modules that reduced development time by 30% and improved data rendering speed",
-      "Found and fixed over 200 bugs before product release, helping reduce post-release issues by 40%",
-      "Handpicked to support a second team (BHE-HCM) while managing BHE Services work — delivered on both under tight timelines",
-      "Received Oracle’s Employee Recognition Award for consistent delivery and cross-team impact"
+      "Designed REST API integrations connecting backend Oracle cloud services to frontend dashboard components — handling data transformation, error states, and loading flows",
+      "Self-taught Oracle Visual Builder Studio with minimal documentation and became the go-to engineer across teams for VBS architecture and API wiring",
+      "Built reusable data-driven UI modules that reduced development time by 30% and significantly improved data rendering speed for service monitoring tools",
+      "Found and fixed over 200 bugs before product release — many at the API/UI boundary — helping reduce post-release issues by 40%",
+      "Received Oracle’s Employee Recognition Award for cross-team delivery and initiative"
     ],
-    "reflection": "Oracle taught me what real initiative looks like — figuring out an undocumented tool alone, earning trust through results, and becoming someone others relied on."
+    "reflection": "Oracle is where I learned that the hardest bugs live at the boundary between data and UI — and that mastering that layer is what separates a frontend dev from someone who can actually own a product."
   },
   {
     "title": "Software Developer Intern",
@@ -89,12 +90,13 @@
       "REST APIs",
       "Figma"
     ],
-    "summary": "This was my first deep dive into full-stack dev — I built dashboards, forms, and connected REST APIs to real backend logic.",
+    "summary": "My first end-to-end project — I built and connected REST APIs using Node.js and Express on the backend, wired them to a JavaScript frontend, and shipped working features as part of a small team.",
     "highlights": [
-      "Helped redesign the homepage using Figma, then brought it to life in code",
-      "Created secure login, form flows, and internal portal features in a team of 3 interns",
-      "Learned to ship fast, test smart, and think about UI from a dev+user perspective"
+      "Built REST API endpoints with Node.js and Express to support dashboard and form features in the internal portal",
+      "Connected frontend JavaScript to backend API routes — handling data flow, form submission, and state persistence",
+      "Implemented secure login and CRUD flows from API layer through to UI",
+      "Redesigned the homepage in Figma and implemented the new layout end-to-end"
     ],
-    "reflection": "This is where I discovered how much I love taking a messy UI and turning it into something simple and sharp."
+    "reflection": "This is where I learned that clean APIs make clean UIs possible — and messy ones make everything harder."
   }
 ]

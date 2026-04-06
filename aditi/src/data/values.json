@@ -22,13 +22,13 @@
     },
     {
       "icon": "🔁",
-      "title": "Full-circle thinking — done means complete from all angles",
-      "description": "I don’t ship unless every detail — UX, logic, performance, and polish — is complete."
+      "title": "Full-circle thinking — data in, experience out",
+      "description": "I don’t ship unless every layer is solid — the data model, the API contract, the integration, the UI, and the polish."
     },
     {
       "icon": "🧩",
-      "title": "Structure, readability, and clean code always",
-      "description": "I write clean, readable code that’s easy to understand and maintain."
+      "title": "API design is UX design",
+      "description": "How data is structured and served shapes how the UI behaves. I treat API contracts as first-class design decisions."
     },
     {
       "icon": "🛡️",
@@ -41,9 +41,9 @@
       "description": "1px off? I see it. And fix it. Transitions, spacing, states — they all matter."
     },
     {
-      "icon": "🎨",
-      "title": "Design sense meets developer sense",
-      "description": "I understand both design intent and dev feasibility — and balance the two."
+      "icon": "🔌",
+      "title": "I own the integration layer",
+      "description": "Stripe, Supabase, Google Maps, LLM APIs, Socket.IO — I wire these into products and make sure the data flows cleanly end-to-end."
     },
     {
       "icon": "🤝",

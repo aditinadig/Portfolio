@@ -39,7 +39,7 @@ const Hero = () => {
           custom={1}
           variants={textVariants}
         >
-          Frontend Dev. UI Snob. Detail Freak.
+          UI Snob. API Thinker. Detail Freak.
         </motion.h2>
 
         <motion.p
@@ -47,9 +47,9 @@ const Hero = () => {
           custom={2}
           variants={textVariants}
         >
-          I build clean, intuitive, full-circle experiences —{" "}
+          I build from API design to pixel-perfect UI —{" "}
           <br className="hidden md:block" />
-          powered by React and polish.
+          the full layer between data and experience.
         </motion.p>
 
         <motion.a

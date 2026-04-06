@@ -38,13 +38,14 @@ const AboutMe = () => {
             </span>
           </h1>
           <p className="text-xl md:text-xl leading-relaxed max-w-5xl">
-            I'm a frontend developer who cares about the space between usable
-            and beautiful. If there's a{" "}
+            I work at the layer between{" "}
             <span className="underline decoration-sunbeam underline-offset-4">
-              1px misalignment
+              data and experience
             </span>
-            , I fix it. If a user might hesitate, I rethink it. If it's just
-            functional, I refine it — until it flows.
+            . I design APIs, shape how data moves through a system, and build
+            the interface on top — so every pixel is backed by logic that's just
+            as clean. If the data model is messy, the UI will feel it. I fix
+            both.
           </p>
         </motion.div>
 
@@ -99,9 +100,9 @@ const AboutMe = () => {
           variants={fadeUp}
           custom={7}
         >
-          If your product needs to{" "}
-          <span className="not-italic font-bold text-lilac">feel</span> just as
-          good as it works — I'm your person.
+          If your product needs clean APIs,{" "}
+          <span className="not-italic font-bold text-lilac">solid data flows</span>
+          , and a UI that feels just as good as it works — I'm your person.
         </motion.div>
       </motion.div>
     </motion.section>

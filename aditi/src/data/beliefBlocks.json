@@ -20,13 +20,13 @@
     "style": "bg-white text-lilac"
   },
   {
-    "title": "I balance structure and soul.",
-    "description": "Code with logic. Design with emotion. I bring both — because that’s what creates real connection.",
+    "title": "I think in data flows, not just UI states.",
+    "description": "Before I build a component, I ask: where does this data come from, how should it be shaped, and what happens when it changes? The UI is the last step.",
     "style": "bg-sunbeam-light"
   },
   {
-    "title": "I build with security in mind.",
-    "description": "From input validation to API design, I never treat security as an afterthought. It’s baked into my process.",
+    "title": "I build the integration layer, not just the screen.",
+    "description": "REST APIs, auth flows, real-time subscriptions, payment pipelines — I design and wire them together, then build the interface on top.",
     "style": "bg-lilac-light"
   }
 ]
