@@ -41,8 +41,8 @@
     "summary": "I redesigned and rebuilt the LPS Health website using React and Tailwind CSS, significantly improving accessibility, page speed, and overall usability.",
     "highlights": [
       "Redesigned and rebuilt the website using React and Tailwind CSS, significantly improving accessibility and overall usability",
+      "Improved page load time by 70% and pushed Lighthouse accessibility score from 40 to 80 through audits, fixes, and asset optimization",
       "Built responsive, mobile-first layouts and reusable UI components that worked smoothly across phones, tablets, and desktops",
-      "Improved page speed and search visibility through Lighthouse audits, SEO fixes, and analytics-driven optimizations",
       "Managed version control and deployments with GitHub and Netlify, allowing fast, low-risk updates",
       "Integrated Stripe Checkout to enable secure online donations and streamline the payment experience",
       "Supported content growth through blog and newsletter pages, backlink outreach, and landing page integrations"
@@ -67,12 +67,13 @@
     ],
     "summary": "I worked on Oracle’s internal cloud dashboards using Visual Builder Studio, where I built Redwood-style UI components and connected them to backend REST APIs.",
     "highlights": [
-      "Created reusable frontend modules that reduced dev time by 30%",
+      "Self-taught Oracle Visual Builder Studio — a low-code tool with minimal documentation — and became the go-to person across teams when others got stuck",
+      "Created reusable frontend modules that reduced development time by 30% and improved data rendering speed",
       "Found and fixed over 200 bugs before product release, helping reduce post-release issues by 40%",
-      "Worked across two teams (BHE Services + BHE HCM) — was handpicked for my frontend strength",
-      "Received Oracle’s Employee Recognition Award for consistent delivery across parallel projects"
+      "Handpicked to support a second team (BHE-HCM) while managing BHE Services work — delivered on both under tight timelines",
+      "Received Oracle’s Employee Recognition Award for consistent delivery and cross-team impact"
     ],
-    "reflection": "Oracle taught me how to adapt fast, take initiative, and stay cool under pressure — even when the tools were new and the timelines tight."
+    "reflection": "Oracle taught me what real initiative looks like — figuring out an undocumented tool alone, earning trust through results, and becoming someone others relied on."
   },
   {
     "title": "Software Developer Intern",

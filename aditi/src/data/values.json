@@ -54,6 +54,21 @@
       "icon": "🚀",
       "title": "Reliable delivery with pride and thoroughness",
       "description": "I build every feature like it’s mine — and make sure it works, beautifully."
+    },
+    {
+      "icon": "🗣️",
+      "title": "I translate tech for people, not just to them",
+      "description": "Whether working with medical staff or small business owners, I turn complex decisions into plain language — and their needs into software that actually fits."
+    },
+    {
+      "icon": "🔦",
+      "title": "I figure out undocumented things — alone",
+      "description": "At Oracle, I taught myself a tool with almost no documentation. I became the person others came to when they were stuck. Initiative is a skill, not a trait."
+    },
+    {
+      "icon": "♿",
+      "title": "Accessibility is craftsmanship, not compliance",
+      "description": "I pushed a Lighthouse accessibility score from 40 to 80 — not because I had to, but because every user deserves a working interface."
     }
   ]
 }
