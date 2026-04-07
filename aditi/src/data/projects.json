@@ -1,21 +1,21 @@
 [
   {
-    "title": "National Civil Service Exam Preparation Platform",
+    "title": "SprintDesk – Agile Sprint Tracker",
     "cover": "",
     "link": "",
     "technologies": [
-      "React",
-      "Node.js",
-      "REST APIs",
-      "LLM API (Groq / Llama)",
-      "Real-time Data Aggregation",
-      "SCORM",
-      "PostgreSQL"
+      "React 19",
+      "TypeScript",
+      "Supabase",
+      "Drag-and-Drop",
+      "Real-time Sync",
+      "Optimistic UI",
+      "Responsive Design"
     ],
     "role": "Full Stack Developer",
     "duration": "Jan 2026 – Present",
-    "description": "A full-stack learning platform for India's national civil service exam (UPSC). I built the data pipeline that aggregates real-time news, government updates, and policy content from multiple sources, transforms them via LLM API calls into exam-relevant insights, and surfaces them through a personalized React frontend.",
-    "highlight": "The core engineering challenge is middleware — designing a pipeline that ingests unstructured content, applies prompt-based transformation via Groq/Llama, maps outputs to an issue-based knowledge model, and serves structured learning data to the UI."
+    "description": "A responsive task management app that lets teams track work across sprint cycles using a drag-and-drop Kanban board. I designed per-user data isolation in Supabase, built real-time sync so changes appear instantly across users, and added optimistic UI updates that roll back automatically on server errors.",
+    "highlight": "The engineering challenge was making the UI feel instant while keeping data consistent — optimistic updates, real-time subscriptions, and per-user row-level security working together end-to-end."
   },
   {
     "title": "Collaborative Music Rehearsal Platform",
@@ -33,24 +33,6 @@
     "duration": "Sept 2025 – Dec 2025",
     "description": "A collaborative rehearsal platform where the data model is the feature — role-based state (singer, musician, manager) determines what each user sees and can do in real time. I designed the data structure for part assignments and reassignment workflows, then built the React interface that responds to those state changes.",
     "highlight": "The core challenge was designing a role-aware data layer that could push the right subset of rehearsal data to each user type — so the UI stayed simple while the underlying logic handled the complexity."
-  },
-  {
-    "title": "CareerCanvas – A Career Growth Platform",
-    "cover": "",
-    "link": "",
-    "technologies": [
-      "React",
-      "Node.js",
-      "REST APIs",
-      "TanStack Router",
-      "Tailwind CSS",
-      "Role-Based Routing",
-      "Modular Data Architecture"
-    ],
-    "role": "Full-Stack Developer",
-    "duration": "July 2025 – Present",
-    "description": "A personalized career guidance platform for users aged 15–35. I designed the data model and API structure for career routes, experience logging, and goal tracking — then built the React frontend on top of those endpoints, with role-based routing and adaptive content based on user profile data.",
-    "highlight": "The architecture decision that mattered most was separating content data from user progress state — designing clean API contracts between the data layer and UI modules so each could evolve independently."
   },
   {
     "title": "Full-Stack Luggage Booking Web App",
@@ -108,26 +90,6 @@
     "highlight": "Built the integrity-checking system and ran client simulations to test node failure recovery."
   },
   {
-    "title": "Sweet Home Finder",
-    "cover": "",
-    "link": "",
-    "technologies": [
-      "React",
-      "Node.js",
-      "Express",
-      "PostgreSQL",
-      "Sequelize",
-      "Socket.IO",
-      "REST APIs",
-      "JWT Auth",
-      "Role-Based Access Control"
-    ],
-    "role": "Full Stack Developer",
-    "duration": "Aug 2024 – Dec 2024",
-    "description": "A full-stack pet adoption platform. I designed the PostgreSQL schema and Sequelize ORM models, built the Express REST API layer (authentication, CRUD, admin routes), and implemented Socket.IO for real-time chat between adopters and shelters — then connected the entire data layer to a React frontend.",
-    "highlight": "Designed the full API surface — auth endpoints, role-based access middleware, and real-time messaging — before writing a single UI component. The data model drove every frontend decision."
-  },
-  {
     "title": "HabiTrack – Habit Tracker with Motivation",
     "cover": "",
     "link": "",
@@ -146,7 +108,7 @@
     "highlight": "Designed the Firestore document structure to make streak calculations efficient at query time — so the UI never has to compute what the data layer already knows."
   },
   {
-    "title": "MediCARE App for Parkinson’s Detection",
+    "title": "MediCARE App for Parkinson's Detection",
     "cover": "",
     "link": "",
     "technologies": [
@@ -163,7 +125,7 @@
     ],
     "role": "Full Stack Developer",
     "duration": "Aug 2021 – Jun 2022",
-    "description": "Award-winning project combining voice and handwriting data to detect Parkinson’s with 91.3%+ accuracy.",
-    "highlight": "Led the development, presented at an international conference, and won “Best Project Presentation.”"
+    "description": "Award-winning project combining voice and handwriting data to detect Parkinson's with 91.3%+ accuracy.",
+    "highlight": "Led the development, presented at an international conference, and won "Best Project Presentation.""
   }
 ]

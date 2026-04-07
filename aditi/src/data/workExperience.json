@@ -71,7 +71,7 @@
       "Designed REST API integrations connecting backend Oracle cloud services to frontend dashboard components — handling data transformation, error states, and loading flows",
       "Self-taught Oracle Visual Builder Studio with minimal documentation and became the go-to engineer across teams for VBS architecture and API wiring",
       "Built reusable data-driven UI modules that reduced development time by 30% and significantly improved data rendering speed for service monitoring tools",
-      "Found and fixed over 200 bugs before product release — many at the API/UI boundary — helping reduce post-release issues by 40%",
+      "Found and fixed over 100 bugs before product release — many at the API/UI boundary — helping reduce post-release issues by 40%",
       "Received Oracle’s Employee Recognition Award for cross-team delivery and initiative"
     ],
     "reflection": "Oracle is where I learned that the hardest bugs live at the boundary between data and UI — and that mastering that layer is what separates a frontend dev from someone who can actually own a product."
