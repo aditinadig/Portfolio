@@ -13,7 +13,7 @@
       "Responsive Design"
     ],
     "role": "Full Stack Developer",
-    "duration": "Jan 2026 – Present",
+    "duration": "April 2026 – Present",
     "description": "A responsive task management app that lets teams track work across sprint cycles using a drag-and-drop Kanban board. I designed per-user data isolation in Supabase, built real-time sync so changes appear instantly across users, and added optimistic UI updates that roll back automatically on server errors.",
     "highlight": "The engineering challenge was making the UI feel instant while keeping data consistent — optimistic updates, real-time subscriptions, and per-user row-level security working together end-to-end."
   },
@@ -126,6 +126,6 @@
     "role": "Full Stack Developer",
     "duration": "Aug 2021 – Jun 2022",
     "description": "Award-winning project combining voice and handwriting data to detect Parkinson's with 91.3%+ accuracy.",
-    "highlight": "Led the development, presented at an international conference, and won "Best Project Presentation.""
+    "highlight": "Led the development, presented at an international conference, and won \"Best Project Presentation.\""
   }
 ]
