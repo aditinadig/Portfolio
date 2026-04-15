@@ -12,8 +12,8 @@ const Projects = () => {
   };
 
   return (
-    <section id="projects" className="px-6 py-20 md:px-24 font-sans bg-canvas text-ink">
-      <div className="max-w-6xl mx-auto">
+    <section id="projects" className="py-20 font-sans bg-canvas text-ink">
+      <div className="w-[80%] mx-auto">
         <motion.h2
           className="text-4xl md:text-5xl font-extrabold tracking-tight mb-6"
           initial={{ opacity: 0, y: 20 }}

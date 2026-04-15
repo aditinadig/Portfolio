@@ -1,32 +1,22 @@
 [
   {
-    "title": "I never leave things halfway.",
-    "description": "Full-circle or nothing. I believe work isn’t 'done' until it feels done — refined, complete, and intuitive.",
-    "style": "bg-white text-lilac"
-  },
-  {
     "title": "I take ownership — fully.",
-    "description": "On two separate projects I was the only developer, no safety net. I scoped, built, shipped, and owned the outcome from start to finish.",
+    "description": "On two separate projects I was the only developer. I scoped, built, shipped, and owned the outcome from start to finish. No safety net.",
     "style": "bg-sunbeam-light"
   },
   {
-    "title": "I naturally think like a user.",
-    "description": "I don’t just test for bugs — I test for hesitation, confusion, and delight. Real insights come from real empathy.",
+    "title": "I get close to the problem first.",
+    "description": "I do not touch the code until I understand what actually needs to be built and why. The best solutions come from sitting with the problem long enough.",
     "style": "bg-lilac-light"
-  },
-  {
-    "title": "I adapt with clarity.",
-    "description": "Plan changes don’t throw me off — they energize me. I stay flexible, grounded, and focused.",
-    "style": "bg-white text-lilac"
   },
   {
     "title": "I think in data flows, not just UI states.",
-    "description": "Before I build a component, I ask: where does this data come from, how should it be shaped, and what happens when it changes? The UI is the last step.",
-    "style": "bg-sunbeam-light"
+    "description": "Before I build a component, I ask where the data comes from, how it should be shaped, and what happens when it changes. The UI is the last step.",
+    "style": "bg-white text-lilac"
   },
   {
-    "title": "I build the integration layer, not just the screen.",
-    "description": "REST APIs, auth flows, real-time subscriptions, payment pipelines — I design and wire them together, then build the interface on top.",
-    "style": "bg-lilac-light"
+    "title": "I test for hesitation, not just bugs.",
+    "description": "If a user might pause, I rethink it. If something feels slightly off I fix it. Clarity and feel matter as much as correctness.",
+    "style": "bg-sunbeam-light"
   }
 ]

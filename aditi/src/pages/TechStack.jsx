@@ -15,9 +15,9 @@ const TechStack = () => {
   return (
     <section
       id="tech-stack"
-      className="bg-canvas px-6 py-20 md:px-24 font-sans text-ink"
+      className="bg-canvas py-20 font-sans text-ink"
     >
-      <div className="max-w-6xl mx-auto">
+      <div className="w-[80%] mx-auto">
         <motion.h2
           className="text-4xl md:text-5xl font-extrabold mb-6 tracking-tight"
           initial={{ opacity: 0, y: 20 }}

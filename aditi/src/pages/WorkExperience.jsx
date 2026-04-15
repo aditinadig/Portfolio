@@ -12,8 +12,8 @@ const WorkExperience = () => {
   };
 
   return (
-    <section id="work-experience" className="px-6 py-20 md:px-28">
-      <div className="max-w-6xl mx-auto">
+    <section id="work-experience" className="py-20">
+      <div className="w-[80%] mx-auto">
         <motion.h2
           className="text-4xl md:text-5xl font-extrabold mb-6 tracking-tight"
           initial={{ opacity: 0, y: 30 }}
@@ -77,7 +77,7 @@ const WorkExperience = () => {
                           {job.summary}
                         </p>
 
-                        <ul className="list-disc list-inside text-[15px] text-ink/90 space-y-1 mb-4 pl-1">
+                        <ul className="list-disc list-outside text-[15px] text-ink/90 space-y-1 mb-4 pl-5">
                           {job.highlights.map((point, i) => (
                             <li key={i}>{point}</li>
                           ))}

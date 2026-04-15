@@ -7,6 +7,7 @@ import Projects from "./pages/Projects";
 import TechStack from "./pages/TechStack";
 import WorkExperience from "./pages/WorkExperience";
 import Values from "./pages/Values";
+import WhatIBelieveIn from "./pages/WhatIBelieveIn";
 import HireMe from "./pages/HireMe";
 import Footer from "./components/Footer";
 
@@ -15,12 +16,13 @@ function App() {
     <div>
       <Navbar />
       <Hero />
+      <Values />
       {/* <MyStory /> */}
-      <AboutMe />
+      {/* <AboutMe /> */}
       <WorkExperience />
       <TechStack />
       <Projects />
-      <Values />
+      <WhatIBelieveIn />
       <HireMe />
       <Footer />
     </div>

@@ -5,11 +5,11 @@ import { motion } from "framer-motion";
 const HireMe = () => {
   return (
     <section
-      className="bg-canvas mx-16 py-24 md:px-24 text-ink font-sans border-t border-ink/10"
+      className="bg-canvas py-24 text-ink font-sans border-t border-ink/10"
       id="hire-me"
     >
       <motion.div
-        className="max-w-3xl mx-auto text-center"
+        className="w-[80%] mx-auto text-center"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}

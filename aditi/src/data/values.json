@@ -1,74 +1,44 @@
 {
   "values": [
     {
-      "icon": "🧼",
-      "title": "Clarity over complexity",
-      "description": "I aim for interfaces and code that make sense at a glance — no unnecessary layers."
-    },
-    {
-      "icon": "🎯",
-      "title": "Function + Feel — never one without the other",
-      "description": "What works should also feel good. I design for both usability and delight."
-    },
-    {
-      "icon": "🧠",
-      "title": "Testing like a user, building like a dev",
-      "description": "I instinctively test for friction and usability — not just technical correctness."
-    },
-    {
-      "icon": "🌱",
-      "title": "Adaptability, ownership, and the hunger to improve",
-      "description": "I evolve with the project, take initiative, and keep pushing quality forward."
+      "icon": "🔦",
+      "title": "I figure things out.",
+      "description": "At Oracle I was handed a tool with almost no documentation. I went straight to the source, studied it properly, and became the person others came to when they were stuck."
     },
     {
       "icon": "🔁",
-      "title": "Full-circle thinking — data in, experience out",
-      "description": "I don’t ship unless every layer is solid — the data model, the API contract, the integration, the UI, and the polish."
+      "title": "Full-circle or nothing.",
+      "description": "I don't ship unless every layer is solid — the data model, the API, the integration, the UI, and the polish."
     },
     {
       "icon": "🧩",
-      "title": "API design is UX design",
+      "title": "API design is UX design.",
       "description": "How data is structured and served shapes how the UI behaves. I treat API contracts as first-class design decisions."
     },
     {
-      "icon": "🛡️",
-      "title": "Security is a default, not an afterthought",
-      "description": "I build with security in mind from the very first line — validation, auth, and more."
-    },
-    {
-      "icon": "🔍",
-      "title": "Pixel-perfect attention to detail",
-      "description": "1px off? I see it. And fix it. Transitions, spacing, states — they all matter."
-    },
-    {
-      "icon": "🔌",
-      "title": "I own the integration layer",
-      "description": "Stripe, Supabase, Google Maps, LLM APIs, Socket.IO — I wire these into products and make sure the data flows cleanly end-to-end."
-    },
-    {
-      "icon": "🤝",
-      "title": "Independence with collaboration where it matters",
-      "description": "I move fast on my own, but collaborate deeply where alignment is key."
-    },
-    {
-      "icon": "🚀",
-      "title": "Reliable delivery with pride and thoroughness",
-      "description": "I build every feature like it’s mine — and make sure it works, beautifully."
-    },
-    {
       "icon": "🗣️",
-      "title": "I translate tech for people, not just to them",
+      "title": "I translate tech for people.",
       "description": "Whether working with medical staff or small business owners, I turn complex decisions into plain language — and their needs into software that actually fits."
     },
     {
-      "icon": "🔦",
-      "title": "I figure out undocumented things — alone",
-      "description": "At Oracle, I taught myself a tool with almost no documentation. I became the person others came to when they were stuck. Initiative is a skill, not a trait."
+      "icon": "🛡️",
+      "title": "Security is a default.",
+      "description": "Validation, auth flows, rate limiting, RBAC. Baked in from the first line, not bolted on at the end."
     },
     {
-      "icon": "♿",
-      "title": "Accessibility is craftsmanship, not compliance",
-      "description": "I pushed a Lighthouse accessibility score from 40 to 80 — not because I had to, but because every user deserves a working interface."
+      "icon": "🎤",
+      "title": "I perform under pressure.",
+      "description": "I have over 100 singing competition awards and performed on television. Showing up when the stakes are high, staying focused when things are not going your way — that has always just been part of how I operate."
+    },
+    {
+      "icon": "🤝",
+      "title": "Independence with collaboration where it matters.",
+      "description": "I move fast on my own and make decisions without needing to be managed. But I know when to align, when to ask, and when to bring people in."
+    },
+    {
+      "icon": "🔍",
+      "title": "Pixel-perfect attention to detail.",
+      "description": "1px off? I see it. And fix it. Transitions, spacing, states — they all matter."
     }
   ]
 }
