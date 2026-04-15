@@ -71,7 +71,7 @@ const HireMe = () => {
           transition={{ duration: 0.5, delay: 0.5 }}
           viewport={{ once: true }}
         >
-          Currently open to Fall 2025 internships and part-time roles (CPT eligible).
+          Currently open to full-time roles (OPT eligible).
         </motion.p>
       </motion.div>
     </section>
