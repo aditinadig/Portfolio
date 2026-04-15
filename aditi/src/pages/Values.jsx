@@ -5,10 +5,7 @@ import beliefBlocks from "../data/beliefBlocks.json";
 
 const Values = () => {
   return (
-    <section
-      id="values"
-      className="bg-canvas text-ink py-20 font-sans"
-    >
+    <section id="values" className="bg-canvas text-ink py-20 font-sans">
       <div className="w-[80%] mx-auto">
         {/* Animated Heading */}
         <motion.h2
@@ -18,7 +15,12 @@ const Values = () => {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          I don't ship until it feels right.
+          <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight leading-tight">
+            I don't ship it{" "}
+            <span className="inline-block bg-lilac/20 px-3 py-1  rounded-xl">
+              unless it feels right.
+            </span>
+          </h1>
         </motion.h2>
 
         <motion.p
@@ -28,15 +30,16 @@ const Values = () => {
           transition={{ duration: 0.6, delay: 0.15 }}
           viewport={{ once: true }}
         >
-          I care about two things equally. What the person sees should be accurate
-          and come from the right place. And it should feel good to use.
+          I care about two things equally. What the person sees should be
+          accurate and come from the right place. And it should feel good to
+          use.
           <br className="hidden md:block" />
-          <br className="hidden md:block" />
-          I have built enterprise dashboards at Oracle, healthcare interfaces at
-          UIC Medicine, and full-stack products from scratch. I am also a singer
-          with over 100 competition awards. That is not a coincidence. The same
-          instinct that makes me fix a 1px misalignment is the same one that makes
-          me sing a phrase forty times until it lands.
+          <br className="hidden md:block" />I have built enterprise dashboards
+          at Oracle, healthcare interfaces at UIC Medicine, and full-stack
+          products from scratch. I am also a singer with over 100 competition
+          awards. That is not a coincidence. The same instinct that makes me fix
+          a 1px misalignment is the same one that makes me sing a phrase forty
+          times until it lands.
         </motion.p>
 
         {/* Belief Blocks Grid — 2 columns, 2 rows */}
@@ -64,7 +67,9 @@ const Values = () => {
                   transition={{ duration: 0.4, delay: i * 0.1 }}
                   viewport={{ once: true }}
                 >
-                  <h3 className={`text-xl font-semibold mb-2 ${headingColors[i]}`}>
+                  <h3
+                    className={`text-xl font-semibold mb-2 ${headingColors[i]}`}
+                  >
                     {item.title}
                   </h3>
                   <p className="text-base leading-relaxed text-ink/80">
