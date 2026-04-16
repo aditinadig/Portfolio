@@ -97,6 +97,21 @@ const Projects = () => {
                           “{project.highlight}”
                         </motion.div>
 
+                        {project.link && (
+                          <motion.a
+                            href={project.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center text-sm font-semibold text-lilac hover:text-lilac-dark underline underline-offset-4 mb-4"
+                            variants={{
+                              hidden: { opacity: 0, y: 10 },
+                              visible: { opacity: 1, y: 0 },
+                            }}
+                          >
+                            View Project
+                          </motion.a>
+                        )}
+
                         {project.technologies?.length > 0 && (
                           <motion.div
                             className="flex flex-wrap gap-2"
