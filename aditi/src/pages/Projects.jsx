@@ -7,6 +7,15 @@ import projects from "../data/projects.json";
 const Projects = () => {
   const [openIndex, setOpenIndex] = useState(null);
 
+  const getLinkHost = (link) => {
+    try {
+      const { hostname } = new URL(link);
+      return hostname.replace(/^www\./, "");
+    } catch {
+      return link;
+    }
+  };
+
   const toggleCollapse = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };
@@ -53,6 +62,31 @@ const Projects = () => {
                   <span className="text-2xl text-ink/50">{isOpen ? "−" : "+"}</span>
                 </button>
 
+                {project.link && (
+                  <div className="px-6 pb-4 -mt-1">
+                    <div className="flex flex-wrap items-center justify-between gap-2 rounded-lg bg-canvas/70 px-3 py-2 border border-lilac-light/60">
+                      <div className="flex items-center gap-2 min-w-0">
+                        <span className="text-[11px] uppercase tracking-[0.12em] font-semibold text-ink/50">
+                          Website
+                        </span>
+                        <span className="text-sm text-ink/80 truncate">
+                          {getLinkHost(project.link)}
+                        </span>
+                      </div>
+
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 text-sm font-semibold text-lilac-dark hover:text-lilac transition-colors"
+                    >
+                      Open link
+                      <span aria-hidden="true">↗</span>
+                    </a>
+                    </div>
+                  </div>
+                )}
+
                 {/* Animated Body */}
                 <AnimatePresence initial={false}>
                   {isOpen && (
@@ -96,21 +130,6 @@ const Projects = () => {
                         >
                           “{project.highlight}”
                         </motion.div>
-
-                        {project.link && (
-                          <motion.a
-                            href={project.link}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="inline-flex items-center text-sm font-semibold text-lilac hover:text-lilac-dark underline underline-offset-4 mb-4"
-                            variants={{
-                              hidden: { opacity: 0, y: 10 },
-                              visible: { opacity: 1, y: 0 },
-                            }}
-                          >
-                            View Project
-                          </motion.a>
-                        )}
 
                         {project.technologies?.length > 0 && (
                           <motion.div
