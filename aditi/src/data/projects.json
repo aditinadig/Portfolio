@@ -20,7 +20,7 @@
   {
     "title": "Collaborative Music Rehearsal Platform",
     "cover": "",
-    "link": "",
+    "link": "https://cuemusicrehearsal.netlify.app/",
     "technologies": [
       "React",
       "Role-Based State Management",
