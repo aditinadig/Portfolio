@@ -1,14 +1,13 @@
-/* eslint-disable no-unused-vars */
 import { motion } from "framer-motion";
-/* eslint-enable no-unused-vars */
+import siteContent from "../data/siteContent.json";
 
-const textVariants = {
-  hidden: { opacity: 0, y: 30 },
-  visible: (custom) => ({
+const fadeUp = {
+  hidden: { opacity: 0, y: 24 },
+  visible: (delay = 0) => ({
     opacity: 1,
     y: 0,
     transition: {
-      delay: custom * 0.2,
+      delay,
       duration: 0.6,
       ease: "easeOut",
     },
@@ -16,72 +15,91 @@ const textVariants = {
 };
 
 const Hero = () => {
+  const { availability, location, date, hero } = siteContent;
+
   return (
-    <section
-      id="hero"
-      className="hero py-12"
-    >
-      <div className="w-[80%] mx-auto flex flex-col md:flex-row items-center justify-between lg:gap-16">
-      {/* Left Side */}
-      <motion.div
-        className="flex flex-col flex-1 text-center md:text-left px-10 sm:px-0 gap-4 md:gap-5 lg:gap-6"
-        initial="hidden"
-        animate="visible"
-      >
-        <motion.h1
-          className="text-7xl sm:text-6xl md:text-5xl lg:text-8xl font-extrabold"
-          custom={0}
-          variants={textVariants}
-        >
-          Hi, I'm <span className="text-lilac">Aditi.</span>
-        </motion.h1>
-        <motion.h2
-          className="text-2xl sm:text-xl md:text-2xl lg:text-4xl md:mr-10 font-semibold"
-          custom={1}
-          variants={textVariants}
-        >
-          Engineer. Singer. Builder.
-        </motion.h2>
+    <section id="hero" className="section-shell py-10 md:py-18">
+      <div className="grid gap-10 border-b border-ink/10 pb-16 lg:grid-cols-[minmax(0,1.5fr)_20rem] lg:gap-12">
+        <motion.div initial="hidden" animate="visible" className="space-y-8">
+          <motion.p
+            className="text-[0.72rem] uppercase tracking-[0.24em] text-ink/58"
+            variants={fadeUp}
+            custom={0}
+          >
+            {availability} · {location} · {date}
+          </motion.p>
 
-        <motion.p
-          className="text-lg md:text-xl lg:text-2xl sm:leading-relaxed md:leading-tight lg:leading-relaxed"
-          custom={2}
-          variants={textVariants}
+          <div className="space-y-4">
+            <motion.h1
+              className="max-w-4xl text-balance text-[clamp(2.9rem,8vw,6.9rem)] font-semibold leading-[0.93] tracking-[-0.06em]"
+              variants={fadeUp}
+              custom={0.08}
+            >
+              {hero.headline[0]}
+            </motion.h1>
+            <motion.p
+              className="max-w-4xl text-balance text-[clamp(2.5rem,6vw,4.8rem)] font-medium italic leading-[0.95] tracking-[-0.05em]"
+              variants={fadeUp}
+              custom={0.16}
+            >
+              {hero.headline[1]}
+            </motion.p>
+            <motion.p
+              className="max-w-3xl text-balance text-[clamp(1.9rem,4vw,3.2rem)] font-medium italic leading-[1.02] tracking-[-0.04em]"
+              variants={fadeUp}
+              custom={0.24}
+            >
+              {hero.headline[2]}
+            </motion.p>
+          </div>
+
+          <motion.p
+            className="max-w-3xl text-lg leading-8 text-ink/76 md:text-xl"
+            variants={fadeUp}
+            custom={0.32}
+          >
+            {hero.subtext}
+          </motion.p>
+
+          <motion.div
+            className="flex flex-wrap gap-3 text-[0.75rem] uppercase tracking-[0.2em] text-ink/64"
+            variants={fadeUp}
+            custom={0.4}
+          >
+            <a className="pill-primary" href="#work">
+              View work
+            </a>
+            <a className="pill-muted" href="/resume.pdf" target="_blank" rel="noreferrer">
+              Resume
+            </a>
+          </motion.div>
+
+          <motion.p
+            className="font-mono text-xs text-ink/48"
+            variants={fadeUp}
+            custom={0.48}
+          >
+            {hero.witLine}
+          </motion.p>
+        </motion.div>
+
+        <motion.aside
+          className="hero-rail"
+          initial={{ opacity: 0, x: 24 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.65, delay: 0.25, ease: "easeOut" }}
         >
-          I build from API design to pixel-perfect UI —{" "}
-          <br className="hidden md:block" />
-          the full layer between data and experience.
-        </motion.p>
-
-        <motion.a
-          href="#work-experience"
-          className="mx-auto md:mx-0 bg-sunbeam font-bold text-md px-5 py-3 rounded shadow-sm hover:bg-yellow-500 transition w-fit"
-          custom={3}
-          variants={textVariants}
-        >
-          CHECK MY WORK EXPERIENCE
-        </motion.a>
-      </motion.div>
-
-      {/* Right Side */}
-      <motion.div
-        className="relative w-70 sm:w-90 md:w-70 lg:w-110 group mt-10"
-        initial={{ opacity: 0, scale: 0.95 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.6, delay: 1 }}
-      >
-        {/* Floating Purple Blob */}
-        <div className="absolute inset-0 bg-purple-200 rounded-[60%_40%_60%_40%/40%_60%_40%_60%] -z-10 scale-105 animate-float transition-transform duration-500 ease-in-out group-hover:animate-wiggle"></div>
-
-        {/* Image */}
-        <a href="#about-me">
-          <img
-            src="/images/aditi.png"
-            alt="Aditi Portrait"
-            className="relative z-10 rounded-full border-4 border-white transition-transform duration-500 ease-in-out group-hover:-translate-y-2 group-hover:rotate-2 w-full"
-          />
-        </a>
-      </motion.div>
+          {hero.cards.map((card, index) => (
+            <article key={card.label} className="editorial-card">
+              <p className="eyebrow mb-3">{card.label}</p>
+              <h2 className="text-base font-semibold leading-snug">{card.text}</h2>
+              <p className="mt-3 text-sm leading-6 text-ink/68">{card.detail}</p>
+              {index !== hero.cards.length - 1 && (
+                <div className="mt-6 border-b border-ink/10" />
+              )}
+            </article>
+          ))}
+        </motion.aside>
       </div>
     </section>
   );

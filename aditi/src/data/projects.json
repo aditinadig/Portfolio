@@ -1,131 +1,63 @@
-[
-  {
-    "title": "SprintDesk – Agile Sprint Tracker",
-    "cover": "",
-    "link": "",
-    "technologies": [
-      "React 19",
-      "TypeScript",
-      "Supabase",
-      "Drag-and-Drop",
-      "Real-time Sync",
-      "Optimistic UI",
-      "Responsive Design"
-    ],
-    "role": "Full Stack Developer",
-    "duration": "April 2026 – Present",
-    "description": "A responsive task management app that lets teams track work across sprint cycles using a drag-and-drop Kanban board. I designed per-user data isolation in Supabase, built real-time sync so changes appear instantly across users, and added optimistic UI updates that roll back automatically on server errors.",
-    "highlight": "The engineering challenge was making the UI feel instant while keeping data consistent — optimistic updates, real-time subscriptions, and per-user row-level security working together end-to-end."
-  },
-  {
-    "title": "Collaborative Music Rehearsal Platform",
-    "cover": "",
-    "link": "https://cuemusicrehearsal.netlify.app/",
-    "technologies": [
-      "React",
-      "Role-Based State Management",
-      "Real-time Updates",
-      "REST APIs",
-      "Conditional Data Rendering",
-      "User Research"
-    ],
-    "role": "Frontend Developer & UI/UX Designer",
-    "duration": "Sept 2025 – Dec 2025",
-    "description": "A collaborative rehearsal platform where the data model is the feature — role-based state (singer, musician, manager) determines what each user sees and can do in real time. I designed the data structure for part assignments and reassignment workflows, then built the React interface that responds to those state changes.",
-    "highlight": "The core challenge was designing a role-aware data layer that could push the right subset of rehearsal data to each user type — so the UI stayed simple while the underlying logic handled the complexity."
-  },
-  {
-    "title": "Full-Stack Luggage Booking Web App",
-    "cover": "",
-    "link": "",
-    "technologies": [
-      "React",
-      "Supabase",
-      "Stripe API",
-      "Google Maps API",
-      "JWT Auth",
-      "Real-time Subscriptions",
-      "Tailwind CSS",
-      "Vite"
-    ],
-    "role": "Full Stack Developer",
-    "duration": "May 2025 – Present",
-    "description": "A production-ready luggage delivery platform. I designed the Supabase data schema for bookings, pricing rules, and order sessions, integrated the Stripe payment API with server-side confirmation logic, and used Google Maps API for real-time address resolution — then built the React booking UI on top of all three.",
-    "highlight": "The middleware layer does the heavy work: dynamic pricing is calculated from real address data, Stripe webhooks update order state in Supabase, and the UI reflects that state in real time via Supabase subscriptions."
-  },
-  {
-    "title": "UX Research: Tech Support for Older Adults",
-    "cover": "",
-    "link": "",
-    "technologies": [
-      "User Interviews",
-      "Survey Design",
-      "Interaction Analysis",
-      "Accessibility Testing",
-      "Notion",
-      "Affinity Mapping"
-    ],
-    "role": "UX Researcher",
-    "duration": "Jan 2025 – May 2025",
-    "description": "Studied how older adults prefer and interact with video-based tech support.",
-    "highlight": "Merged design empathy with real user needs — identifying pain points and usability gaps."
-  },
-  {
-    "title": "Distributed Object Store with Integrity",
-    "cover": "",
-    "link": "",
-    "technologies": [
-      "Python",
-      "Docker",
-      "SHA-256",
-      "Reed-Solomon Erasure Coding",
-      "Threading",
-      "Data Integrity",
-      "Fault Tolerance",
-      "Socket Programming"
-    ],
-    "role": "Backend Developer",
-    "duration": "Jan 2025 – May 2025",
-    "description": "Simulated a fault-tolerant distributed storage system using Docker and erasure coding.",
-    "highlight": "Built the integrity-checking system and ran client simulations to test node failure recovery."
-  },
-  {
-    "title": "HabiTrack – Habit Tracker with Motivation",
-    "cover": "",
-    "link": "",
-    "technologies": [
-      "React",
-      "Firebase",
-      "Firestore",
-      "Firebase Auth",
-      "Real-time Listeners",
-      "MUI",
-      "Framer Motion"
-    ],
-    "role": "Full Stack Developer",
-    "duration": "Aug 2024 – Dec 2024",
-    "description": "A habit tracker built on Firebase — I structured the Firestore data model for habits, streaks, and milestones, set up real-time listeners so the UI responds instantly to data changes, and implemented Firebase Auth with session persistence. The frontend animations and dashboards are driven entirely by live data state.",
-    "highlight": "Designed the Firestore document structure to make streak calculations efficient at query time — so the UI never has to compute what the data layer already knows."
-  },
-  {
-    "title": "MediCARE App for Parkinson's Detection",
-    "cover": "",
-    "link": "",
-    "technologies": [
-      "Python",
-      "CNN",
-      "SVM",
-      "Streamlit",
-      "Pandas",
-      "Matplotlib",
-      "Data Augmentation",
-      "Signal Processing",
-      "Voice Feature Extraction",
-      "Handwriting Data Analysis"
-    ],
-    "role": "Full Stack Developer",
-    "duration": "Aug 2021 – Jun 2022",
-    "description": "Award-winning project combining voice and handwriting data to detect Parkinson's with 91.3%+ accuracy.",
-    "highlight": "Led the development, presented at an international conference, and won \"Best Project Presentation.\""
-  }
-]
+{
+  "eyebrow": "Selected projects",
+  "title": "Things I built. Things I actually care about.",
+  "items": [
+    {
+      "title": "SprintDesk",
+      "anchorId": "projects",
+      "type": "Product",
+      "context": "Personal",
+      "date": "April 2026 – Present",
+      "description": "Agile sprint tracking is core to how software teams work. I built an interactive tool for it from the ground up, with a Kanban board, real-time sync, and MCP integrations connecting GitHub, Jira, Slack, and Google Calendar into one workspace.",
+      "stack": [
+        "React 19",
+        "TypeScript",
+        "Supabase",
+        "MCP"
+      ],
+      "tags": [
+        "Real-time sync",
+        "Row-level security",
+        "MCP integrations",
+        "Drag-and-drop"
+      ]
+    },
+    {
+      "title": "Cue",
+      "type": "HCI",
+      "context": "UIC",
+      "date": "Sept 2025 – Dec 2025",
+      "description": "Built by a singer who kept running into a coordination problem with no good software solution. Started with user interviews. Designed in Figma. Ended with role-based real-time views for singers, musicians, and managers, each seeing exactly what they need.",
+      "stack": [
+        "React",
+        "Figma",
+        "User research",
+        "HCI"
+      ],
+      "tags": [
+        "User interviews",
+        "Wireframes",
+        "Role-based UI",
+        "Real-time"
+      ],
+      "link": "https://cuemusicrehearsal.netlify.app/"
+    },
+    {
+      "title": "AI and the future of education",
+      "anchorId": "research",
+      "type": "Qualitative research",
+      "context": "",
+      "date": "Jan 2025 – Present",
+      "description": "A thematic analysis of 800+ YouTube comments. Not really about AI, about what people believe learning is for, and what that reveals about trust, identity, and who education was ever designed for.",
+      "stack": [
+        "Reflexive TA",
+        "Braun & Clarke 2022"
+      ],
+      "tags": [
+        "6 themes surfaced",
+        "800+ data points",
+        "Qualitative"
+      ]
+    }
+  ]
+}

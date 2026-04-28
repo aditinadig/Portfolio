@@ -1,111 +1,57 @@
-[
-  {
-    "title": "Web Developer",
-    "icon": "",
-    "company": "UI Health",
-    "location": "Chicago, IL",
-    "type": "Part-time",
-    "duration": "Sept 2025 – Present",
-    "technologies": [
-      "React",
-      "JavaScript",
-      "REST APIs",
-      "CMS Integration",
-      "HTML",
-      "CSS",
-      "Accessibility"
-    ],
-    "summary": "I build and maintain web interfaces for UIC Medicine's Otolaryngology department. The sites cover faculty profiles, residency programs, patient appointments, seminar listings, and events. My stakeholders are medical staff. What shows up on screen has to be accurate, fast, and accessible — there is no room for error when patients are looking up appointment or clinical information.",
-    "highlights": [
-      "Built and maintained faculty, resident, and seminar websites — pulling live data from CMS APIs and ensuring content stays accurate and up to date",
-      "Developed patient-facing pages for appointment information and department events — handling dynamic content, scheduling data, and structured layouts",
-      "Hardened pages against broken data states — handling API failures, empty responses, and malformed content so users never see a broken interface",
-      "Improved page load speed and search visibility through asset optimization, image compression, and structured data markup",
-      "Ensured WCAG accessibility compliance and cross-browser reliability across all pages while shipping frequent content and UI updates",
-      "Operated within healthcare compliance requirements — handling patient-adjacent content carefully to meet institutional standards"
-    ],
-    "reflection": "Healthcare taught me that data accuracy and interface clarity are the same problem. A broken data feed means a broken experience for someone who actually needs that information."
-  },
-  {
-    "title": "Frontend & Workflow Lead",
-    "icon": "",
-    "company": "LPS Health",
-    "location": "Chicago, IL",
-    "type": "Internship",
-    "duration": "May 2025 – Aug 2025",
-    "technologies": [
-      "React",
-      "Tailwind CSS",
-      "Stripe API",
-      "Google Analytics API",
-      "REST APIs",
-      "Netlify",
-      "GitHub"
-    ],
-    "summary": "I rebuilt the LPS Health website end-to-end as the only developer. LPS Health is a cardiovascular health and wellness platform. The site covered health information, nutrition guidance, online consultations, patient quizzes, appointment booking, events, and donation payments. I designed and wired the full integration layer and built the React frontend on top of it.",
-    "highlights": [
-      "Built interactive health quizzes that helped patients identify their condition and get directed to the right care pathway — handling branching logic, state management, and results rendering",
-      "Designed and integrated a secure Stripe Checkout payment flow for donations and consultations — handling webhook-based confirmation, session state, and payment failure edge cases end-to-end",
-      "Built online appointment and consultation request flows — handling form validation, submission state, and confirmation feedback",
-      "Implemented input validation and sanitization across all forms to prevent malformed or malicious data from reaching the backend",
-      "Built an analytics pipeline connecting Google Analytics events to content and UX decisions — driving measurable SEO and conversion improvements",
-      "Improved page load time by 70% and pushed Lighthouse accessibility score from 40 to 80 through performance audits, asset optimization, and structured data fixes",
-      "Set up CI and deployment pipelines via GitHub and Netlify — maintaining fast, low-risk release cycles as the sole developer"
-    ],
-    "reflection": "This role proved I can own the full product layer — secure payment flows, patient-facing features, data pipelines, and UI — without a team to hand things off to."
-  },
-  {
-    "title": "Cloud Analyst (Frontend Developer - Oracle Cloud)",
-    "icon": "",
-    "company": "Oracle",
-    "location": "Bengaluru, India",
-    "type": "Full Time",
-    "duration": "Aug 2022 – Jun 2024",
-    "technologies": [
-      "Oracle VBS",
-      "REST APIs",
-      "JavaScript",
-      "HTML",
-      "CSS",
-      "Agile",
-      "JIRA"
-    ],
-    "summary": "I worked on two internal Oracle cloud products built for Berkshire Hathaway Energy (BHE) — a large energy and utilities conglomerate managing operations across North America. BHE runs physical services like streetlight installations, pipeline management, and energy distribution facilities. My job was to build the frontend layer that made their operational and workforce data readable and actionable for the teams managing those services every day.",
-    "highlights": [
-      "Built dashboard interfaces for BHE Services — an internal operations management tool used by BHE teams across North America to track and manage physical service workflows like installations, maintenance, and facility operations",
-      "Contributed to BHE-HCM dashboards — an HR and workforce management product used to manage employee records, payroll data, and operational staffing across BHE's large field workforce",
-      "Built using Oracle Visual Builder Studio (VBS) — Oracle's low-code frontend development platform built on HTML, JavaScript, and CSS, used for building enterprise-grade internal tools. I was self-taught with almost no documentation and became the go-to engineer across teams for VBS architecture and API wiring",
-      "Built Redwood-style UI components — Redwood is Oracle's enterprise design system, designed to bring consumer-grade usability to internal business tools. I followed its standards to keep interfaces consistent, accessible, and familiar to enterprise users",
-      "Designed REST API integrations connecting Oracle cloud backend services to frontend dashboard components — handling data transformation, error states, and loading flows for real-time operational data",
-      "Built reusable data-driven UI modules that reduced development time by 30% and improved data rendering speed across both products",
-      "Found and fixed over 100 bugs before product release — many at the API and UI boundary — reducing post-release issues by 40%",
-      "Delivered features across both teams simultaneously without missing a deadline",
-      "Received Oracle's Employee Recognition Award for cross-team contribution and initiative"
-    ],
-    "reflection": "Oracle is where I learned that enterprise software lives or dies at the boundary between data and UI. The people reading these dashboards were making real operational decisions about physical infrastructure across the country. Getting the data right and making it readable were the same problem."
-  },
-  {
-    "title": "Software Developer Intern",
-    "icon": "",
-    "company": "Softora Technologies",
-    "location": "Remote, India",
-    "type": "Internship",
-    "duration": "Aug 2021 – Sep 2021",
-    "technologies": [
-      "JavaScript",
-      "Express.js",
-      "Node.js",
-      "REST APIs",
-      "Figma"
-    ],
-    "summary": "My first end-to-end project. I built an online reservation portal for a restaurant — handling table bookings, availability checks, and confirmation flows. I designed and built the REST APIs with Node.js and Express and wired them to a JavaScript frontend.",
-    "highlights": [
-      "Built REST API endpoints for table reservation, availability lookup, and booking confirmation using Node.js and Express",
-      "Implemented secure login and session-based auth from API layer through to UI",
-      "Connected frontend JavaScript to backend API routes — handling booking form submission, availability state, and confirmation feedback",
-      "Wrote input validation to sanitize reservation data before it hit the backend — preventing invalid bookings and bad data",
-      "Redesigned the homepage in Figma and implemented the new layout end-to-end"
-    ],
-    "reflection": "This is where I learned that clean APIs make clean UIs possible — and messy ones make everything harder."
-  }
-]
+{
+  "eyebrow": "Work experience",
+  "title": "Where I have shipped real things.",
+  "items": [
+    {
+      "company": "UI Health · UIC Medicine",
+      "role": "Software Engineer",
+      "type": "Part-time",
+      "date": "Sept 2025 – Present",
+      "location": "Chicago, IL",
+      "bullets": [
+        "Built and maintained web pages for UIC Medicine's Otolaryngology department",
+        "Designed in Figma, then implemented with spec-based AI prompting via Copilot",
+        "WCAG compliance and healthcare-grade reliability across all pages",
+        "Scoping an MCP workflow to sync content from hospital systems automatically"
+      ]
+    },
+    {
+      "company": "LPS Health",
+      "role": "Software Engineer",
+      "type": "Intern",
+      "date": "May – Aug 2025",
+      "location": "Chicago, IL",
+      "bullets": [
+        "Rebuilt the full website from scratch as the sole engineer, using React, Tailwind, and a Figma-first workflow",
+        "Integrated Stripe Checkout for donations, handling webhooks and payment edge cases",
+        "Connected Google Analytics to UX decisions, improving SEO and conversion",
+        "Set up CI/CD through GitHub and Netlify"
+      ]
+    },
+    {
+      "company": "Oracle",
+      "role": "Software Engineer · Cloud Analyst",
+      "type": "Full-time",
+      "date": "Aug 2022 – Jun 2024",
+      "location": "Bengaluru, India",
+      "bullets": [
+        "Built internal dashboards for Berkshire Hathaway Energy on Oracle Fusion Cloud",
+        "Developed Redwood-style components and REST API integrations using Oracle VBS",
+        "Resolved 100+ pre-release bugs at the API-UI boundary",
+        "Received an Employee Recognition Award for cross-team contribution on BHE-HCM"
+      ]
+    },
+    {
+      "company": "Softora Technologies",
+      "role": "Software Engineer",
+      "type": "Intern",
+      "date": "Aug – Sep 2021",
+      "location": "Remote, India",
+      "bullets": [
+        "Built REST APIs for a restaurant reservation portal using Node.js and Express",
+        "Connected frontend to backend routes with end-to-end input validation",
+        "Redesigned and implemented the homepage using Figma"
+      ]
+    }
+  ]
+}

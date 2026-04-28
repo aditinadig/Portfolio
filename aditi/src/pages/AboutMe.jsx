@@ -1,111 +1,45 @@
-/* eslint-disable no-unused-vars */
 import { motion } from "framer-motion";
-/* eslint-enable no-unused-vars */
-import beliefBlocks from "../data/beliefBlocks.json";
+import about from "../data/values.json";
 
 const AboutMe = () => {
-  const leftColumn = beliefBlocks.slice(0, 3);
-  const rightColumn = beliefBlocks.slice(3, 6);
-
-  const fadeUp = {
-    hidden: { opacity: 0, y: 30 },
-    visible: (i = 0) => ({
-      opacity: 1,
-      y: 0,
-      transition: {
-        delay: i * 0.2,
-        duration: 0.6,
-        ease: "easeOut",
-      },
-    }),
-  };
-
   return (
-    <motion.section
-      id="about-me"
-      className="px-10 md:px-30  py-10 md:my-12"
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, amount: 0.2 }}
-    >
-      <motion.div className="flex flex-col gap-6 xl:gap-8 2xl:gap-10 max-w-7xl 2xl:max-w-8xl mx-auto">
-        {/* Header */}
-        <motion.div className="space-y-4 xl:space-y-6 2xl:space-y-8" variants={fadeUp} custom={0}>
-          <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight leading-tight">
-            I don't ship it{" "}
-            <span className="inline-block bg-lilac/20 px-3 py-1  rounded-xl">
-              unless it feels right.
-            </span>
-          </h1>
-          <p className="text-xl md:text-xl leading-relaxed max-w-5xl">
-            I work at the layer between{" "}
-            <span className="underline decoration-sunbeam underline-offset-4">
-              data and experience
-            </span>
-            . I design APIs, shape how data moves through a system, and build
-            the interface on top — so every pixel is backed by logic that's just
-            as clean. If the data model is messy, the UI will feel it. I fix
-            both.
-          </p>
-        </motion.div>
-
-        {/* Belief Blocks */}
+    <section id="about" className="section-shell py-16 md:py-24">
+      <div className="grid gap-10 border-t border-ink/10 pt-16 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,0.85fr)]">
         <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 gap-4 "
-          variants={fadeUp}
-          custom={0.5}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true, amount: 0.2 }}
+          className="space-y-5"
         >
-          {/* Left Column */}
-          <div className="space-y-4 8">
-            {leftColumn.map((block, index) => (
-              <motion.div
-                key={index}
-                className={`p-6  rounded-2xl shadow-sm backdrop-blur-sm transition-all duration-300 hover:shadow-md hover:-translate-y-[2px] ${block.style}`}
-                variants={fadeUp}
-                custom={index + 1}
-              >
-                <h3 className="text-lg font-semibold tracking-wide mb-2 ">
-                  {block.title}
-                </h3>
-                <p className="text-base leading-relaxed text-ink">
-                  {block.description}
-                </p>
-              </motion.div>
-            ))}
-          </div>
-
-          {/* Right Column */}
-          <div className="space-y-4 ">
-            {rightColumn.map((block, index) => (
-              <motion.div
-                key={index + 3}
-                className={`p-6 rounded-2xl shadow-sm backdrop-blur-sm transition-all duration-300 hover:shadow-md hover:-translate-y-[2px] ${block.style}`}
-                variants={fadeUp}
-                custom={index + 4}
-              >
-                <h3 className="text-lg font-semibold tracking-wide mb-2 ">
-                  {block.title}
-                </h3>
-                <p className="text-base leading-relaxed text-ink">
-                  {block.description}
-                </p>
-              </motion.div>
+          <p className="eyebrow">{about.eyebrow}</p>
+          <h2 className="section-title max-w-2xl">{about.title}</h2>
+          <div className="space-y-5 text-[1rem] leading-8 text-ink/74 md:text-[1.02rem]">
+            {about.paragraphs.map((paragraph) => (
+              <p key={paragraph}>{paragraph}</p>
             ))}
           </div>
         </motion.div>
 
-        {/* Signature */}
-        <motion.div
-          className="max-w-4xl text-xl md:text-xl italic border-l-4 border-lilac pl-6 xl:pl-8 2xl:pl-10 leading-relaxed"
-          variants={fadeUp}
-          custom={7}
-        >
-          If your product needs clean APIs,{" "}
-          <span className="not-italic font-bold text-lilac">solid data flows</span>
-          , and a UI that feels just as good as it works — I'm your person.
-        </motion.div>
-      </motion.div>
-    </motion.section>
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-1">
+          {about.values.map((value, index) => (
+            <motion.article
+              key={value.title}
+              className="rounded-[1.5rem] border border-ink/10 bg-white/82 p-5"
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.45, delay: index * 0.08 }}
+              viewport={{ once: true, amount: 0.2 }}
+            >
+              <h3 className="text-lg font-semibold leading-snug">{value.title}</h3>
+              <p className="mt-3 text-[0.96rem] leading-7 text-ink/72">
+                {value.description}
+              </p>
+            </motion.article>
+          ))}
+        </div>
+      </div>
+    </section>
   );
 };
 

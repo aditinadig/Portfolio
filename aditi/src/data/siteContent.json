@@ -1,0 +1,76 @@
+{
+  "name": "Aditi Arun Nadig",
+  "location": "Chicago, IL",
+  "availability": "Available",
+  "date": "May 2026",
+  "nav": [
+    { "label": "Work", "href": "#work" },
+    { "label": "Skills", "href": "#skills" },
+    { "label": "Projects", "href": "#projects" },
+    { "label": "Research", "href": "#research" },
+    { "label": "Contact", "href": "#contact" }
+  ],
+  "hero": {
+    "headline": [
+      "Software engineer who talks to AI",
+      "and gets answers worth keeping.",
+      "Also sings. Professionally."
+    ],
+    "subtext": "I build software that holds up across the stack, across edge cases, across the moment a user does something nobody planned for. Four years of production experience across enterprise, healthcare, and solo developer roles. I think before I prompt, review before I merge, and own everything that ships.",
+    "cards": [
+      {
+        "label": "Currently",
+        "text": "Web Developer · UIC Medicine",
+        "detail": "Healthcare web. No room for broken interfaces."
+      },
+      {
+        "label": "Previously",
+        "text": "Oracle · LPS Health · Softora",
+        "detail": "Enterprise dashboards to solo rebuilds."
+      },
+      {
+        "label": "Education",
+        "text": "MS Computer Science · UIC · May 2026",
+        "detail": "GPA 3.83 · Software Eng, HCI, Distributed Systems"
+      },
+      {
+        "label": "Stack",
+        "text": "React · TypeScript · Node.js · Supabase",
+        "detail": "+ Figma, Copilot, and strong opinions"
+      },
+      {
+        "label": "Also",
+        "text": "Professional singer · 100+ competitions won",
+        "detail": "Coordination is emotional before it is logistical."
+      },
+      {
+        "label": "Researching",
+        "text": "AI, education, and what people believe learning is for",
+        "detail": "Because it matters for what we build."
+      }
+    ],
+    "witLine": "// AI wrote zero lines of this portfolio. ironic, i know."
+  },
+  "footer": {
+    "title": "Let's build something good.",
+    "witLine": "// i will review your codebase too, don't worry",
+    "links": [
+      {
+        "label": "aditiarunnadig@gmail.com",
+        "href": "mailto:aditiarunnadig@gmail.com"
+      },
+      {
+        "label": "LinkedIn",
+        "href": "https://www.linkedin.com/in/aditi-arun-nadig-78540b214/"
+      },
+      {
+        "label": "GitHub",
+        "href": "https://github.com/aditinadig"
+      },
+      {
+        "label": "Hire me",
+        "href": "/resume.pdf"
+      }
+    ]
+  }
+}

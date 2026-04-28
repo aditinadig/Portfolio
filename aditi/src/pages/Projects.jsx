@@ -1,165 +1,85 @@
-import { useState } from "react";
-/* eslint-disable no-unused-vars */
-import { motion, AnimatePresence } from "framer-motion";
-/* eslint-enable no-unused-vars */
+import { motion } from "framer-motion";
 import projects from "../data/projects.json";
 
 const Projects = () => {
-  const [openIndex, setOpenIndex] = useState(null);
-
-  const getLinkHost = (link) => {
-    try {
-      const { hostname } = new URL(link);
-      return hostname.replace(/^www\./, "");
-    } catch {
-      return link;
-    }
-  };
-
-  const toggleCollapse = (index) => {
-    setOpenIndex(openIndex === index ? null : index);
-  };
-
   return (
-    <section id="projects" className="py-20 font-sans bg-canvas text-ink">
-      <div className="w-[80%] mx-auto">
-        <motion.h2
-          className="text-4xl md:text-5xl font-extrabold tracking-tight mb-6"
+    <section className="section-shell py-16 md:py-24">
+      <div className="border-t border-ink/10 pt-16">
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true, amount: 0.2 }}
+          className="space-y-5"
         >
-          My Projects
-        </motion.h2>
+          <p className="eyebrow">{projects.eyebrow}</p>
+          <h2 className="section-title">{projects.title}</h2>
+        </motion.div>
 
-        <div className="flex flex-col gap-4">
-          {projects.map((project, index) => {
-            const isOpen = openIndex === index;
-
-            return (
-              <motion.div
-                key={index}
-                className="rounded-2xl border border-lilac-light bg-white shadow-sm overflow-hidden transition-all"
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.4, delay: index * 0.05 }}
-                viewport={{ once: true }}
-              >
-                {/* Header */}
-                <button
-                  onClick={() => toggleCollapse(index)}
-                  className="w-full px-6 py-4 md:py-5 flex justify-between items-center text-left hover:bg-sunbeam-light transition-colors"
-                >
-                  <div>
-                    <h3 className="text-xl font-semibold leading-tight">
-                      {project.title}
-                    </h3>
-                    <div className="text-sm text-ink/60 font-medium">
-                      {project.role} • {project.duration}
-                    </div>
+        <div className="mt-10 grid gap-5">
+          {projects.items.map((project, index) => (
+            <motion.article
+              key={project.title}
+              id={project.anchorId}
+              className="rounded-[1.8rem] border border-ink/10 bg-white/80 p-6 md:p-8"
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.45, delay: index * 0.06 }}
+              viewport={{ once: true, amount: 0.2 }}
+            >
+              <div className="grid gap-8 lg:grid-cols-[minmax(0,1.2fr)_19rem]">
+                <div>
+                  <div className="flex flex-wrap items-center gap-3 text-[0.72rem] uppercase tracking-[0.2em] text-ink/56">
+                    <span>{project.type}</span>
+                    {project.context ? <span>· {project.context}</span> : null}
                   </div>
-                  <span className="text-2xl text-ink/50">{isOpen ? "−" : "+"}</span>
-                </button>
-
-                {project.link && (
-                  <div className="px-6 pb-4 -mt-1">
-                    <div className="flex flex-wrap items-center justify-between gap-2 rounded-lg bg-canvas/70 px-3 py-2 border border-lilac-light/60">
-                      <div className="flex items-center gap-2 min-w-0">
-                        <span className="text-[11px] uppercase tracking-[0.12em] font-semibold text-ink/50">
-                          Website
-                        </span>
-                        <span className="text-sm text-ink/80 truncate">
-                          {getLinkHost(project.link)}
-                        </span>
-                      </div>
-
+                  <h3 className="mt-4 text-[clamp(1.8rem,2.4vw,2.5rem)] font-semibold tracking-[-0.04em]">
+                    {project.title}
+                  </h3>
+                  <p className="mt-4 max-w-3xl text-[1rem] leading-7 text-ink/74">
+                    {project.description}
+                  </p>
+                  {project.link ? (
                     <a
                       href={project.link}
                       target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1 text-sm font-semibold text-lilac-dark hover:text-lilac transition-colors"
+                      rel="noreferrer"
+                      className="mt-5 inline-flex text-sm font-semibold uppercase tracking-[0.16em] text-ink underline underline-offset-4"
                     >
-                      Open link
-                      <span aria-hidden="true">↗</span>
+                      View live project
                     </a>
+                  ) : null}
+                </div>
+
+                <aside className="space-y-6 border-t border-ink/10 pt-6 lg:border-l lg:border-t-0 lg:pl-8 lg:pt-0">
+                  <div>
+                    <p className="eyebrow mb-3">Date</p>
+                    <p className="text-sm leading-6 text-ink/72">{project.date}</p>
+                  </div>
+                  <div>
+                    <p className="eyebrow mb-3">Stack</p>
+                    <div className="flex flex-wrap gap-2">
+                      {project.stack.map((item) => (
+                        <span key={item} className="skill-pill">
+                          {item}
+                        </span>
+                      ))}
                     </div>
                   </div>
-                )}
-
-                {/* Animated Body */}
-                <AnimatePresence initial={false}>
-                  {isOpen && (
-                    <motion.div
-                      initial={{ height: 0, opacity: 0 }}
-                      animate={{ height: "auto", opacity: 1 }}
-                      exit={{ height: 0, opacity: 0 }}
-                      transition={{ duration: 0.4 }}
-                      className="px-6 md:px-6 overflow-hidden"
-                    >
-                      <motion.div
-                        initial="hidden"
-                        animate="visible"
-                        variants={{
-                          visible: {
-                            transition: {
-                              staggerChildren: 0.05,
-                              delayChildren: 0.1,
-                            },
-                          },
-                          hidden: {},
-                        }}
-                        className="py-4"
-                      >
-                        <motion.p
-                          className="text-[15px] leading-relaxed text-ink/90 mb-3"
-                          variants={{
-                            hidden: { opacity: 0, y: 10 },
-                            visible: { opacity: 1, y: 0 },
-                          }}
-                        >
-                          {project.description}
-                        </motion.p>
-
-                        <motion.div
-                          className="text-[14px] italic text-ink/70 border-l-4 border-lilac pl-4 mb-4"
-                          variants={{
-                            hidden: { opacity: 0, y: 10 },
-                            visible: { opacity: 1, y: 0 },
-                          }}
-                        >
-                          “{project.highlight}”
-                        </motion.div>
-
-                        {project.technologies?.length > 0 && (
-                          <motion.div
-                            className="flex flex-wrap gap-2"
-                            variants={{
-                              hidden: { opacity: 0 },
-                              visible: { opacity: 1 },
-                            }}
-                          >
-                            {project.technologies.map((tech, i) => (
-                              <motion.span
-                                key={i}
-                                className="bg-sunbeam-light text-ink text-sm px-3 py-[5px] rounded-full shadow-sm"
-                                whileHover={{ scale: 1.08 }}
-                                transition={{ type: "spring", stiffness: 300 }}
-                                initial={{ opacity: 0, y: 10 }}
-                                animate={{ opacity: 1, y: 0 }}
-                              >
-                                {tech}
-                              </motion.span>
-                            ))}
-                          </motion.div>
-                        )}
-                      </motion.div>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-              </motion.div>
-            );
-          })}
+                  <div>
+                    <p className="eyebrow mb-3">Tags</p>
+                    <div className="flex flex-wrap gap-2">
+                      {project.tags.map((tag) => (
+                        <span key={tag} className="skill-pill skill-pill-primary">
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </aside>
+              </div>
+            </motion.article>
+          ))}
         </div>
       </div>
     </section>

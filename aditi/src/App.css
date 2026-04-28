@@ -1,0 +1,88 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section-shell {
+  width: min(100% - 2rem, 84rem);
+  margin-inline: auto;
+}
+
+.eyebrow {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: rgb(43 42 42 / 0.55);
+}
+
+.section-title {
+  max-width: 56rem;
+  text-wrap: balance;
+  font-size: clamp(2rem, 4vw, 4.2rem);
+  line-height: 0.98;
+  letter-spacing: -0.05em;
+  font-weight: 600;
+}
+
+.hero-rail {
+  display: grid;
+  gap: 0;
+  align-content: start;
+  border-left: 1px solid rgb(43 42 42 / 0.1);
+  padding-left: 1.5rem;
+}
+
+.editorial-card {
+  padding-block: 1.1rem;
+}
+
+.pill-primary,
+.pill-muted,
+.skill-pill {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 0.55rem 0.95rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+.pill-primary {
+  background: #18261b;
+  color: #f5fff3;
+}
+
+.pill-muted {
+  border: 1px solid rgb(43 42 42 / 0.12);
+  color: rgb(43 42 42 / 0.72);
+}
+
+.skill-pill {
+  border: 1px solid rgb(43 42 42 / 0.1);
+  background: rgb(255 255 255 / 0.8);
+  color: rgb(43 42 42 / 0.76);
+}
+
+.skill-pill-primary {
+  border-color: rgb(32 89 47 / 0.14);
+  background: #e7f4e9;
+  color: #1d5d31;
+}
+
+@media (max-width: 1023px) {
+  .hero-rail {
+    border-left: 0;
+    border-top: 1px solid rgb(43 42 42 / 0.1);
+    padding-left: 0;
+    padding-top: 1rem;
+  }
+}

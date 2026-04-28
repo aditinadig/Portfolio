@@ -1,58 +1,93 @@
 {
-  "languages": [
-    { "name": "JavaScript", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
-    { "name": "TypeScript", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
-    { "name": "Python", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
-    { "name": "Java", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" },
-    { "name": "HTML5", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
-    { "name": "CSS3", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" }
-  ],
-  "frontend": [
-    { "name": "React", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
-    { "name": "Next.js", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" },
-    { "name": "Astro", "icon": "https://cdn.simpleicons.org/astro/000" },
-    { "name": "Tailwind CSS", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" },
-    { "name": "SCSS", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" },
-    { "name": "Framer Motion", "icon": "https://cdn.simpleicons.org/framer/000000" },
-    { "name": "Vite", "icon": "https://cdn.simpleicons.org/vite/646CFF" },
-    { "name": "TanStack", "icon": "https://cdn.simpleicons.org/reactquery/FF4154" },
-    { "name": "Jest", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg" },
-    { "name": "Playwright", "icon": "https://cdn.simpleicons.org/playwright/2EAD33" }
-  ],
-  "backend": [
-    { "name": "Node.js", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
-    { "name": "Express.js", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" },
-    { "name": "Django", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" },
-    { "name": "PostgreSQL", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" },
-    { "name": "REST APIs", "icon": "https://cdn.simpleicons.org/openapiinitiative/6BA539" },
-    { "name": "Supabase", "icon": "https://cdn.simpleicons.org/supabase/3FCF8E" },
-    { "name": "Firebase", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" }
-  ],
-  "devops_tools": [
-    { "name": "Docker", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
-    { "name": "AWS", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" },
-    { "name": "CI/CD", "icon": "https://cdn.simpleicons.org/gitlab/FC6D26" },
-    { "name": "Netlify", "icon": "https://cdn.simpleicons.org/netlify/00C7B7" },
-    { "name": "GitHub Actions", "icon": "https://cdn.simpleicons.org/githubactions/2088FF" },
-    { "name": "VBS/VBCS", "icon": "https://cdn.simpleicons.org/oracle/F80000" },
-    { "name": "Postman", "icon": "https://cdn.simpleicons.org/postman/FF6C37" },
-    { "name": "Notion", "icon": "https://cdn.simpleicons.org/notion/000000" },
-    { "name": "Figma", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" }
-  ],
-  "other": [
-    { "name": "Stripe Integration", "icon": "https://cdn.simpleicons.org/stripe/635BFF" },
-    { "name": "Google Maps API", "icon": "https://cdn.simpleicons.org/googlemaps/4285F4" },
-    { "name": "Groq / Llama (LLM)", "icon": "https://cdn.simpleicons.org/meta/0082FB" },
-    { "name": "Lighthouse", "icon": "https://cdn.simpleicons.org/googlelighthouse/000000" },
-    { "name": "SEO", "icon": "https://cdn.simpleicons.org/google/34A853" },
-    { "name": "Accessibility (WCAG)", "icon": "https://cdn.simpleicons.org/w3c/005A9C" }
-  ],
-  "cs_concepts": [
-    { "name": "Distributed Systems", "icon": "https://cdn.simpleicons.org/protocolsio/1A1A1A" },
-    { "name": "JWT Auth", "icon": "https://cdn.simpleicons.org/jsonwebtokens/000000" },
-    { "name": "SHA-256", "icon": "https://cdn.simpleicons.org/gnupg/0093DD" },
-    { "name": "OAuth2", "icon": "https://cdn.simpleicons.org/oauth/2C5DC2" },
-    { "name": "RBAC", "icon": "https://cdn.simpleicons.org/microsoftazure/0078D4" },
-    { "name": "Input Sanitization", "icon": "https://cdn.simpleicons.org/vercel/000000" }
+  "eyebrow": "Technical skills",
+  "title": "The stack. No buzzword padding.",
+  "witLine": "// highlighted in green = things i reach for first",
+  "columns": [
+    {
+      "title": "Languages & frameworks",
+      "items": [
+        { "label": "React", "primary": true },
+        { "label": "TypeScript", "primary": true },
+        { "label": "JavaScript ES6+", "primary": true },
+        { "label": "Next.js" },
+        { "label": "Node.js", "primary": true },
+        { "label": "Python" },
+        { "label": "Astro" },
+        { "label": "Tailwind CSS", "primary": true },
+        { "label": "Framer Motion" },
+        { "label": "GraphQL" },
+        { "label": "Socket.IO" }
+      ]
+    },
+    {
+      "title": "Data, APIs & infrastructure",
+      "items": [
+        { "label": "Supabase", "primary": true },
+        { "label": "PostgreSQL" },
+        { "label": "REST APIs", "primary": true },
+        { "label": "Firebase" },
+        { "label": "MongoDB" },
+        { "label": "Redis" },
+        { "label": "Sequelize" },
+        { "label": "JWT" },
+        { "label": "OAuth2/OIDC" },
+        { "label": "AWS EC2" },
+        { "label": "S3" },
+        { "label": "ECS" },
+        { "label": "Docker" },
+        { "label": "Kubernetes" },
+        { "label": "GitHub Actions" }
+      ]
+    },
+    {
+      "title": "AI, design & research",
+      "items": [
+        { "label": "GitHub Copilot", "primary": true },
+        { "label": "Prompt engineering", "primary": true },
+        { "label": "MCP", "primary": true },
+        { "label": "Figma", "primary": true },
+        { "label": "LLM API integration" },
+        { "label": "Spec-driven development" },
+        { "label": "HCI" },
+        { "label": "Usability testing" },
+        { "label": "User interviews" },
+        { "label": "Thematic analysis" }
+      ]
+    },
+    {
+      "title": "Security",
+      "items": [
+        { "label": "RBAC", "primary": true },
+        { "label": "Input validation", "primary": true },
+        { "label": "Rate limiting", "primary": true },
+        { "label": "Hashing" },
+        { "label": "HTTPS" },
+        { "label": "OAuth2" },
+        { "label": "OIDC" }
+      ]
+    },
+    {
+      "title": "Testing & performance",
+      "items": [
+        { "label": "Jest" },
+        { "label": "Lighthouse", "primary": true },
+        { "label": "k6" },
+        { "label": "API optimization", "primary": true },
+        { "label": "Caching strategies", "primary": true }
+      ]
+    },
+    {
+      "title": "Tools",
+      "items": [
+        { "label": "Git", "primary": true },
+        { "label": "GitHub", "primary": true },
+        { "label": "Jira" },
+        { "label": "Postman" },
+        { "label": "Notion" },
+        { "label": "Netlify" },
+        { "label": "Adobe Suite" },
+        { "label": "Oracle VBS/VBCS" }
+      ]
+    }
   ]
 }

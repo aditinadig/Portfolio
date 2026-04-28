@@ -1,44 +1,27 @@
 {
+  "eyebrow": "About me",
+  "title": "Engineer. Singer. Overthinker, the good kind.",
+  "paragraphs": [
+    "I am finishing my Master's in Computer Science at UIC in May 2026. Two years at Oracle building enterprise dashboards. Since moving to the US, the sole engineer at LPS Health and UIC Medicine, where what I ship matters to real people.",
+    "I am also a professional singer. 100+ competition wins, playback singing in Kannada films, stage concerts. Music taught me that coordination is emotional before it is logistical. That instinct shows up in how I build software.",
+    "And I study AI, not just to build with it, but to understand what it is doing to how people think and learn. Because those questions eventually come back to what we build and who we build it for."
+  ],
   "values": [
     {
-      "icon": "🔦",
-      "title": "I figure things out.",
-      "description": "At Oracle I was handed a tool with almost no documentation. I went straight to the source, studied it properly, and became the person others came to when they were stuck."
+      "title": "Full-circle or nothing",
+      "description": "Work is not done until it feels done. UX, logic, performance, and polish all have to be right before something ships."
     },
     {
-      "icon": "🔁",
-      "title": "Full-circle or nothing.",
-      "description": "I don't ship unless every layer is solid — the data model, the API, the integration, the UI, and the polish."
+      "title": "Structure and soul",
+      "description": "Code with logic. Design with emotion. Both matter. That is what creates real connection between a product and a person."
     },
     {
-      "icon": "🧩",
-      "title": "API design is UX design.",
-      "description": "How data is structured and served shapes how the UI behaves. I treat API contracts as first-class design decisions."
+      "title": "Clarity over complexity",
+      "description": "If it needs a paragraph to explain, it needs a redesign. Interfaces and code that make sense at a glance."
     },
     {
-      "icon": "🗣️",
-      "title": "I translate tech for people.",
-      "description": "Whether working with medical staff or small business owners, I turn complex decisions into plain language — and their needs into software that actually fits."
-    },
-    {
-      "icon": "🛡️",
-      "title": "Security is a default.",
-      "description": "Validation, auth flows, rate limiting, RBAC. Baked in from the first line, not bolted on at the end."
-    },
-    {
-      "icon": "🎤",
-      "title": "I perform under pressure.",
-      "description": "I have over 100 singing competition awards and performed on television. Showing up when the stakes are high, staying focused when things are not going your way — that has always just been part of how I operate."
-    },
-    {
-      "icon": "🤝",
-      "title": "Independence with collaboration where it matters.",
-      "description": "I move fast on my own and make decisions without needing to be managed. But I know when to align, when to ask, and when to bring people in."
-    },
-    {
-      "icon": "🔍",
-      "title": "Pixel-perfect attention to detail.",
-      "description": "1px off? I see it. And fix it. Transitions, spacing, states — they all matter."
+      "title": "Adapt with clarity",
+      "description": "Plan changes do not throw me off. I rethink from the right level, not from panic."
     }
   ]
 }

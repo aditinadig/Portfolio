@@ -1,109 +1,48 @@
-import { useState } from "react";
-/* eslint-disable no-unused-vars */
-import { motion, AnimatePresence } from "framer-motion";
-/* eslint-enable no-unused-vars */
-import techData from "../data/techStack.json";
+import { motion } from "framer-motion";
+import techStack from "../data/techStack.json";
 
 const TechStack = () => {
-  const categories = Object.entries(techData);
-  const [openIndex, setOpenIndex] = useState(0);
-
-  const toggleCategory = (index) => {
-    setOpenIndex(index === openIndex ? null : index);
-  };
-
   return (
-    <section
-      id="tech-stack"
-      className="bg-canvas py-20 font-sans text-ink"
-    >
-      <div className="w-[80%] mx-auto">
-        <motion.h2
-          className="text-4xl md:text-5xl font-extrabold mb-6 tracking-tight"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-        >
-          My Tech Stack
-        </motion.h2>
+    <section id="skills" className="section-shell py-16 md:py-24">
+      <motion.div
+        className="space-y-5"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        viewport={{ once: true, amount: 0.2 }}
+      >
+        <p className="eyebrow">{techStack.eyebrow}</p>
+        <h2 className="section-title">{techStack.title}</h2>
+      </motion.div>
 
-        <div className="space-y-3">
-          {categories.map(([category, tools], index) => {
-            const isOpen = openIndex === index;
-
-            return (
-              <motion.div
-                key={index}
-                className="border border-lilac-light rounded-2xl overflow-hidden shadow-sm bg-white"
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.1, duration: 0.5 }}
-                viewport={{ once: true }}
-              >
-                {/* Header */}
-                <button
-                  onClick={() => toggleCategory(index)}
-                  className="w-full text-left px-6 py-4 flex justify-between hover:bg-sunbeam-light transition-colors"
+      <div className="mt-10 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+        {techStack.columns.map((column, index) => (
+          <motion.article
+            key={column.title}
+            className="rounded-[1.6rem] border border-ink/10 bg-white/72 p-5"
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.45, delay: index * 0.06 }}
+            viewport={{ once: true, amount: 0.2 }}
+          >
+            <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-ink/78">
+              {column.title}
+            </h3>
+            <div className="mt-5 flex flex-wrap gap-2">
+              {column.items.map((item) => (
+                <span
+                  key={item.label}
+                  className={item.primary ? "skill-pill skill-pill-primary" : "skill-pill"}
                 >
-                  <h3 className="text-xl font-semibold text-lilac tracking-wide">
-                    {category.replaceAll("_", " ")}
-                  </h3>
-                  <span className="text-2xl text-ink/50">
-                    {isOpen ? "−" : "+"}
-                  </span>
-                </button>
-
-                {/* Animated Body */}
-                <AnimatePresence initial={false}>
-                  {isOpen && (
-                    <motion.div
-                      initial={{ height: 0, opacity: 0 }}
-                      animate={{ height: "auto", opacity: 1 }}
-                      exit={{ height: 0, opacity: 0 }}
-                      transition={{ duration: 0.4 }}
-                      className="px-6 overflow-hidden"
-                    >
-                      <motion.div
-                        className="flex flex-wrap justify-around md:justify-start gap-x-12 gap-y-10 py-6"
-                        initial="hidden"
-                        animate="visible"
-                        variants={{
-                          visible: {
-                            transition: {
-                              staggerChildren: 0.05,
-                              delayChildren: 0.1,
-                            },
-                          },
-                          hidden: {},
-                        }}
-                      >
-                        {tools.map((tool, i) => (
-                          <motion.div
-                            key={i}
-                            className="flex flex-col items-center gap-2 w-[4.5rem] md:w-[5rem] transition-transform duration-300 hover:scale-105"
-                            variants={{
-                              hidden: { opacity: 0, y: 10 },
-                              visible: { opacity: 1, y: 0 },
-                            }}
-                          >
-                            <img
-                              src={tool.icon}
-                              alt={tool.name}
-                              className="w-12 h-12 md:w-14 md:h-14 object-contain"
-                            />
-                            <span className="text-sm text-center">{tool.name}</span>
-                          </motion.div>
-                        ))}
-                      </motion.div>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-              </motion.div>
-            );
-          })}
-        </div>
+                  {item.label}
+                </span>
+              ))}
+            </div>
+          </motion.article>
+        ))}
       </div>
+
+      <p className="mt-6 font-mono text-xs text-ink/48">{techStack.witLine}</p>
     </section>
   );
 };

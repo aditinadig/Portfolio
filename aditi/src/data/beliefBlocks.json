@@ -1,22 +1,26 @@
-[
-  {
-    "title": "I take ownership — fully.",
-    "description": "On two separate projects I was the only developer. I scoped, built, shipped, and owned the outcome from start to finish. No safety net.",
-    "style": "bg-sunbeam-light"
-  },
-  {
-    "title": "I get close to the problem first.",
-    "description": "I do not touch the code until I understand what actually needs to be built and why. The best solutions come from sitting with the problem long enough.",
-    "style": "bg-lilac-light"
-  },
-  {
-    "title": "I think in data flows, not just UI states.",
-    "description": "Before I build a component, I ask where the data comes from, how it should be shaped, and what happens when it changes. The UI is the last step.",
-    "style": "bg-white text-lilac"
-  },
-  {
-    "title": "I test for hesitation, not just bugs.",
-    "description": "If a user might pause, I rethink it. If something feels slightly off I fix it. Clarity and feel matter as much as correctness.",
-    "style": "bg-sunbeam-light"
-  }
-]
+{
+  "eyebrow": "How I work",
+  "title": "Full-circle or nothing. No half-shipped features.",
+  "blocks": [
+    {
+      "number": "01",
+      "title": "I think like a user.",
+      "description": "I test for hesitation, confusion, and the moment someone almost gives up, not just whether the function returns the right value."
+    },
+    {
+      "number": "02",
+      "title": "I take full ownership.",
+      "description": "At LPS Health and UIC Medicine I was the only engineer. No one to catch my mistakes. That changes how carefully you work."
+    },
+    {
+      "number": "03",
+      "title": "Security baked in from line one.",
+      "description": "Input validation, RBAC, rate limiting, JWT, not sprinkled on at the end when someone files a bug report."
+    },
+    {
+      "number": "04",
+      "title": "1px off? I see it. I fix it.",
+      "description": "Transitions, spacing, states, they all matter. This is not perfectionism. It is respect for the person on the other side of the screen."
+    }
+  ]
+}

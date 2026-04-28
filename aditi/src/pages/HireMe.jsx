@@ -1,78 +1,37 @@
-/* eslint-disable no-unused-vars */
 import { motion } from "framer-motion";
-/* eslint-enable no-unused-vars */
+import siteContent from "../data/siteContent.json";
 
 const HireMe = () => {
   return (
-    <section
-      className="bg-canvas py-24 text-ink font-sans border-t border-ink/10"
-      id="hire-me"
-    >
+    <section id="contact" className="section-shell py-16 md:py-24">
       <motion.div
-        className="w-[80%] mx-auto text-center"
-        initial={{ opacity: 0, y: 30 }}
+        className="border-t border-ink/10 pt-12"
+        initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
+        viewport={{ once: true, amount: 0.2 }}
       >
-        {/* Heading */}
-        <motion.h1
-          className="text-4xl md:text-6xl font-extrabold mb-6 leading-tight"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.1 }}
-          viewport={{ once: true }}
-        >
-          Let’s Build Something Great Together
-        </motion.h1>
+        <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-end">
+          <div className="space-y-4">
+            <p className="eyebrow">Footer</p>
+            <h2 className="section-title max-w-2xl">{siteContent.footer.title}</h2>
+            <p className="font-mono text-xs text-ink/48">{siteContent.footer.witLine}</p>
+          </div>
 
-        {/* Subheading */}
-        <motion.p
-          className="text-lg md:text-xl text-ink/80 mb-10"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          viewport={{ once: true }}
-        >
-          Whether you’re looking for a frontend developer with a strong design
-          sense, a product-minded engineer, or someone who gets things done with
-          ownership — I’d love to chat.
-        </motion.p>
-
-        {/* CTA Buttons */}
-        <motion.div
-          className="flex flex-col md:flex-row gap-4 justify-center"
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5, delay: 0.3 }}
-          viewport={{ once: true }}
-        >
-          <a
-            href="mailto:aditiarunnadig@gmail.com"
-            className="bg-sunbeam hover:bg-sunbeam-light text-ink font-semibold py-3 px-6 rounded-full transition-all shadow-md"
-          >
-            Reach Out
-          </a>
-          <a
-            href="/resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="border border-lilac text-lilac hover:bg-lilac-light font-semibold py-3 px-6 rounded-full transition-all shadow-sm"
-          >
-            View My Resume
-          </a>
-        </motion.div>
-
-        {/* Optional Availability Note */}
-        <motion.p
-          className="text-sm text-ink/60 mt-8 italic"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.5 }}
-          viewport={{ once: true }}
-        >
-          Currently open to full-time roles (OPT eligible).
-        </motion.p>
+          <div className="flex flex-wrap gap-x-5 gap-y-3 text-sm uppercase tracking-[0.18em] text-ink/72">
+            {siteContent.footer.links.map((link) => (
+              <a
+                key={link.label}
+                href={link.href}
+                target={link.href.startsWith("http") || link.href.endsWith(".pdf") ? "_blank" : undefined}
+                rel={link.href.startsWith("http") || link.href.endsWith(".pdf") ? "noreferrer" : undefined}
+                className="transition hover:text-ink"
+              >
+                {link.label}
+              </a>
+            ))}
+          </div>
+        </div>
       </motion.div>
     </section>
   );

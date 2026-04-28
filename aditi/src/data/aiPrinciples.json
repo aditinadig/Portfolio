@@ -1,0 +1,27 @@
+{
+  "eyebrow": "On using AI",
+  "quote": "I use AI the way a careful editor uses a fast typist. The thinking is mine. The execution is shared.",
+  "witLine": "// not a vibe coder. not even close.",
+  "points": [
+    {
+      "number": "01",
+      "title": "Specify before prompting",
+      "description": "I know the behavior, the edge cases, and the constraints before I write a prompt. Garbage in, garbage out is a thinking problem, not a model problem."
+    },
+    {
+      "number": "02",
+      "title": "Every output reviewed like a PR",
+      "description": "I read it, question it, test it. If I cannot explain a line, it does not ship."
+    },
+    {
+      "number": "03",
+      "title": "Ownership stays with me",
+      "description": "When something breaks in production, the model is not accountable. I am. That shapes every decision about what to generate and what to write myself."
+    },
+    {
+      "number": "04",
+      "title": "AI speeds up execution, not thinking",
+      "description": "Rethinking architecture mid-build is expensive no matter what tool you use. The thinking happens first, always."
+    }
+  ]
+}

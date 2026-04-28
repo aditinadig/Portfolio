@@ -1,47 +1,44 @@
-/* eslint-disable no-unused-vars */
 import { motion } from "framer-motion";
-/* eslint-enable no-unused-vars */
-import values from "../data/values.json";
+import aiPrinciples from "../data/aiPrinciples.json";
 
 const WhatIBelieveIn = () => {
   return (
-    <section
-      id="what-i-believe-in"
-      className="bg-canvas text-ink py-20 font-sans"
-    >
-      <div className="w-[80%] mx-auto">
-        <motion.h2
-          className="text-4xl md:text-5xl font-extrabold mb-14 tracking-tight text-ink"
+    <section className="section-shell py-16 md:py-24">
+      <div className="grid gap-10 border-t border-ink/10 pt-16 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)]">
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true, amount: 0.2 }}
+          className="space-y-5"
         >
-          What I Believe In
-        </motion.h2>
+          <p className="eyebrow">{aiPrinciples.eyebrow}</p>
+          <blockquote className="text-balance text-[clamp(2rem,3vw,3.1rem)] font-medium leading-tight tracking-[-0.04em]">
+            “{aiPrinciples.quote}”
+          </blockquote>
+          <p className="font-mono text-xs text-ink/48">{aiPrinciples.witLine}</p>
+        </motion.div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          {values.values.map((item, i) => (
-            <motion.div
-              key={i}
-              className="group flex gap-4 items-start rounded-2xl bg-white p-5 shadow-[0_2px_10px_rgba(0,0,0,0.04)] transition duration-300 hover:shadow-lg hover:scale-[1.015]"
-              initial={{ opacity: 0, y: 20 }}
+        <div className="grid gap-4">
+          {aiPrinciples.points.map((point, index) => (
+            <motion.article
+              key={point.number}
+              className="grid gap-4 rounded-[1.6rem] border border-ink/10 bg-white/78 p-6 md:grid-cols-[4.5rem_minmax(0,1fr)]"
+              initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4, delay: i * 0.1 }}
-              viewport={{ once: true }}
+              transition={{ duration: 0.45, delay: index * 0.08 }}
+              viewport={{ once: true, amount: 0.2 }}
             >
-              <div className="min-w-[3.5rem] h-[3.5rem] flex items-center justify-center rounded-full bg-sunbeam-light text-4xl">
-                {item.icon}
-              </div>
-              <div className="flex flex-col">
-                <h3 className="text-lg font-semibold text-ink mb-1">
-                  {item.title}
-                </h3>
-                <p className="text-sm leading-snug text-ink/90">
-                  {item.description}
+              <p className="text-xs font-semibold uppercase tracking-[0.24em] text-ink/42">
+                {point.number}
+              </p>
+              <div>
+                <h3 className="text-xl font-semibold leading-snug">{point.title}</h3>
+                <p className="mt-3 text-[0.98rem] leading-7 text-ink/72">
+                  {point.description}
                 </p>
               </div>
-            </motion.div>
+            </motion.article>
           ))}
         </div>
       </div>

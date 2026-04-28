@@ -1,113 +1,53 @@
-import { useState } from "react";
-/* eslint-disable no-unused-vars */
-import { motion, AnimatePresence } from "framer-motion";
-/* eslint-enable no-unused-vars */
-import experience from "../data/workExperience.json";
+import { motion } from "framer-motion";
+import workExperience from "../data/workExperience.json";
 
 const WorkExperience = () => {
-  const [openIndex, setOpenIndex] = useState(0);
-
-  const toggleCollapse = (index) => {
-    setOpenIndex(openIndex === index ? null : index);
-  };
-
   return (
-    <section id="work-experience" className="py-20">
-      <div className="w-[80%] mx-auto">
-        <motion.h2
-          className="text-4xl md:text-5xl font-extrabold mb-6 tracking-tight"
-          initial={{ opacity: 0, y: 30 }}
+    <section id="work" className="section-shell py-16 md:py-24">
+      <div className="border-t border-ink/10 pt-16">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
-          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true, amount: 0.2 }}
+          className="space-y-5"
         >
-          My Work Experience
-        </motion.h2>
+          <p className="eyebrow">{workExperience.eyebrow}</p>
+          <h2 className="section-title">{workExperience.title}</h2>
+        </motion.div>
 
-        <div className="relative pl-4 md:pl-4 before:absolute before:left-4 md:before:left-6 before:top-0 before:h-full before:w-[2px] before:bg-ink/20">
-          {experience.map((job, index) => {
-            const isOpen = openIndex === index;
-            return (
-              <motion.div
-                key={index}
-                className="relative mb-6 group"
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.1, duration: 0.5 }}
-                viewport={{ once: true }}
-              >
-                {/* Timeline Dot */}
-                <div className="absolute top-8 w-4 h-4 md:w-5 md:h-5 rounded-full bg-sunbeam border-4 border-white shadow-md z-10"></div>
-
-                {/* Card */}
-                <div className="ml-8 md:ml-12 bg-white rounded-3xl shadow-sm transition-all duration-300">
-                  {/* Clickable Header */}
-                  <button
-                    onClick={() => toggleCollapse(index)}
-                    className="w-full text-left p-6 md:p-8 cursor-pointer flex flex-col md:flex-row md:justify-between md:items-center hover:bg-sunbeam-light rounded-3xl transition-colors duration-300"
-                  >
-                    <div>
-                      <h3 className="text-xl md:text-2xl font-semibold">
-                        {job.title}{" "}
-                        <span className="text-lilac font-normal">
-                          @ {job.company}
-                        </span>
-                      </h3>
-                      <div className="text-sm text-ink/60 mt-1 font-medium">
-                        {job.location} • {job.type} • {job.duration}
-                      </div>
-                    </div>
-                    <div className="text-2xl text-ink/50 mt-3 md:mt-0">
-                      {isOpen ? "−" : "+"}
-                    </div>
-                  </button>
-
-                  {/* Collapsible Body with animation */}
-                  <AnimatePresence initial={false}>
-                    {isOpen && (
-                      <motion.div
-                        key="content"
-                        initial={{ height: 0, opacity: 0 }}
-                        animate={{ height: "auto", opacity: 1 }}
-                        exit={{ height: 0, opacity: 0 }}
-                        transition={{ duration: 0.4, ease: "easeInOut" }}
-                        className="overflow-hidden px-6 md:px-8 pb-6"
-                      >
-                        <p className="text-[15px] leading-relaxed text-ink/90 mb-4">
-                          {job.summary}
-                        </p>
-
-                        <ul className="list-disc list-outside text-[15px] text-ink/90 space-y-1 mb-4 pl-5">
-                          {job.highlights.map((point, i) => (
-                            <li key={i}>{point}</li>
-                          ))}
-                        </ul>
-
-                        {job.technologies?.length > 0 && (
-                          <div className="flex flex-wrap gap-2 mb-4">
-                            {job.technologies.map((tech, i) => (
-                              <span
-                                key={i}
-                                className="bg-sunbeam-light text-ink text-sm px-3 py-1 rounded-full shadow-sm"
-                              >
-                                {tech}
-                              </span>
-                            ))}
-                          </div>
-                        )}
-
-                        {job.reflection && (
-                          <p className="italic text-sm text-ink/60 mt-2 border-t pt-3 border-dashed border-lilac-light">
-                            “{job.reflection}”
-                          </p>
-                        )}
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
+        <div className="mt-10 grid gap-5">
+          {workExperience.items.map((job, index) => (
+            <motion.article
+              key={`${job.company}-${job.date}`}
+              className="rounded-[1.8rem] border border-ink/10 bg-white/82 p-6 md:p-8"
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.45, delay: index * 0.06 }}
+              viewport={{ once: true, amount: 0.2 }}
+            >
+              <div className="grid gap-6 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)]">
+                <div className="space-y-4">
+                  <p className="eyebrow">{job.company}</p>
+                  <h3 className="text-[clamp(1.7rem,2.3vw,2.35rem)] font-semibold tracking-[-0.04em]">
+                    {job.role}
+                  </h3>
+                  <p className="text-sm uppercase tracking-[0.2em] text-ink/56">
+                    {job.type} · {job.date} · {job.location}
+                  </p>
                 </div>
-              </motion.div>
-            );
-          })}
+
+                <ul className="space-y-3 text-[0.98rem] leading-7 text-ink/74">
+                  {job.bullets.map((bullet) => (
+                    <li key={bullet} className="flex gap-3">
+                      <span className="mt-[0.72rem] h-1.5 w-1.5 rounded-full bg-ink/50" />
+                      <span>{bullet}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </motion.article>
+          ))}
         </div>
       </div>
     </section>
