@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import AboutMe from "./pages/AboutMe";
 import Hero from "./pages/Hero";
 import Projects from "./pages/Projects";
+import ProblemApproach from "./pages/ProblemApproach";
 import TechStack from "./pages/TechStack";
 import WorkExperience from "./pages/WorkExperience";
 import Values from "./pages/Values";
@@ -15,11 +16,12 @@ function App() {
       <Navbar />
       <main>
         <Hero />
-        <TechStack />
+        <ProblemApproach />
         <Values />
         <WhatIBelieveIn />
         <Projects />
         <WorkExperience />
+        <TechStack />
         <AboutMe />
       </main>
       <HireMe />

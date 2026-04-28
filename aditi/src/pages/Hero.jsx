@@ -18,8 +18,12 @@ const Hero = () => {
   const { availability, location, date, hero } = siteContent;
 
   return (
-    <section id="hero" className="section-shell py-10 md:py-18">
-      <div className="grid gap-10 border-b border-ink/10 pb-16 lg:grid-cols-[minmax(0,1.5fr)_20rem] lg:gap-12">
+    <section id="hero" className="section-shell relative py-12 md:py-20">
+      <div className="mesh-orb mesh-orb-one" />
+      <div className="mesh-orb mesh-orb-two" />
+      <div className="mesh-orb mesh-orb-three hidden lg:block" />
+
+      <div className="relative grid gap-12 border-b border-ink/10 pb-18 lg:grid-cols-[minmax(0,1.5fr)_20rem] lg:gap-14">
         <motion.div initial="hidden" animate="visible" className="space-y-8">
           <motion.p
             className="text-[0.72rem] uppercase tracking-[0.24em] text-ink/58"
@@ -62,7 +66,7 @@ const Hero = () => {
           </motion.p>
 
           <motion.div
-            className="flex flex-wrap gap-3 text-[0.75rem] uppercase tracking-[0.2em] text-ink/64"
+            className="flex flex-wrap gap-3 pt-1 text-[0.75rem] uppercase tracking-[0.2em] text-ink/64"
             variants={fadeUp}
             custom={0.4}
           >
@@ -90,14 +94,18 @@ const Hero = () => {
           transition={{ duration: 0.65, delay: 0.25, ease: "easeOut" }}
         >
           {hero.cards.map((card, index) => (
-            <article key={card.label} className="editorial-card">
+            <motion.article
+              key={card.label}
+              className="editorial-card"
+              initial={{ opacity: 0, y: 18 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.45, delay: 0.3 + index * 0.08 }}
+              whileHover={{ y: -4 }}
+            >
               <p className="eyebrow mb-3">{card.label}</p>
               <h2 className="text-base font-semibold leading-snug">{card.text}</h2>
               <p className="mt-3 text-sm leading-6 text-ink/68">{card.detail}</p>
-              {index !== hero.cards.length - 1 && (
-                <div className="mt-6 border-b border-ink/10" />
-              )}
-            </article>
+            </motion.article>
           ))}
         </motion.aside>
       </div>

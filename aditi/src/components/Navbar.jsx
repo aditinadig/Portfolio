@@ -5,11 +5,11 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-ink/10 bg-canvas/92 backdrop-blur">
-      <nav className="section-shell flex items-center justify-between gap-6 py-5">
+    <header className="sticky top-0 z-50 border-b border-ink/10 bg-canvas/80 backdrop-blur-xl">
+      <nav className="section-shell flex items-center justify-between gap-6 py-4 md:py-5">
         <a
           href="#hero"
-          className="text-[0.9rem] font-semibold uppercase tracking-[0.28em]"
+          className="text-[0.82rem] font-semibold uppercase tracking-[0.28em] md:text-[0.9rem]"
         >
           {siteContent.name}
         </a>
@@ -24,10 +24,10 @@ const Navbar = () => {
           Menu
         </button>
 
-        <ul className="hidden items-center gap-5 text-[0.72rem] uppercase tracking-[0.24em] text-ink/68 lg:flex">
+        <ul className="hidden items-center gap-6 text-[0.72rem] uppercase tracking-[0.24em] text-ink/68 lg:flex">
           {siteContent.nav.map((item) => (
             <li key={item.label}>
-              <a className="transition hover:text-ink" href={item.href}>
+              <a className="transition duration-200 hover:-translate-y-[1px] hover:text-ink" href={item.href}>
                 {item.label}
               </a>
             </li>

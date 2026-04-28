@@ -1,0 +1,99 @@
+{
+  "eyebrow": "How I approach a problem",
+  "title": "Think first. Build clearly. Review before shipping.",
+  "intro": "This is the part I care about most. I do not start with tools. I start with the problem, the edge cases, the data flow, and what might break later.",
+  "decisionGuide": [
+    {
+      "label": "I use AI for",
+      "items": [
+        "Building first versions of components from clear specs",
+        "Doing repetitive refactors and cleanup",
+        "Getting first-pass test ideas",
+        "Comparing a few ways to build something"
+      ]
+    },
+    {
+      "label": "I do myself",
+      "items": [
+        "System and data-flow decisions",
+        "Security-sensitive or risky logic",
+        "Reviewing every generated line before shipping",
+        "Making the final ship decision"
+      ]
+    }
+  ],
+  "stages": [
+    {
+      "id": "understand",
+      "label": "01 Understand",
+      "title": "Understand the real problem first",
+      "summary": "Before I build anything, I make the problem clear. What is actually broken? Who is affected? What matters most here?",
+      "details": [
+        "I define the user, the failure point, and where the experience starts to break.",
+        "I separate the visible issue from the real cause.",
+        "I define what success looks like before I build."
+      ],
+      "signals": [
+        "What does success look like?",
+        "What can go wrong?",
+        "What matters most here?"
+      ],
+      "aiRole": "AI can help me summarize notes, compare options, or draft a checklist.",
+      "myRole": "I decide what problem matters, what tradeoffs matter, and what done actually means."
+    },
+    {
+      "id": "model",
+      "label": "02 Model",
+      "title": "Design the system before the UI",
+      "summary": "I think about data flow first. State, APIs, permissions, and error states come before polish.",
+      "details": [
+        "I map where data starts, how it changes, and where it can get out of sync.",
+        "I plan for loading, empty, error, and partial-data states from the start.",
+        "I treat security as part of the build, not cleanup at the end."
+      ],
+      "signals": [
+        "What is the source of truth?",
+        "Where can delay or inconsistency show up?",
+        "What should this user never be able to do?"
+      ],
+      "aiRole": "AI helps me move faster on diagrams, endpoint drafts, schema drafts, and outlines.",
+      "myRole": "I review the structure, catch weak assumptions, and make sure it matches real product behavior."
+    },
+    {
+      "id": "build",
+      "label": "03 Build",
+      "title": "Use AI for speed, not thinking",
+      "summary": "Once the behavior is clear, I use AI to move faster. But only after the constraints, states, and contracts are already defined.",
+      "details": [
+        "I write prompts from specs, not guesses.",
+        "I use AI for first drafts, repetitive work, refactors, and alternatives.",
+        "I keep the work grounded in clear expectations so the code stays easy to review."
+      ],
+      "signals": [
+        "Can I explain every line this tool generated?",
+        "Did the code keep the edge cases right?",
+        "Would I still ship this if my name alone were on it?"
+      ],
+      "aiRole": "AI speeds up implementation, repetition, and trying a few options quickly.",
+      "myRole": "I own correctness, clarity, security, and whether the final code should ship."
+    },
+    {
+      "id": "review",
+      "label": "04 Review",
+      "title": "Review everything like a PR",
+      "summary": "Generated or not, I review code carefully. I verify behavior, question assumptions, and test the parts most likely to fail.",
+      "details": [
+        "I look for brittle logic, missing states, and shortcuts that only work in ideal cases.",
+        "I test edge cases, bad data paths, and permission boundaries.",
+        "I clean up naming, structure, and UX until the work feels solid."
+      ],
+      "signals": [
+        "If this breaks, where does it break first?",
+        "What did the happy path hide?",
+        "Is the product clearer now than it was before?"
+      ],
+      "aiRole": "AI can suggest tests, point out risky branches, or give a second pass on refactors.",
+      "myRole": "I make the final shipping call. If I cannot explain it, it does not go live."
+    }
+  ]
+}

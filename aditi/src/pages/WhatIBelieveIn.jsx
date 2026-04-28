@@ -3,8 +3,8 @@ import aiPrinciples from "../data/aiPrinciples.json";
 
 const WhatIBelieveIn = () => {
   return (
-    <section className="section-shell py-16 md:py-24">
-      <div className="grid gap-10 border-t border-ink/10 pt-16 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)]">
+    <section className="section-shell py-18 md:py-28">
+      <div className="grid gap-12 border-t border-ink/10 pt-18 lg:grid-cols-[minmax(0,0.72fr)_minmax(0,1.28fr)]">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -19,15 +19,16 @@ const WhatIBelieveIn = () => {
           <p className="font-mono text-xs text-ink/48">{aiPrinciples.witLine}</p>
         </motion.div>
 
-        <div className="grid gap-4">
+        <div className="grid gap-5">
           {aiPrinciples.points.map((point, index) => (
             <motion.article
               key={point.number}
-              className="grid gap-4 rounded-[1.6rem] border border-ink/10 bg-white/78 p-6 md:grid-cols-[4.5rem_minmax(0,1fr)]"
+              className="surface-card grid gap-4 rounded-[1.7rem] p-6 md:grid-cols-[4.5rem_minmax(0,1fr)] md:p-7"
               initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.45, delay: index * 0.08 }}
               viewport={{ once: true, amount: 0.2 }}
+              whileHover={{ y: -6 }}
             >
               <p className="text-xs font-semibold uppercase tracking-[0.24em] text-ink/42">
                 {point.number}

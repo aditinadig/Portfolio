@@ -4,46 +4,54 @@
   "items": [
     {
       "company": "UI Health · UIC Medicine",
-      "role": "Software Engineer",
+      "role": "Web Developer",
       "type": "Part-time",
       "date": "Sept 2025 – Present",
-      "location": "Chicago, IL",
+      "location": "Chicago, IL, USA",
       "bullets": [
-        "Built and maintained web pages for UIC Medicine's Otolaryngology department",
-        "Designed in Figma, then implemented with spec-based AI prompting via Copilot",
-        "WCAG compliance and healthcare-grade reliability across all pages",
-        "Scoping an MCP workflow to sync content from hospital systems automatically"
+        "Build and maintain React-based web pages for UIC Medicine's Otolaryngology department, covering faculty profiles, residency programs, patient appointments, seminars, and department events.",
+        "Design layouts in Figma before implementation and use specification-based prompting with GitHub Copilot to generate component code.",
+        "Review and test all AI-generated output before shipping to production.",
+        "Handle broken data states, API failures, and malformed CMS content to ensure a reliable user experience.",
+        "Maintain WCAG accessibility compliance and cross-browser reliability under healthcare compliance requirements.",
+        "Scope an MCP-based workflow to sync department website content directly from hospital scheduling systems, faculty directory systems, event management systems, and residency program databases, reducing manual content updates for department staff."
       ]
     },
     {
       "company": "LPS Health",
-      "role": "Software Engineer",
+      "role": "Frontend & Workflow Lead",
       "type": "Intern",
       "date": "May – Aug 2025",
-      "location": "Chicago, IL",
+      "location": "Chicago, IL, USA",
       "bullets": [
-        "Rebuilt the full website from scratch as the sole engineer, using React, Tailwind, and a Figma-first workflow",
-        "Integrated Stripe Checkout for donations, handling webhooks and payment edge cases",
-        "Connected Google Analytics to UX decisions, improving SEO and conversion",
-        "Set up CI/CD through GitHub and Netlify"
+        "Rebuilt the full website as the sole developer using React and Tailwind CSS.",
+        "Designed all layouts in Figma, then used AI-assisted workflows with GitHub Copilot to generate and review code from component specifications.",
+        "Reviewed all AI-generated output before merging, ensuring full understanding of every change shipped.",
+        "Integrated Stripe Checkout for online donations, handling session state, webhook confirmation, and payment failure edge cases.",
+        "Connected Google Analytics to UX decisions, improving SEO and conversion outcomes.",
+        "Set up CI/CD pipelines using GitHub and Netlify as the sole developer."
       ]
     },
     {
       "company": "Oracle",
-      "role": "Software Engineer · Cloud Analyst",
+      "role": "Cloud Analyst · Frontend Developer · Oracle Cloud",
       "type": "Full-time",
-      "date": "Aug 2022 – Jun 2024",
+      "date": "Aug 2022 – June 2024",
       "location": "Bengaluru, India",
       "bullets": [
-        "Built internal dashboards for Berkshire Hathaway Energy on Oracle Fusion Cloud",
-        "Developed Redwood-style components and REST API integrations using Oracle VBS",
-        "Resolved 100+ pre-release bugs at the API-UI boundary",
-        "Received an Employee Recognition Award for cross-team contribution on BHE-HCM"
+        "Built frontend components for two Oracle Fusion Cloud products: BHE Services (operations management) and BHE-HCM (HR and workforce management) for Berkshire Hathaway Energy.",
+        "Developed using Oracle Visual Builder Studio (VBS), a low-code platform built on HTML, JavaScript, and CSS. Became the primary VBS resource across both teams, entirely self-taught.",
+        "Built Redwood-style UI components following Oracle's enterprise design system for consistency and accessibility across dashboards.",
+        "Connected components to Oracle Fusion HCM backend APIs via REST, handling payroll data, staffing records, and workforce management data.",
+        "Built reusable UI modules that reduced development time and improved data rendering speed across both products.",
+        "Found and resolved over 100 pre-release bugs at the API-UI boundary, significantly reducing post-release issues.",
+        "Supported both teams simultaneously without missing a deadline.",
+        "Received Oracle's Employee Recognition Award for cross-team contribution."
       ]
     },
     {
       "company": "Softora Technologies",
-      "role": "Software Engineer",
+      "role": "SDE Intern",
       "type": "Intern",
       "date": "Aug – Sep 2021",
       "location": "Remote, India",
