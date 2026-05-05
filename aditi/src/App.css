@@ -767,18 +767,8 @@ a {
   }
 
   .project-link-bar {
-    align-items: flex-start;
-    flex-direction: column;
     gap: 0.65rem;
   }
-
-  .project-link,
-  .project-link-first,
-  .project-link-last {
-    flex: 0 0 auto;
-    justify-content: flex-start;
-  }
-
 }
 
 @media (max-width: 1023px) {
