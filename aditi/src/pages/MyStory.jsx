@@ -1,6 +1,4 @@
-/* eslint-disable no-unused-vars */
 import { motion } from "framer-motion";
-/* eslint-enable no-unused-vars */
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },

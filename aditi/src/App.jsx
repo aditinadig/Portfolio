@@ -4,10 +4,9 @@ import AboutMe from "./pages/AboutMe";
 import Hero from "./pages/Hero";
 import Projects from "./pages/Projects";
 import ProblemApproach from "./pages/ProblemApproach";
+import RoleFit from "./pages/RoleFit";
 import TechStack from "./pages/TechStack";
 import WorkExperience from "./pages/WorkExperience";
-import Values from "./pages/Values";
-import WhatIBelieveIn from "./pages/WhatIBelieveIn";
 import HireMe from "./pages/HireMe";
 
 function App() {
@@ -17,12 +16,11 @@ function App() {
       <main>
         <Hero />
         <ProblemApproach />
-        <Values />
-        <WhatIBelieveIn />
-        <Projects />
         <WorkExperience />
-        <TechStack />
+        <Projects />
         <AboutMe />
+        <RoleFit />
+        <TechStack />
       </main>
       <HireMe />
     </div>

@@ -2,49 +2,89 @@ import { motion } from "framer-motion";
 import techStack from "../data/techStack.json";
 
 const TechStack = () => {
-  return (
-    <section id="skills" className="section-shell py-18 md:py-28">
-      <motion.div
-        className="space-y-5"
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-        viewport={{ once: true, amount: 0.2 }}
-      >
-        <p className="eyebrow">{techStack.eyebrow}</p>
-        <h2 className="section-title">{techStack.title}</h2>
-      </motion.div>
+  const primarySkills = techStack.columns
+    .flatMap((column) => column.items)
+    .filter((item) => item.primary)
+    .slice(0, 12);
 
-      <div className="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-        {techStack.columns.map((column, index) => (
-          <motion.article
-            key={column.title}
-            className="surface-card rounded-[1.7rem] p-6 md:p-7"
-            initial={{ opacity: 0, y: 24 }}
+  return (
+    <section id="skills" className="section-shell pb-18 md:pb-28">
+      <div className="section-divider pb-14">
+        <div className="grid gap-10 pt-6 md:pt-8 lg:grid-cols-[minmax(0,0.72fr)_minmax(0,1.28fr)] lg:items-end">
+          <motion.div
+            className="space-y-5"
+            initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.45, delay: index * 0.06 }}
+            transition={{ duration: 0.5 }}
             viewport={{ once: true, amount: 0.2 }}
-            whileHover={{ y: -6 }}
           >
-            <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-ink/78">
-              {column.title}
-            </h3>
-            <div className="mt-6 flex flex-wrap gap-2.5">
-              {column.items.map((item) => (
+            <p className="eyebrow">{techStack.eyebrow}</p>
+            <h2 className="section-title">{techStack.title}</h2>
+            <p className="max-w-lg text-[1rem] leading-7 text-ink/70">
+              The tools I reach for most are the ones that help me keep UI, data,
+              security, and product behavior understandable.
+            </p>
+          </motion.div>
+
+          <motion.div
+            className="skills-featured"
+            initial={{ opacity: 0, y: 18 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.08 }}
+            viewport={{ once: true, amount: 0.2 }}
+          >
+            <p className="eyebrow">Reach for first</p>
+            <div className="mt-4 grid gap-2 sm:grid-cols-2 xl:grid-cols-3">
+              {primarySkills.map((item, index) => (
                 <motion.span
                   key={item.label}
-                  className={item.primary ? "skill-pill skill-pill-primary" : "skill-pill"}
-                  whileHover={{ scale: 1.04 }}
+                  className="featured-skill"
+                  initial={{ opacity: 0, y: 10 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.25, delay: index * 0.025 }}
+                  viewport={{ once: true, amount: 0.2 }}
+                  whileHover={{ y: -2 }}
                 >
                   {item.label}
                 </motion.span>
               ))}
             </div>
-          </motion.article>
-        ))}
-      </div>
+          </motion.div>
+        </div>
 
-      <p className="mt-7 font-mono text-xs text-ink/48">{techStack.witLine}</p>
+        <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+          {techStack.columns.map((column, index) => (
+            <motion.article
+              key={column.title}
+              className="skills-category"
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.45, delay: index * 0.06 }}
+              viewport={{ once: true, amount: 0.2 }}
+              whileHover={{ y: -4 }}
+            >
+              <div className="flex items-start justify-between gap-4">
+                <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-ink/78">
+                  {column.title}
+                </h3>
+                <span className="skills-count">{column.items.length}</span>
+              </div>
+              <div className="mt-5 grid gap-2">
+                {column.items.map((item, itemIndex) => (
+                  <div
+                    key={item.label}
+                    className={item.primary ? "skill-row skill-row-primary" : "skill-row"}
+                    style={{ "--delay": `${itemIndex * 20}ms` }}
+                  >
+                    <span>{item.label}</span>
+                    {item.primary ? <span className="skill-row-mark">Core</span> : null}
+                  </div>
+                ))}
+              </div>
+            </motion.article>
+          ))}
+        </div>
+      </div>
     </section>
   );
 };

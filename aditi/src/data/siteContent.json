@@ -2,7 +2,7 @@
   "name": "Aditi Arun Nadig",
   "location": "Chicago, IL",
   "availability": "Available",
-  "date": "May 2026",
+  "date": "F-1 OPT",
   "nav": [
     { "label": "Work", "href": "#work" },
     { "label": "Skills", "href": "#skills" },
@@ -13,21 +13,21 @@
   ],
   "hero": {
     "headline": [
-      "Software engineer who talks to AI",
-      "and gets answers worth keeping.",
-      "Also sings. Professionally."
+      "Software engineer who cares about UX",
+      "and uses AI well enough to keep the answers.",
+      "Also sings. On pitch."
     ],
-    "subtext": "I build software that holds up across the stack, across edge cases, across the moment a user does something nobody planned for. Four years of production experience across enterprise, healthcare, and solo developer roles. I think before I prompt, review before I merge, and own everything that ships.",
+    "subtext": "I have industry experience across healthcare, education, and enterprise teams, building interfaces and workflows that people rely on day to day. I care about clear UX, reliable data flow, and software that still makes sense when the edge cases show up.",
     "cards": [
       {
         "label": "Currently",
-        "text": "Web Developer · UIC Medicine",
-        "detail": "Healthcare web. No room for broken interfaces."
+        "text": "Web Developer · UI Health",
+        "detail": "Clinical and academic workflows. No room for stale data."
       },
       {
         "label": "Previously",
-        "text": "Oracle · LPS Health · Softora",
-        "detail": "Enterprise dashboards to solo rebuilds."
+        "text": "Oracle · LPS Health",
+        "detail": "Enterprise systems to healthcare workflow rebuilds."
       },
       {
         "label": "Education",
@@ -36,8 +36,8 @@
       },
       {
         "label": "Stack",
-        "text": "React · TypeScript · Node.js · Supabase",
-        "detail": "+ Figma, Copilot, and strong opinions"
+        "text": "React · TypeScript · Node.js · REST APIs",
+        "detail": "+ Figma, Copilot, Codex, Claude, and strong opinions"
       },
       {
         "label": "Also",
@@ -53,13 +53,10 @@
     "witLine": "// yes, i reviewed this entire page like a PR before shipping it"
   },
   "footer": {
+    "eyebrow": "Contact",
     "title": "Let's build something good.",
-    "witLine": "// i will review your codebase too, don't worry",
+    "email": "aditiarunnadig@gmail.com",
     "links": [
-      {
-        "label": "aditiarunnadig@gmail.com",
-        "href": "mailto:aditiarunnadig@gmail.com"
-      },
       {
         "label": "LinkedIn",
         "href": "https://www.linkedin.com/in/aditi-arun-nadig-78540b214/"

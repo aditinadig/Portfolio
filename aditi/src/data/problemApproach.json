@@ -9,7 +9,8 @@
         "Building first versions of components from clear specs",
         "Doing repetitive refactors and cleanup",
         "Getting first-pass test ideas",
-        "Comparing a few ways to build something"
+        "Comparing a few ways to build something",
+        "Drafting documentation for architecture and data flow"
       ]
     },
     {
@@ -74,7 +75,7 @@
         "Did the code keep the edge cases right?",
         "Would I still ship this if my name alone were on it?"
       ],
-      "aiRole": "AI speeds up implementation, repetition, and trying a few options quickly.",
+      "aiRole": "AI speeds up implementation, repetition, documentation passes, and trying a few options quickly.",
       "myRole": "I own correctness, clarity, security, and whether the final code should ship."
     },
     {

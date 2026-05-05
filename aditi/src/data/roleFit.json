@@ -1,0 +1,24 @@
+{
+  "eyebrow": "What I am looking for",
+  "title": "A role where UX, engineering, and communication all matter.",
+  "intro": "I am especially interested in frontend-focused roles because I love analyzing how people move through a product and building interfaces that make that experience clearer. My HCI coursework strengthened that instinct, and my work has made me even more convinced that good UX is an engineering responsibility too.",
+  "cards": [
+    {
+      "title": "Frontend-focused",
+      "description": "I want to build thoughtful interfaces, design clear workflows, and turn messy product behavior into screens that feel obvious to use."
+    },
+    {
+      "title": "Open to full-stack",
+      "description": "I also enjoy backend and full-stack work because I like working with data, APIs, validation, and the logic that makes the interface reliable."
+    },
+    {
+      "title": "Healthy communication",
+      "description": "I want a team that values clear expectations, honest feedback, good documentation, and people who explain decisions instead of creating confusion."
+    },
+    {
+      "title": "Non-toxic culture",
+      "description": "I do my best work in good-natured environments where people are serious about quality without being performative, dismissive, or chaotic."
+    }
+  ],
+  "closing": "The best fit for me is a team that cares about craft, users, maintainable systems, and the humans building them."
+}

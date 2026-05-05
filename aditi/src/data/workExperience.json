@@ -3,62 +3,114 @@
   "title": "Where I have shipped real things.",
   "items": [
     {
-      "company": "UI Health · UIC Medicine",
+      "company": "UI Health",
       "role": "Web Developer",
       "type": "Part-time",
       "date": "Sept 2025 – Present",
       "location": "Chicago, IL, USA",
-      "bullets": [
-        "Build and maintain React-based web pages for UIC Medicine's Otolaryngology department, covering faculty profiles, residency programs, patient appointments, seminars, and department events.",
-        "Design layouts in Figma before implementation and use specification-based prompting with GitHub Copilot to generate component code.",
-        "Review and test all AI-generated output before shipping to production.",
-        "Handle broken data states, API failures, and malformed CMS content to ensure a reliable user experience.",
-        "Maintain WCAG accessibility compliance and cross-browser reliability under healthcare compliance requirements.",
-        "Scope an MCP-based workflow to sync department website content directly from hospital scheduling systems, faculty directory systems, event management systems, and residency program databases, reducing manual content updates for department staff."
+      "overview": "UI Health runs healthcare services and academic programs that depend on schedules, faculty details, residency data, and events being accurate across internal systems and public-facing platforms. I build web applications and integration workflows that keep clinical and academic information reliable for patients, staff, and students.",
+      "responsibilities": [
+        "Designing and implementing a scalable content sync system for faculty, residency, and scheduling data across internal systems and CMS platforms.",
+        "Using REST APIs, validation, retry logic, and MCP-based tools to support controlled AI-assisted workflows and reduce manual updates.",
+        "Building and maintaining React applications for clinical workflows such as appointment scheduling and academic workflows such as residency training.",
+        "Handling inconsistent data through validation, transformation, secure API usage, logging, error handling, and retry-safe execution.",
+        "Documenting architecture and data flows to support scalability, maintainability, and faster onboarding.",
+        "Maintaining WCAG accessibility compliance, performance, and cross-browser reliability across all pages."
+      ],
+      "technologies": [
+        "React",
+        "Node.js",
+        "Figma",
+        "GitHub Copilot",
+        "MCP",
+        "REST APIs",
+        "CMS",
+        "WCAG",
+        "GitHub",
+        "Netlify"
+      ],
+      "tags": [
+        "Healthcare",
+        "Accessibility",
+        "AI-assisted development",
+        "Content automation",
+        "MCP",
+        "Sole engineer"
       ]
     },
     {
       "company": "LPS Health",
       "role": "Frontend & Workflow Lead",
       "type": "Intern",
-      "date": "May – Aug 2025",
+      "date": "May 2025 – Aug 2025",
       "location": "Chicago, IL, USA",
-      "bullets": [
-        "Rebuilt the full website as the sole developer using React and Tailwind CSS.",
-        "Designed all layouts in Figma, then used AI-assisted workflows with GitHub Copilot to generate and review code from component specifications.",
-        "Reviewed all AI-generated output before merging, ensuring full understanding of every change shipped.",
-        "Integrated Stripe Checkout for online donations, handling session state, webhook confirmation, and payment failure edge cases.",
-        "Connected Google Analytics to UX decisions, improving SEO and conversion outcomes.",
-        "Set up CI/CD pipelines using GitHub and Netlify as the sole developer."
+      "overview": "LPS Health is a cardiovascular health and wellness platform focused on preventive care and education. The organization needed reliable digital workflows for events, seminars, donations, and engagement, so I led a full-cycle website rebuild within a three-month internship.",
+      "responsibilities": [
+        "Led a full-cycle website rebuild within a three-month timeline, delivering production-ready features for event registrations, seminars, and donations.",
+        "Implemented end-to-end user and payment workflows with Stripe Checkout, including validation and error handling for secure, reliable transactions.",
+        "Managed CI/CD pipelines through GitHub and Netlify to automate build and deployment processes.",
+        "Optimized frontend performance through Lighthouse audits and efficient data handling, reducing redundant API calls and improving responsiveness.",
+        "Added basic Jest tests and validation logic to keep core user flows stable.",
+        "Collaborated with stakeholders to define requirements and iterated using Google Analytics insights to improve engagement and conversion."
+      ],
+      "technologies": [
+        "React",
+        "Tailwind CSS",
+        "Stripe API",
+        "Google Analytics",
+        "GitHub Copilot",
+        "GitHub",
+        "Netlify",
+        "Jest"
+      ],
+      "tags": [
+        "Nonprofit",
+        "Healthcare",
+        "Payments",
+        "Analytics",
+        "CI/CD",
+        "AI-assisted development",
+        "Sole developer"
       ]
     },
     {
       "company": "Oracle",
-      "role": "Cloud Analyst · Frontend Developer · Oracle Cloud",
+      "role": "Cloud Analyst · Frontend Developer",
       "type": "Full-time",
-      "date": "Aug 2022 – June 2024",
-      "location": "Bengaluru, India",
-      "bullets": [
-        "Built frontend components for two Oracle Fusion Cloud products: BHE Services (operations management) and BHE-HCM (HR and workforce management) for Berkshire Hathaway Energy.",
-        "Developed using Oracle Visual Builder Studio (VBS), a low-code platform built on HTML, JavaScript, and CSS. Became the primary VBS resource across both teams, entirely self-taught.",
-        "Built Redwood-style UI components following Oracle's enterprise design system for consistency and accessibility across dashboards.",
-        "Connected components to Oracle Fusion HCM backend APIs via REST, handling payroll data, staffing records, and workforce management data.",
-        "Built reusable UI modules that reduced development time and improved data rendering speed across both products.",
-        "Found and resolved over 100 pre-release bugs at the API-UI boundary, significantly reducing post-release issues.",
-        "Supported both teams simultaneously without missing a deadline.",
-        "Received Oracle's Employee Recognition Award for cross-team contribution."
-      ]
-    },
-    {
-      "company": "Softora Technologies",
-      "role": "SDE Intern",
-      "type": "Intern",
-      "date": "Aug – Sep 2021",
-      "location": "Remote, India",
-      "bullets": [
-        "Built REST APIs for a restaurant reservation portal using Node.js and Express",
-        "Connected frontend to backend routes with end-to-end input validation",
-        "Redesigned and implemented the homepage using Figma"
+      "date": "Aug 2022 – Jun 2024",
+      "location": "Bengaluru, Karnataka, India",
+      "overview": "Oracle Fusion Cloud builds enterprise applications that support large-scale business operations. I contributed to Berkshire Hathaway Energy platforms across BHE-HCM for payroll, scheduling, employee records, and absence management, and BHE-CX Services for field service, work orders, asset maintenance, and inspections.",
+      "responsibilities": [
+        "Contributed to production-grade enterprise applications as part of an Agile Scrum team for BHE-HCM and BHE-CX platforms.",
+        "Designed and built Redwood-style dashboards, forms, and workflow interfaces using Oracle Visual Builder Studio integrated with Oracle Fusion REST APIs.",
+        "Engineered API integration layers with data mapping, validation, and error handling to keep data consistent across distributed systems.",
+        "Implemented secure development practices including input validation and role-based access considerations.",
+        "Collaborated with backend, QA, and product teams to deliver features and support production releases.",
+        "Improved maintainability through structured code reviews, modular component design, and consistent documentation.",
+        "Diagnosed and resolved 100+ production bugs across UI and API layers, and contributed to Jest test coverage for UI behavior and API interactions.",
+        "Received an Employee Recognition Award for rapidly mastering Oracle VBS and being selected to support the BHE-HCM product team."
+      ],
+      "technologies": [
+        "Oracle VBS/VBCS",
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "REST APIs",
+        "Oracle Fusion Cloud",
+        "Oracle Redwood Design System",
+        "Jest",
+        "JIRA",
+        "Agile"
+      ],
+      "tags": [
+        "Enterprise",
+        "HCM",
+        "Workforce management",
+        "Operations management",
+        "Oracle Fusion Cloud",
+        "Redwood",
+        "Cross-team",
+        "Employee Recognition Award"
       ]
     }
   ]

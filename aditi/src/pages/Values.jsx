@@ -3,8 +3,8 @@ import beliefBlocks from "../data/beliefBlocks.json";
 
 const Values = () => {
   return (
-    <section className="section-shell py-18 md:py-28">
-      <div className="grid gap-12 border-t border-ink/10 pt-18 lg:grid-cols-[minmax(0,0.82fr)_minmax(0,1.18fr)]">
+    <section className="section-shell pb-18 md:pb-28">
+      <div className="section-divider grid gap-12 pb-14 pt-6 md:pt-8 lg:grid-cols-[minmax(0,0.82fr)_minmax(0,1.18fr)]">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

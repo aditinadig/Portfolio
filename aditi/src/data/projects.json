@@ -6,57 +6,117 @@
       "title": "SprintDesk",
       "anchorId": "projects",
       "type": "Product",
-      "context": "Personal",
+      "context": "Personal project",
       "date": "April 2026 – Present",
-      "description": "Agile sprint tracking is core to how software teams work. I built an interactive tool for it from the ground up, with a Kanban board, real-time sync, and MCP integrations connecting GitHub, Jira, Slack, and Google Calendar into one workspace.",
-      "stack": [
+      "overview": "Software teams have no shortage of sprint tracking tools, but many are too heavy or too disconnected from where the actual work happens. Engineers lose context moving between GitHub, Jira, Slack, and their calendar. I built SprintDesk as a lightweight, real-time Kanban tracker that brings the right context into one place without asking people to change how they already work.",
+      "responsibilities": [
+        "Built a task management app using React 19, TypeScript, and Supabase with a drag-and-drop Kanban board and full sprint cycle tracking.",
+        "Designed the component system in Figma before writing code, then used specification-driven prompting with GitHub Copilot to implement directly from design specs.",
+        "Built real-time sync with Supabase Realtime so changes appear instantly across users without a refresh.",
+        "Implemented per-user data isolation through row-level security so users only see and interact with their own tasks and boards.",
+        "Built an activity log recording every task move and update for auditability.",
+        "Integrated MCP to connect GitHub, Jira, Slack, and Google Calendar into one workspace."
+      ],
+      "technologies": [
         "React 19",
         "TypeScript",
         "Supabase",
-        "MCP"
+        "Supabase Realtime",
+        "MCP",
+        "Figma",
+        "GitHub Copilot",
+        "Row-level security"
       ],
       "tags": [
-        "Real-time sync",
-        "Row-level security",
+        "Product",
+        "Agile",
+        "Real-time",
         "MCP integrations",
+        "AI-assisted development",
+        "Spec-driven development",
         "Drag-and-drop"
       ]
     },
     {
       "title": "Cue",
       "type": "HCI",
-      "context": "UIC",
+      "context": "UIC coursework",
       "date": "Sept 2025 – Dec 2025",
-      "description": "Built by a singer who kept running into a coordination problem with no good software solution. Started with user interviews. Designed in Figma. Ended with role-based real-time views for singers, musicians, and managers, each seeing exactly what they need.",
-      "stack": [
+      "overview": "Coordinating a music rehearsal sounds simple until you are the one doing it. Different singers, musicians, and managers all need different information, and most groups still manage that through chats and spreadsheets. As a professional singer, I built Cue to solve a problem I knew firsthand: a rehearsal platform where each role sees exactly what they need and updates happen in real time.",
+      "responsibilities": [
+        "Conducted user interviews and contextual research with singers, musicians, and ensemble managers before designing a single screen.",
+        "Designed the full UI system in Figma, including wireframes, high-fidelity mockups, and role-based views for each type of user.",
+        "Used specification-based AI prompting to build role-aware logic and tested manually across every role state.",
+        "Implemented structured workflows and state management for consistent role-based interactions.",
+        "Integrated real-time updates and backend services with Socket.IO and REST APIs, handling synchronization, validation, and error states.",
+        "Ran usability testing and iterated on the design based on real user feedback."
+      ],
+      "technologies": [
         "React",
+        "TypeScript",
         "Figma",
-        "User research",
-        "HCI"
+        "Socket.IO",
+        "REST APIs",
+        "HCI principles",
+        "Usability testing",
+        "User interviews",
+        "Reflexive Thematic Analysis"
       ],
       "tags": [
-        "User interviews",
-        "Wireframes",
+        "HCI",
+        "User research",
         "Role-based UI",
-        "Real-time"
+        "Real-time",
+        "Figma",
+        "Singer-built"
       ],
-      "link": "https://cuemusicrehearsal.netlify.app/"
+      "link": "https://cuemusicrehearsal.netlify.app/",
+      "links": [
+        {
+          "label": "GitHub repo",
+          "href": "https://github.com/aditinadig/music-rehearsal-platform.git"
+        }
+      ]
     },
     {
-      "title": "AI and the future of education",
+      "title": "Thematic Analysis — AI and the Future of Education",
       "anchorId": "research",
-      "type": "Qualitative research",
-      "context": "",
-      "date": "Jan 2025 – Present",
-      "description": "A thematic analysis of 800+ YouTube comments. Not really about AI, about what people believe learning is for, and what that reveals about trust, identity, and who education was ever designed for.",
-      "stack": [
-        "Reflexive TA",
-        "Braun & Clarke 2022"
+      "type": "Research",
+      "context": "Ongoing",
+      "date": "Jan 2026 – May 2026",
+      "overview": "Every conversation about AI in education quickly becomes a conversation about something deeper: what learning is for, whether struggle matters, and who education has really been designed to serve. This study explores how AI reveals both what people hope learning can become and what they fear losing.",
+      "responsibilities": [
+        "Collected and processed public comments across opposing conversations about AI in education, including a second dataset of 303 YouTube comments.",
+        "Applied Reflexive Thematic Analysis following Braun and Clarke (2022), moving through six phases from familiarisation to final write-up.",
+        "Produced a final themes paper and visual findings map connecting both datasets through the cross-dataset concept of stakes.",
+        "Identified themes around access, fairness, human connection, effort, institutional trust, corporate control, and the emotional experience of learning.",
+        "Brought an explicit positionality to the analysis as a developer who uses AI daily, treating that tension as part of the research rather than something to hide."
+      ],
+      "technologies": [
+        "Reflexive Thematic Analysis",
+        "Outscraper",
+        "Braun and Clarke 2022",
+        "Qualitative research methods"
       ],
       "tags": [
-        "6 themes surfaced",
-        "800+ data points",
-        "Qualitative"
+        "Qualitative research",
+        "AI in education",
+        "Thematic analysis",
+        "Positionality"
+      ],
+      "links": [
+        {
+          "label": "View findings map",
+          "href": "/thematic-analysis-findings.html"
+        },
+        {
+          "label": "Read final paper",
+          "href": "/themes-paper-2-aditi-arun-nadig.pdf"
+        },
+        {
+          "label": "View presentation deck",
+          "href": "/ta-dataset-2.pdf"
+        }
       ]
     }
   ]

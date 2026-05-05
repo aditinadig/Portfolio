@@ -2,15 +2,12 @@
   "eyebrow": "About me",
   "title": "Engineer. Singer. Overthinker, the good kind.",
   "paragraphs": [
-    "I am finishing my Master's in Computer Science at UIC in May 2026. Two years at Oracle building enterprise dashboards. Since moving to the US, the sole engineer at LPS Health and UIC Medicine, where what I ship matters to real people.",
-    "I am also a professional singer. 100+ competition wins, playback singing in Kannada films, stage concerts. Music taught me that coordination is emotional before it is logistical. That instinct shows up in how I build software.",
-    "And I study AI, not just to build with it, but to understand what it is doing to how people think and learn. Because those questions eventually come back to what we build and who we build it for.",
-    "I also keep myself unusually up to date. Reddit, TLDR, engineering discussions, product chatter, and release notes are part of how I track a tech world that changes faster than most advice can keep up with."
+    "I also keep myself unusually up to date. Reddit, TLDR, engineering discussions, product chatter, release notes, and AI tooling shifts are part of how I track a tech world that changes faster than most advice can keep up with."
   ],
   "values": [
     {
-      "title": "Full-circle or nothing",
-      "description": "Work is not done until it feels done. UX, logic, performance, and polish all have to be right before something ships."
+      "title": "Full-circle ownership",
+      "description": "UX, logic, data flow, performance, documentation, and polish all have to make sense before something ships."
     },
     {
       "title": "Structure and soul",
@@ -21,8 +18,8 @@
       "description": "If it needs a paragraph to explain, it needs a redesign. Interfaces and code that make sense at a glance."
     },
     {
-      "title": "Adapt with clarity",
-      "description": "Plan changes do not throw me off. I rethink from the right level, not from panic."
+      "title": "Security from line one",
+      "description": "Input validation, RBAC, rate limits, and permission boundaries belong in the design, not in cleanup."
     }
   ]
 }

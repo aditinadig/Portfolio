@@ -1,0 +1,659 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI and the Future of Education - Findings Map</title>
+    <style>
+      :root {
+        color: #162b2f;
+        background: #f8f4ee;
+        --ink: #162b2f;
+        --muted: rgb(22 43 47 / 0.68);
+        --line: rgb(22 43 47 / 0.12);
+        --paper: rgb(255 255 255 / 0.72);
+        --hope-card: #e7f4e9;
+        --paper-warm: #fbf7ee;
+        --threat-card: #f8f3e6;
+        --honey-soft: #ead58f;
+        --accent: #1d5d31;
+        --navy: #102336;
+        font-family:
+          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          sans-serif;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background:
+          radial-gradient(circle at top left, rgba(231, 244, 233, 0.86), transparent 28rem),
+          radial-gradient(circle at top right, rgba(242, 223, 170, 0.5), transparent 28rem),
+          linear-gradient(180deg, #fbf8f2 0%, #f4eee5 100%);
+      }
+
+      main {
+        width: min(100% - 2rem, 82rem);
+        margin: 0 auto;
+        padding: 3rem 0 4rem;
+      }
+
+      .eyebrow {
+        margin: 0;
+        color: rgb(22 43 47 / 0.55);
+        font-size: 0.74rem;
+        font-weight: 900;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        max-width: 62rem;
+        margin: 1rem 0;
+        font-size: clamp(2.5rem, 6vw, 5rem);
+        line-height: 0.98;
+        letter-spacing: -0.055em;
+      }
+
+      h2,
+      h3 {
+        margin: 0;
+        letter-spacing: -0.03em;
+      }
+
+      p {
+        line-height: 1.65;
+      }
+
+      .intro {
+        max-width: 56rem;
+        color: var(--muted);
+        font-size: 1.05rem;
+      }
+
+      .hero {
+        position: relative;
+        overflow: hidden;
+        border: 1px solid var(--line);
+        border-radius: 1.8rem;
+        background:
+          linear-gradient(135deg, rgb(255 255 255 / 0.82), rgb(248 244 238 / 0.86)),
+          radial-gradient(circle at top right, rgba(231, 244, 233, 0.85), transparent 46%);
+        padding: clamp(1.4rem, 3vw, 2.2rem);
+        box-shadow: 0 24px 60px rgb(22 43 47 / 0.08);
+      }
+
+      .hero::before {
+        content: "";
+        position: absolute;
+        inset: 0 0 auto;
+        height: 4px;
+        background: linear-gradient(90deg, var(--hope-card), var(--honey-soft), var(--navy));
+      }
+
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+        margin-top: 1.4rem;
+      }
+
+      .actions a,
+      .control {
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        background: rgb(255 255 255 / 0.72);
+        color: var(--ink);
+        cursor: pointer;
+        padding: 0.7rem 1rem;
+        font-size: 0.8rem;
+        font-weight: 900;
+        letter-spacing: 0.08em;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition:
+          transform 180ms ease,
+          background-color 180ms ease,
+          box-shadow 180ms ease;
+      }
+
+      .actions a:hover,
+      .control:hover,
+      .control.active {
+        transform: translateY(-2px);
+        background: var(--navy);
+        color: #f8fff7;
+        box-shadow: 0 16px 32px rgb(22 43 47 / 0.14);
+      }
+
+      .section {
+        margin-top: 2.4rem;
+      }
+
+      .stake-section {
+        border: 1px solid var(--line);
+        border-radius: 1.8rem;
+        background:
+          linear-gradient(135deg, rgb(255 255 255 / 0.72), rgb(246 241 234 / 0.72)),
+          radial-gradient(circle at 16% 20%, rgba(231, 244, 233, 0.5), transparent 24rem),
+          radial-gradient(circle at 85% 25%, rgba(242, 223, 170, 0.28), transparent 24rem);
+        box-shadow: 0 24px 60px rgb(22 43 47 / 0.08);
+        padding: clamp(1rem, 2vw, 1.4rem);
+      }
+
+      .map-header,
+      .stake-row {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr) minmax(0, 1fr);
+        gap: 1.4rem;
+        align-items: center;
+      }
+
+      .map-header {
+        margin-bottom: 1.1rem;
+        text-align: center;
+      }
+
+      .map-header h2 {
+        font-size: clamp(1.15rem, 2vw, 1.65rem);
+        letter-spacing: -0.025em;
+      }
+
+      .map-kicker {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-top: 0.45rem;
+        color: rgb(22 43 47 / 0.58);
+        font-size: 0.68rem;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .map-kicker::before {
+        content: "";
+        width: 0.55rem;
+        height: 0.55rem;
+        border-radius: 999px;
+        background: currentColor;
+        opacity: 0.55;
+      }
+
+      .stake-map {
+        display: grid;
+        gap: 0.85rem;
+      }
+
+      .stake-row {
+        position: relative;
+      }
+
+      .stake-row::before,
+      .stake-row::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        height: 2px;
+        background: linear-gradient(90deg, transparent, rgb(22 43 47 / 0.34), transparent);
+        transform: translateY(-50%);
+        z-index: 0;
+      }
+
+      .stake-row::before {
+        left: 30%;
+        right: 58%;
+      }
+
+      .stake-row::after {
+        left: 58%;
+        right: 30%;
+      }
+
+      .theme-box,
+      .stake-box {
+        position: relative;
+        z-index: 1;
+        min-height: 6.3rem;
+        border: 1px solid rgb(22 43 47 / 0.08);
+        border-radius: 1rem;
+        padding: 0.95rem 1rem;
+        box-shadow: 0 12px 28px rgb(22 43 47 / 0.05);
+        transition:
+          transform 180ms ease,
+          box-shadow 180ms ease,
+          filter 180ms ease;
+      }
+
+      .theme-box:hover,
+      .stake-box:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 18px 36px rgb(22 43 47 / 0.08);
+      }
+
+      .theme-box.left {
+        background: var(--hope-card);
+      }
+
+      .theme-box.left.mid {
+        background: var(--hope-card);
+      }
+
+      .theme-box.left.deep {
+        background: var(--hope-card);
+      }
+
+      .theme-box.right {
+        background: var(--threat-card);
+      }
+
+      .theme-box.right.mid {
+        background: var(--threat-card);
+      }
+
+      .theme-box.right.deep {
+        background: var(--threat-card);
+      }
+
+      .stake-box {
+        background:
+          linear-gradient(180deg, rgb(255 255 255 / 0.78), #f0eee9),
+          radial-gradient(circle at top, rgb(255 255 255 / 0.8), transparent 72%);
+        cursor: pointer;
+        text-align: left;
+      }
+
+      .stake-box.active {
+        border-color: rgb(29 93 49 / 0.18);
+        outline: 0;
+        box-shadow: 0 18px 38px rgb(29 93 49 / 0.1);
+      }
+
+      .theme-label {
+        display: inline-flex;
+        margin-bottom: 0.58rem;
+        border-radius: 999px;
+        background: rgb(255 255 255 / 0.58);
+        padding: 0.26rem 0.5rem;
+        color: var(--accent);
+        font-size: 0.66rem;
+        font-weight: 800;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      .theme-title {
+        color: var(--navy);
+        font-size: clamp(0.98rem, 1.25vw, 1.12rem);
+        font-weight: 700;
+        line-height: 1.32;
+      }
+
+      .theme-note {
+        margin: 0.55rem 0 0;
+        color: rgb(16 35 54 / 0.62);
+        font-size: 0.78rem;
+        line-height: 1.55;
+      }
+
+      .stake-title {
+        display: inline-flex;
+        margin-bottom: 0.58rem;
+        border-radius: 999px;
+        background: rgb(29 93 49 / 0.1);
+        padding: 0.26rem 0.54rem;
+        color: #1d5d31;
+        font-size: 0.66rem;
+        font-weight: 800;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      .stake-text {
+        display: block;
+        color: var(--navy);
+        font-size: clamp(0.98rem, 1.25vw, 1.14rem);
+        font-weight: 700;
+        line-height: 1.35;
+      }
+
+      .detail-panel {
+        display: grid;
+        grid-template-columns: minmax(0, 0.72fr) minmax(0, 1.28fr);
+        gap: 1rem;
+        margin-top: 1.1rem;
+        border: 1px solid var(--line);
+        border-radius: 1.35rem;
+        background: rgb(255 255 255 / 0.78);
+        box-shadow: 0 18px 42px rgb(22 43 47 / 0.07);
+        padding: 1.1rem;
+      }
+
+      .detail-panel p {
+        color: var(--muted);
+      }
+
+      .detail-grid {
+        display: grid;
+        gap: 0.8rem;
+      }
+
+      .detail-card {
+        border: 1px solid var(--line);
+        border-radius: 0.95rem;
+        background: rgb(255 255 255 / 0.64);
+        padding: 0.95rem;
+      }
+
+      .detail-card h3 {
+        font-size: 0.95rem;
+      }
+
+      .detail-card p {
+        margin: 0.35rem 0 0;
+        font-size: 0.94rem;
+      }
+
+      .mini-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1rem;
+      }
+
+      .theme-summary-heading {
+        margin: 0 0 0.9rem;
+        font-size: clamp(1.25rem, 2vw, 1.7rem);
+      }
+
+      .mini-card {
+        border: 1px solid var(--line);
+        border-radius: 1.2rem;
+        background: rgb(255 255 255 / 0.68);
+        padding: 1rem;
+      }
+
+      .mini-card p {
+        color: rgb(22 43 47 / 0.68);
+      }
+
+      .finding {
+        background: var(--navy);
+        color: #f8fff7;
+      }
+
+      .finding p,
+      .finding .eyebrow {
+        color: rgb(248 255 247 / 0.76);
+      }
+
+      @media (max-width: 900px) {
+        .map-header,
+        .stake-row,
+        .detail-panel,
+        .mini-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .map-header {
+          text-align: left;
+        }
+
+        .stake-row::before,
+        .stake-row::after {
+          display: none;
+        }
+
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header class="hero">
+        <p class="eyebrow">Reflexive thematic analysis</p>
+        <h1>What people believe learning is for when AI enters the room.</h1>
+        <p class="intro">
+          This map compares two opposing YouTube comment datasets. Dataset #1 captures hope:
+          AI as access, emotional safety, and support. Dataset #2 captures threat: AI as
+          corporate control, broken schooling, and the loss of thinking through struggle.
+          The center layer shows what is at stake between those reactions.
+        </p>
+
+        <div class="actions" aria-label="Documents">
+          <a href="/themes-paper-2-aditi-arun-nadig.pdf" target="_blank" rel="noreferrer">
+            Read final paper
+          </a>
+        <a href="/ta-dataset-2.pdf" target="_blank" rel="noreferrer">View presentation deck</a>
+      </div>
+      </header>
+
+      <section class="section stake-section" aria-label="Stake map">
+        <div class="map-header">
+          <div>
+            <h2>Dataset #1</h2>
+            <span class="map-kicker">Hope</span>
+          </div>
+          <div>
+            <h2>What is at stake</h2>
+            <span class="map-kicker">Click each stake</span>
+          </div>
+          <div>
+            <h2>Dataset #2</h2>
+            <span class="map-kicker">Threat</span>
+          </div>
+        </div>
+
+        <div class="stake-map">
+          <div class="stake-row">
+            <article class="theme-box left">
+              <span class="theme-label">Theme 1</span>
+              <div class="theme-title">AI expands access to learning</div>
+              <p class="theme-note">AI is imagined as a way in for people education left out.</p>
+            </article>
+            <button class="stake-box active" type="button" data-stake="0">
+              <span class="stake-title">Stake 1</span>
+              <span class="stake-text">The hope that education could finally be fair</span>
+            </button>
+            <article class="theme-box right">
+              <span class="theme-label">Theme C</span>
+              <div class="theme-title">AI serves corporations, not students</div>
+              <p class="theme-note">Access becomes a market, and quality becomes a paid tier.</p>
+            </article>
+          </div>
+
+          <div class="stake-row">
+            <article class="theme-box left mid">
+              <span class="theme-label">Theme 2</span>
+              <div class="theme-title">AI changes the emotional experience of learning</div>
+              <p class="theme-note">AI can feel patient, private, and safe to ask questions.</p>
+            </article>
+            <button class="stake-box" type="button" data-stake="1">
+              <span class="stake-title">Stake 2</span>
+              <span class="stake-text">The idea that learning can be human and caring</span>
+            </button>
+            <article class="theme-box right mid">
+              <span class="theme-label">Theme A</span>
+              <div class="theme-title">The system was already broken</div>
+              <p class="theme-note">AI may scale the same impersonal system more efficiently.</p>
+            </article>
+          </div>
+
+          <div class="stake-row">
+            <article class="theme-box left deep">
+              <span class="theme-label">Theme 3</span>
+              <div class="theme-title">AI changes how students think and learn</div>
+              <p class="theme-note">AI supports cognition, but also raises worry about dependence.</p>
+            </article>
+            <button class="stake-box" type="button" data-stake="2">
+              <span class="stake-title">Stake 3</span>
+              <span class="stake-text">The belief that thinking is built through struggle</span>
+            </button>
+            <article class="theme-box right deep">
+              <span class="theme-label">Theme B</span>
+              <div class="theme-title">AI takes away the ability to think</div>
+              <p class="theme-note">Friction is treated as the mechanism through which learning happens.</p>
+            </article>
+          </div>
+        </div>
+
+        <article class="detail-panel" id="stake-detail" aria-live="polite">
+          <div>
+            <p class="eyebrow" id="detail-kicker">Stake 1</p>
+            <h2 id="detail-title">The hope that education could finally be fair</h2>
+          </div>
+          <div class="detail-grid">
+            <div class="detail-card">
+              <h3>Hope</h3>
+              <p id="detail-hope">
+                AI might reach people excluded by cost, geography, disability, and institutional
+                neglect.
+              </p>
+            </div>
+            <div class="detail-card">
+              <h3>Threat</h3>
+              <p id="detail-threat">
+                That promise may become a paid hierarchy where better learning belongs to people
+                who can afford better tools.
+              </p>
+            </div>
+            <div class="detail-card">
+              <h3>Why it matters</h3>
+              <p id="detail-body">
+                The same technology is read as liberation in one dataset and as inequality in
+                the other. The stake is not AI itself, but whether education can finally be fair.
+              </p>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="section" aria-label="Dataset 1 finalized themes">
+        <h2 class="theme-summary-heading">Dataset #1 themes</h2>
+        <div class="mini-grid">
+          <article class="mini-card">
+            <p class="eyebrow">Theme 1</p>
+            <h3>AI expands access to learning</h3>
+            <p>
+              Commenters imagine AI as a way to reach students blocked by cost, geography,
+              disability, confidence, or systems that were never designed around them.
+            </p>
+          </article>
+          <article class="mini-card">
+            <p class="eyebrow">Theme 2</p>
+            <h3>AI changes the emotional experience of learning</h3>
+            <p>
+              Learning is framed as easier when students can ask questions privately, repeat
+              confusion without shame, and move at their own pace.
+            </p>
+          </article>
+          <article class="mini-card">
+            <p class="eyebrow">Theme 3</p>
+            <h3>AI changes how students think and learn</h3>
+            <p>
+              The hope is that AI can scaffold difficult ideas, but the comments also begin
+              to question what happens when struggle disappears too quickly.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" aria-label="Dataset 2 finalized themes">
+        <h2 class="theme-summary-heading">Dataset #2 themes</h2>
+        <div class="mini-grid">
+          <article class="mini-card">
+            <p class="eyebrow">Theme A</p>
+            <h3>The system was already broken</h3>
+            <p>
+              Commenters argue AI did not create the crisis. It entered a system already shaped
+              by testing, metrics, and control.
+            </p>
+          </article>
+          <article class="mini-card">
+            <p class="eyebrow">Theme B</p>
+            <h3>AI takes away the ability to think</h3>
+            <p>
+              Learning is framed as something built through friction, effort, intention, and the
+              discomfort of not knowing yet.
+            </p>
+          </article>
+          <article class="mini-card">
+            <p class="eyebrow">Theme C</p>
+            <h3>AI serves corporations, not students</h3>
+            <p>
+              The fear is that education becomes a product tier controlled by companies rather
+              than a public good shaped by communities.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section mini-card finding">
+        <p class="eyebrow">Finding</p>
+        <h2>People are not only arguing about AI.</h2>
+        <p>
+          They are defending what they believe education owes them: equal access, human
+          connection, and the ability to think. Dataset #1 shows those beliefs as hope.
+          Dataset #2 shows them as fear and grief.
+        </p>
+      </section>
+    </main>
+
+    <script>
+      const details = [
+        {
+          kicker: "Stake 1",
+          title: "The hope that education could finally be fair",
+          hope:
+            "AI might reach people excluded by cost, geography, disability, and institutional neglect.",
+          threat:
+            "That promise may become a paid hierarchy where better learning belongs to people who can afford better tools.",
+          body:
+            "The same technology is read as liberation in one dataset and as inequality in the other. The stake is not AI itself, but whether education can finally be fair.",
+        },
+        {
+          kicker: "Stake 2",
+          title: "The idea that learning can be human and caring",
+          hope:
+            "AI can feel patient, private, and emotionally safe, especially for students afraid to ask questions in class.",
+          threat:
+            "If AI is added to an already impersonal system, it may scale efficiency without adding genuine care.",
+          body:
+            "The contrast reveals a deeper belief: learning is not only information transfer. People want education to notice them, respond to them, and protect them from shame.",
+        },
+        {
+          kicker: "Stake 3",
+          title: "The belief that thinking is built through struggle",
+          hope:
+            "AI can scaffold difficult work, explain confusing ideas, and help students keep going.",
+          threat:
+            "AI may remove the friction, effort, and intention through which independent thinking develops.",
+          body:
+            "The argument is not that struggle is pleasant. It is that some forms of struggle are productive, and removing them may produce completed assignments without learning.",
+        },
+      ];
+
+      const buttons = document.querySelectorAll(".stake-box");
+      const kicker = document.querySelector("#detail-kicker");
+      const title = document.querySelector("#detail-title");
+      const hope = document.querySelector("#detail-hope");
+      const threat = document.querySelector("#detail-threat");
+      const body = document.querySelector("#detail-body");
+
+      buttons.forEach((button) => {
+        button.addEventListener("click", () => {
+          buttons.forEach((item) => item.classList.remove("active"));
+          button.classList.add("active");
+
+          const detail = details[Number(button.dataset.stake)];
+          kicker.textContent = detail.kicker;
+          title.textContent = detail.title;
+          hope.textContent = detail.hope;
+          threat.textContent = detail.threat;
+          body.textContent = detail.body;
+        });
+      });
+    </script>
+  </body>
+</html>
