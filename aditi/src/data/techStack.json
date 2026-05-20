@@ -21,7 +21,8 @@
         { "label": "Framer Motion" },
         { "label": "TanStack" },
         { "label": "GraphQL" },
-        { "label": "Socket.IO" }
+        { "label": "Socket.IO" },
+        { "label": "Chart.js", "primary": true }
       ]
     },
     {
@@ -51,7 +52,7 @@
         { "label": "Codex", "primary": true },
         { "label": "Claude" },
         { "label": "Prompt engineering", "primary": true },
-        { "label": "MCP" },
+        { "label": "MCP", "primary": true },
         { "label": "Figma", "primary": true },
         { "label": "LLM API integration" },
         { "label": "Spec-driven development" },
@@ -60,7 +61,8 @@
         { "label": "User interviews" },
         { "label": "Wireframing" },
         { "label": "Prototyping" },
-        { "label": "Thematic analysis" }
+        { "label": "Thematic analysis" },
+        { "label": "A/B testing" }
       ]
     },
     {
@@ -68,6 +70,7 @@
       "items": [
         { "label": "RBAC", "primary": true },
         { "label": "Input validation", "primary": true },
+        { "label": "Input sanitization", "primary": true },
         { "label": "Rate limiting", "primary": true },
         { "label": "Hashing" },
         { "label": "HTTPS" },
@@ -81,8 +84,11 @@
         { "label": "Jest" },
         { "label": "Lighthouse", "primary": true },
         { "label": "k6" },
+        { "label": "Lazy loading", "primary": true },
         { "label": "API optimization", "primary": true },
-        { "label": "Caching strategies", "primary": true }
+        { "label": "Caching strategies", "primary": true },
+        { "label": "Memoization" },
+        { "label": "State optimization" }
       ]
     },
     {

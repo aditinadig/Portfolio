@@ -42,31 +42,33 @@
       "type": "HCI",
       "context": "UIC coursework",
       "date": "Sept 2025 – Dec 2025",
-      "overview": "Coordinating a music rehearsal sounds simple until you are the one doing it. Different singers, musicians, and managers all need different information, and most groups still manage that through chats and spreadsheets. As a professional singer, I built Cue to solve a problem I knew firsthand: a rehearsal platform where each role sees exactly what they need and updates happen in real time.",
+      "overview": "Coordinating a music rehearsal sounds simple until you are the one doing it. Different singers, musicians, and managers all need different information, and most groups still manage that through chats and spreadsheets. As a professional singer, I built Cue to reduce coordination errors and rehearsal downtime with a role-based platform where each person sees exactly what they need.",
       "responsibilities": [
-        "Conducted user interviews and contextual research with singers, musicians, and ensemble managers before designing a single screen.",
-        "Designed the full UI system in Figma, including wireframes, high-fidelity mockups, and role-based views for each type of user.",
-        "Used specification-based AI prompting to build role-aware logic and tested manually across every role state.",
-        "Implemented structured workflows and state management for consistent role-based interactions.",
-        "Integrated real-time updates and backend services with Socket.IO and REST APIs, handling synchronization, validation, and error states.",
-        "Ran usability testing and iterated on the design based on real user feedback."
+        "Conducted user interviews with singers, musicians, and ensemble coordinators to identify coordination gaps before designing wireframes and high-fidelity Figma prototypes following HCI principles.",
+        "Built a React-based platform using specification-driven development, structured state management, and role-aware workflows for singers, musicians, and coordinators.",
+        "Integrated Socket.IO and REST APIs to synchronize rehearsal assignments, schedule updates, and preparation workflows across connected users.",
+        "Ran usability and A/B testing during live rehearsal sessions, refining workflows to improve coordination accuracy and task completion.",
+        "Exploring MCP-assisted integrations with Spotify and Google Calendar to support synchronized rehearsal preparation, scheduling, and coordination workflows."
       ],
       "technologies": [
         "React",
         "TypeScript",
-        "Figma",
         "Socket.IO",
         "REST APIs",
+        "Figma",
         "HCI principles",
         "Usability testing",
-        "User interviews",
-        "Reflexive Thematic Analysis"
+        "A/B testing",
+        "MCP",
+        "Spotify API",
+        "Google Calendar API"
       ],
       "tags": [
         "HCI",
         "User research",
         "Role-based UI",
         "Real-time",
+        "A/B testing",
         "Figma",
         "Singer-built"
       ],
@@ -79,10 +81,10 @@
       ]
     },
     {
-      "title": "Thematic Analysis — AI and the Future of Education",
+      "title": "AI and the Future of Education",
       "anchorId": "research",
       "type": "Research",
-      "context": "Ongoing",
+      "context": "Reflective Thematic Analysis",
       "date": "Jan 2026 – May 2026",
       "overview": "Every conversation about AI in education quickly becomes a conversation about something deeper: what learning is for, whether struggle matters, and who education has really been designed to serve. This study explores how AI reveals both what people hope learning can become and what they fear losing.",
       "responsibilities": [

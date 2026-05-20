@@ -17,12 +17,12 @@
       "and uses AI well enough to keep the answers.",
       "Also sings. On pitch."
     ],
-    "subtext": "I have industry experience across healthcare, education, and enterprise teams, building interfaces and workflows that people rely on day to day. I care about clear UX, reliable data flow, and software that still makes sense when the edge cases show up.",
+    "subtext": "I have industry experience across healthcare, education, and enterprise teams, building interfaces, synchronization workflows, dashboards, and payment flows that people rely on day to day. I care about clear UX, reliable data flow, and software that still makes sense when the edge cases show up.",
     "cards": [
       {
         "label": "Currently",
         "text": "Web Developer · UI Health",
-        "detail": "Clinical and academic workflows. No room for stale data."
+        "detail": "React apps, Node.js sync workflows, dashboards, and healthcare data reliability."
       },
       {
         "label": "Previously",
@@ -37,7 +37,7 @@
       {
         "label": "Stack",
         "text": "React · TypeScript · Node.js · REST APIs",
-        "detail": "+ Figma, Copilot, Codex, Claude, and strong opinions"
+        "detail": "+ Chart.js, Stripe, Figma, Copilot, MCP, and performance tuning"
       },
       {
         "label": "Also",

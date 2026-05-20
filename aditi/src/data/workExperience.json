@@ -8,34 +8,36 @@
       "type": "Part-time",
       "date": "Sept 2025 – Present",
       "location": "Chicago, IL, USA",
-      "overview": "UI Health runs healthcare services and academic programs that depend on schedules, faculty details, residency data, and events being accurate across internal systems and public-facing platforms. I build web applications and integration workflows that keep clinical and academic information reliable for patients, staff, and students.",
+      "overview": "UI Health manages healthcare and academic operations that depend on faculty, residency, scheduling, and departmental data staying accurate and synchronized across internal systems and public-facing platforms. I build web applications and synchronization workflows that keep that information reliable for patients, staff, and students.",
       "responsibilities": [
-        "Designing and implementing a scalable content sync system for faculty, residency, and scheduling data across internal systems and CMS platforms.",
-        "Using REST APIs, validation, retry logic, and MCP-based tools to support controlled AI-assisted workflows and reduce manual updates.",
-        "Building and maintaining React applications for clinical workflows such as appointment scheduling and academic workflows such as residency training.",
-        "Handling inconsistent data through validation, transformation, secure API usage, logging, error handling, and retry-safe execution.",
-        "Documenting architecture and data flows to support scalability, maintainability, and faster onboarding.",
-        "Maintaining WCAG accessibility compliance, performance, and cross-browser reliability across all pages."
+        "Contributing to a Node.js-based synchronization workflow that pulls faculty, residency, and scheduling data through REST APIs to validate records, detect inconsistencies, and reduce fragmented manual updates across disconnected healthcare systems.",
+        "Modernizing legacy scheduling, faculty management, residency, and academic event workflows into React-based applications using specification-driven development.",
+        "Improving accessibility, WCAG compliance, reusable component architecture, and cross-browser reliability across clinical and academic workflows.",
+        "Improving rendering performance and operational reliability using reusable hooks, state optimization, memoization, debounced search and filter workflows, lazy loading, and recovery handling for inconsistent API responses.",
+        "Building Chart.js dashboards and reusable workflow components that help departments monitor scheduling conflicts, residency coverage, and faculty operations."
       ],
       "technologies": [
         "React",
         "Node.js",
+        "JavaScript",
+        "Chart.js",
         "Figma",
         "GitHub Copilot",
-        "MCP",
         "REST APIs",
         "CMS",
         "WCAG",
-        "GitHub",
-        "Netlify"
+        "Lazy loading",
+        "Memoization",
+        "State optimization"
       ],
       "tags": [
         "Healthcare",
         "Accessibility",
+        "Performance",
         "AI-assisted development",
         "Content automation",
-        "MCP",
-        "Sole engineer"
+        "Data synchronization",
+        "Dashboards"
       ]
     },
     {
@@ -44,32 +46,33 @@
       "type": "Intern",
       "date": "May 2025 – Aug 2025",
       "location": "Chicago, IL, USA",
-      "overview": "LPS Health is a cardiovascular health and wellness platform focused on preventive care and education. The organization needed reliable digital workflows for events, seminars, donations, and engagement, so I led a full-cycle website rebuild within a three-month internship.",
+      "overview": "LPS Health is a cardiovascular health and wellness platform focused on preventive care, educational content, community engagement, and donations. The organization needed reliable digital workflows for events, seminars, donations, and engagement, so I led a full-cycle website rebuild within a three-month internship.",
       "responsibilities": [
-        "Led a full-cycle website rebuild within a three-month timeline, delivering production-ready features for event registrations, seminars, and donations.",
-        "Implemented end-to-end user and payment workflows with Stripe Checkout, including validation and error handling for secure, reliable transactions.",
+        "Replaced a legacy frontend system with a modern React architecture, redesigning registration, educational, and donation workflows into centralized production-ready user experiences within a three-month timeline.",
+        "Improved Lighthouse accessibility score from 40 to 80 and reduced page load time by 70% using lazy loading, image optimization, frontend caching strategies, debounced form handling, state optimization, and accessibility-focused redesign decisions.",
+        "Built secure Stripe Checkout workflows with validation, session management, payment recovery handling, and rate-limiting safeguards to improve donation reliability and prevent invalid transaction states.",
         "Managed CI/CD pipelines through GitHub and Netlify to automate build and deployment processes.",
-        "Optimized frontend performance through Lighthouse audits and efficient data handling, reducing redundant API calls and improving responsiveness.",
-        "Added basic Jest tests and validation logic to keep core user flows stable.",
-        "Collaborated with stakeholders to define requirements and iterated using Google Analytics insights to improve engagement and conversion."
+        "Used Google Analytics insights to redesign registration and donation flows, improving workflow completion, engagement, SEO visibility, and frontend usability."
       ],
       "technologies": [
         "React",
         "Tailwind CSS",
+        "JavaScript",
         "Stripe API",
         "Google Analytics",
-        "GitHub Copilot",
         "GitHub",
         "Netlify",
-        "Jest"
+        "Lazy loading",
+        "Lighthouse"
       ],
       "tags": [
         "Nonprofit",
         "Healthcare",
         "Payments",
         "Analytics",
+        "Performance",
+        "Accessibility",
         "CI/CD",
-        "AI-assisted development",
         "Sole developer"
       ]
     },
@@ -79,15 +82,13 @@
       "type": "Full-time",
       "date": "Aug 2022 – Jun 2024",
       "location": "Bengaluru, Karnataka, India",
-      "overview": "Oracle Fusion Cloud builds enterprise applications that support large-scale business operations. I contributed to Berkshire Hathaway Energy platforms across BHE-HCM for payroll, scheduling, employee records, and absence management, and BHE-CX Services for field service, work orders, asset maintenance, and inspections.",
+      "overview": "Oracle Fusion Cloud builds enterprise applications that support large-scale business operations. I contributed to two Berkshire Hathaway Energy products: BHE-HCM for payroll, scheduling, employee records, and absence management, and BHE-CX Services for field service, work orders, asset maintenance, and inspections.",
       "responsibilities": [
-        "Contributed to production-grade enterprise applications as part of an Agile Scrum team for BHE-HCM and BHE-CX platforms.",
-        "Designed and built Redwood-style dashboards, forms, and workflow interfaces using Oracle Visual Builder Studio integrated with Oracle Fusion REST APIs.",
-        "Engineered API integration layers with data mapping, validation, and error handling to keep data consistent across distributed systems.",
-        "Implemented secure development practices including input validation and role-based access considerations.",
-        "Collaborated with backend, QA, and product teams to deliver features and support production releases.",
-        "Improved maintainability through structured code reviews, modular component design, and consistent documentation.",
-        "Diagnosed and resolved 100+ production bugs across UI and API layers, and contributed to Jest test coverage for UI behavior and API interactions.",
+        "Built Redwood-style enterprise interfaces in Oracle Visual Builder Studio for BHE-HCM and BHE-CX workflows including payroll approvals, employee scheduling, absence management, work orders, inspections, and asset-maintenance operations using Oracle Fusion REST APIs.",
+        "Developed reusable frontend components for HCM and CX modules used across enterprise teams for employee records, scheduling systems, approval workflows, inspection forms, and operational dashboards.",
+        "Engineered API integration layers with structured validation, RBAC-aware handling, and secure REST interactions across distributed Oracle Fusion modules.",
+        "Collaborated with backend and QA teams during Agile Scrum release cycles to debug cross-module workflow failures.",
+        "Resolved 100+ production issues across frontend and API layers, improving reliability and operational stability.",
         "Received an Employee Recognition Award for rapidly mastering Oracle VBS and being selected to support the BHE-HCM product team."
       ],
       "technologies": [
@@ -98,9 +99,7 @@
         "REST APIs",
         "Oracle Fusion Cloud",
         "Oracle Redwood Design System",
-        "Jest",
-        "JIRA",
-        "Agile"
+        "Agile Scrum"
       ],
       "tags": [
         "Enterprise",

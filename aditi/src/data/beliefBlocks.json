@@ -15,7 +15,7 @@
     {
       "number": "03",
       "title": "Security baked in from line one.",
-      "description": "Input validation, RBAC, rate limiting, JWT, not sprinkled on at the end when someone files a bug report."
+      "description": "Input validation, sanitization, RBAC, rate limiting, JWT, not sprinkled on at the end when someone files a bug report."
     },
     {
       "number": "04",
