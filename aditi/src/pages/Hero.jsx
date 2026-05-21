@@ -35,34 +35,41 @@ const Hero = () => {
             {availability} · {location} · {date}
           </motion.p>
 
-          <div className="space-y-4">
+          <div className="hero-heading">
             <motion.h1
-              className="max-w-4xl text-balance text-[clamp(2.3rem,6vw,5.2rem)] font-semibold leading-[0.94] tracking-[-0.055em]"
+              className="hero-heading-role"
               variants={fadeUp}
               custom={0.08}
             >
-              {hero.headline[0]}
+              {hero.headline.role}
             </motion.h1>
             <motion.p
-              className="max-w-4xl text-balance text-[clamp(1.75rem,3.8vw,3.1rem)] font-medium italic leading-[1] tracking-[-0.035em]"
+              className="hero-heading-ux"
               variants={fadeUp}
               custom={0.16}
             >
-              {hero.headline[1]}
+              {hero.headline.ux}
             </motion.p>
             <motion.p
-              className="max-w-3xl text-balance text-[clamp(1.3rem,2.4vw,2rem)] font-medium italic leading-[1.08] tracking-[-0.025em]"
+              className="hero-heading-ai"
               variants={fadeUp}
               custom={0.24}
             >
-              {hero.headline[2]}
+              {hero.headline.ai}
+            </motion.p>
+            <motion.p
+              className="hero-heading-note"
+              variants={fadeUp}
+              custom={0.3}
+            >
+              <em>{hero.headline.note}</em>
             </motion.p>
           </div>
 
           <motion.p
             className="max-w-2xl text-[1rem] leading-7 text-ink/76 md:text-[1.05rem]"
             variants={fadeUp}
-            custom={0.32}
+            custom={0.36}
           >
             {hero.subtext}
           </motion.p>
@@ -70,7 +77,7 @@ const Hero = () => {
           <motion.div
             className="flex flex-wrap gap-3 pt-1 text-[0.75rem] uppercase tracking-[0.2em] text-ink/64"
             variants={fadeUp}
-            custom={0.37}
+            custom={0.41}
           >
             <a className="pill-primary" href="#work">
               View work

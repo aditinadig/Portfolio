@@ -53,9 +53,6 @@ const Projects = () => {
                       {project.type}
                       {project.context ? ` · ${project.context}` : ""}
                     </span>
-                    <span className="mt-2 block text-[0.68rem] uppercase tracking-[0.18em] text-ink/42">
-                      {project.date}
-                    </span>
                   </span>
                 </motion.button>
               );
@@ -81,10 +78,6 @@ const Projects = () => {
                     <h3 className="text-[clamp(1.8rem,2.6vw,2.75rem)] font-semibold leading-[1.02] tracking-[-0.045em]">
                       {activeProject.title}
                     </h3>
-                  </div>
-
-                  <div className="rounded-[1rem] bg-[#fbfaf6] px-3 py-2 text-sm leading-5 text-ink/68 lg:min-w-[11rem]">
-                    {activeProject.date}
                   </div>
                 </div>
 

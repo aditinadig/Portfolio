@@ -4,104 +4,79 @@
   "witLine": "// highlighted in green = things i reach for first",
   "columns": [
     {
-      "title": "Languages & frameworks",
+      "title": "Languages",
       "items": [
-        { "label": "React", "primary": true },
-        { "label": "TypeScript", "primary": true },
         { "label": "JavaScript ES6+", "primary": true },
-        { "label": "Next.js" },
-        { "label": "Node.js", "primary": true },
-        { "label": "Express.js" },
+        { "label": "TypeScript", "primary": true },
         { "label": "Python" },
         { "label": "SQL" },
-        { "label": "Astro" },
-        { "label": "Vite" },
+        { "label": "HTML/CSS", "primary": true }
+      ]
+    },
+    {
+      "title": "Frameworks & libraries",
+      "items": [
+        { "label": "React", "primary": true },
+        { "label": "Next.js" },
+        { "label": "Node.js", "primary": true },
         { "label": "Tailwind CSS", "primary": true },
-        { "label": "SCSS" },
-        { "label": "Framer Motion" },
-        { "label": "TanStack" },
         { "label": "GraphQL" },
         { "label": "Socket.IO" },
         { "label": "Chart.js", "primary": true }
       ]
     },
     {
-      "title": "Data, APIs & infrastructure",
-      "items": [
-        { "label": "Supabase", "primary": true },
-        { "label": "PostgreSQL" },
-        { "label": "REST APIs", "primary": true },
-        { "label": "Firebase" },
-        { "label": "MongoDB" },
-        { "label": "MySQL" },
-        { "label": "Redis" },
-        { "label": "Sequelize" },
-        { "label": "JWT" },
-        { "label": "OAuth2/OIDC" },
-        { "label": "AWS" },
-        { "label": "Docker" },
-        { "label": "Kubernetes" },
-        { "label": "Netlify", "primary": true },
-        { "label": "GitHub Actions" }
-      ]
-    },
-    {
-      "title": "AI, design & research",
+      "title": "AI & tooling",
       "items": [
         { "label": "GitHub Copilot", "primary": true },
-        { "label": "Codex", "primary": true },
-        { "label": "Claude" },
         { "label": "Prompt engineering", "primary": true },
-        { "label": "MCP", "primary": true },
-        { "label": "Figma", "primary": true },
+        { "label": "Specification-driven development", "primary": true },
         { "label": "LLM API integration" },
-        { "label": "Spec-driven development" },
-        { "label": "HCI", "primary": true },
-        { "label": "Usability testing" },
-        { "label": "User interviews" },
-        { "label": "Wireframing" },
-        { "label": "Prototyping" },
-        { "label": "Thematic analysis" },
-        { "label": "A/B testing" }
+        { "label": "MCP", "primary": true },
+        { "label": "GitHub" },
+        { "label": "GitHub Actions" },
+        { "label": "Netlify" },
+        { "label": "Oracle VBS/VBCS" }
       ]
     },
     {
-      "title": "Security",
+      "title": "Data & infrastructure",
+      "items": [
+        { "label": "REST APIs", "primary": true },
+        { "label": "PostgreSQL" },
+        { "label": "Supabase", "primary": true },
+        { "label": "Firebase" },
+        { "label": "MongoDB" },
+        { "label": "AWS" },
+        { "label": "Docker" },
+        { "label": "Kubernetes" }
+      ]
+    },
+    {
+      "title": "Security, testing & performance",
       "items": [
         { "label": "RBAC", "primary": true },
-        { "label": "Input validation", "primary": true },
-        { "label": "Input sanitization", "primary": true },
+        { "label": "Input validation & sanitization", "primary": true },
         { "label": "Rate limiting", "primary": true },
-        { "label": "Hashing" },
-        { "label": "HTTPS" },
-        { "label": "OAuth2" },
-        { "label": "OIDC" }
-      ]
-    },
-    {
-      "title": "Testing & performance",
-      "items": [
+        { "label": "JWT" },
+        { "label": "OAuth2/OIDC" },
         { "label": "Jest" },
+        { "label": "Usability testing" },
+        { "label": "A/B testing" },
         { "label": "Lighthouse", "primary": true },
-        { "label": "k6" },
         { "label": "Lazy loading", "primary": true },
-        { "label": "API optimization", "primary": true },
-        { "label": "Caching strategies", "primary": true },
         { "label": "Memoization" },
         { "label": "State optimization" }
       ]
     },
     {
-      "title": "Tools",
+      "title": "Design & research",
       "items": [
-        { "label": "Git", "primary": true },
-        { "label": "GitHub", "primary": true },
-        { "label": "Jira" },
-        { "label": "Postman" },
-        { "label": "Notion" },
-        { "label": "Netlify" },
-        { "label": "Adobe Suite" },
-        { "label": "Oracle VBS/VBCS" }
+        { "label": "Figma", "primary": true },
+        { "label": "Wireframing" },
+        { "label": "HCI", "primary": true },
+        { "label": "User interviews" },
+        { "label": "Reflexive Thematic Analysis", "primary": true }
       ]
     }
   ]

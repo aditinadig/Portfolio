@@ -12,11 +12,12 @@
     { "label": "Contact", "href": "#contact" }
   ],
   "hero": {
-    "headline": [
-      "Software engineer who cares about UX",
-      "and uses AI well enough to keep the answers.",
-      "Also sings. On pitch."
-    ],
+    "headline": {
+      "role": "Software engineer",
+      "ux": "cares about UX",
+      "ai": "uses AI well enough to keep the answers.",
+      "note": "Also sings. On pitch."
+    },
     "subtext": "I have industry experience across healthcare, education, and enterprise teams, building interfaces, synchronization workflows, dashboards, and payment flows that people rely on day to day. I care about clear UX, reliable data flow, and software that still makes sense when the edge cases show up.",
     "cards": [
       {
@@ -31,18 +32,18 @@
       },
       {
         "label": "Education",
-        "text": "MS Computer Science · UIC · May 2026",
-        "detail": "GPA 3.83 · Software Eng, HCI, Distributed Systems"
+        "text": "MS Computer Science · UIC",
+        "detail": "GPA 3.86 · Software Eng, HCI, Distributed Systems"
       },
       {
         "label": "Stack",
-        "text": "React · TypeScript · Node.js · REST APIs",
+        "text": "React · TypeScript · Node.js · REST",
         "detail": "+ Chart.js, Stripe, Figma, Copilot, MCP, and performance tuning"
       },
       {
         "label": "Also",
-        "text": "Professional singer · 100+ competitions won",
-        "detail": "Coordination is emotional before it is logistical."
+        "text": "Singer · Mobile Legends player",
+        "detail": "Mythic rank · Beatrix main · 2000+ expertise · 100+ singing wins"
       },
       {
         "label": "Researching",

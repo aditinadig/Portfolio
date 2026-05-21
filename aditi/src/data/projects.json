@@ -7,7 +7,6 @@
       "anchorId": "projects",
       "type": "Product",
       "context": "Personal project",
-      "date": "April 2026 – Present",
       "overview": "Software teams have no shortage of sprint tracking tools, but many are too heavy or too disconnected from where the actual work happens. Engineers lose context moving between GitHub, Jira, Slack, and their calendar. I built SprintDesk as a lightweight, real-time Kanban tracker that brings the right context into one place without asking people to change how they already work.",
       "responsibilities": [
         "Built a task management app using React 19, TypeScript, and Supabase with a drag-and-drop Kanban board and full sprint cycle tracking.",
@@ -41,7 +40,6 @@
       "title": "Cue",
       "type": "HCI",
       "context": "UIC coursework",
-      "date": "Sept 2025 – Dec 2025",
       "overview": "Coordinating a music rehearsal sounds simple until you are the one doing it. Different singers, musicians, and managers all need different information, and most groups still manage that through chats and spreadsheets. As a professional singer, I built Cue to reduce coordination errors and rehearsal downtime with a role-based platform where each person sees exactly what they need.",
       "responsibilities": [
         "Conducted user interviews with singers, musicians, and ensemble coordinators to identify coordination gaps before designing wireframes and high-fidelity Figma prototypes following HCI principles.",
@@ -85,7 +83,6 @@
       "anchorId": "research",
       "type": "Research",
       "context": "Reflective Thematic Analysis",
-      "date": "Jan 2026 – May 2026",
       "overview": "Every conversation about AI in education quickly becomes a conversation about something deeper: what learning is for, whether struggle matters, and who education has really been designed to serve. This study explores how AI reveals both what people hope learning can become and what they fear losing.",
       "responsibilities": [
         "Collected and processed public comments across opposing conversations about AI in education, including a second dataset of 303 YouTube comments.",
