@@ -1,0 +1,32 @@
+{
+  "eyebrow": "Why UX stuck with me",
+  "title": "Small frustrations stay in my head longer than they should.",
+  "dek": "I notice friction before I have language for it. Then I keep picking at it until the experience makes sense.",
+  "panels": [
+    {
+      "kicker": "The tiny bug IRL",
+      "title": "My extension box had one job.",
+      "paragraphs": [
+        "It kept falling off my bedside table whenever I moved in my sleep. Deeply irritating. So I taped it down, adjusted the placement, and finally stopped thinking about it.",
+        "That is very me. If something feels inconvenient or unnecessarily difficult, my brain refuses to let it stay vague. I start asking: why does this feel annoying, why does this take more effort than it should, and how could this be simpler?"
+      ],
+      "pullQuote": "Over time, I realized this way of thinking had a name: UX.",
+      "afterQuote": "Spacing changes readability. Button placement changes behavior. One confusing interaction can make an entire product feel broken even when the code is technically working. That changed how I looked at software: not as just code, but as a series of decisions shaping someone's experience moment by moment."
+    },
+    {
+      "kicker": "Humility",
+      "title": "The kind of engineer I want to be.",
+      "paragraphs": [
+        "It also shaped the kind of engineer I want to be. I respect engineers who can say, \"I don't know yet,\" ask better questions, take feedback without making it weird, and care more about solving the problem correctly than protecting their ego."
+      ]
+    },
+    {
+      "kicker": "Why frontend",
+      "title": "It never felt random.",
+      "paragraphs": [
+        "Every technical decision affects how a real person experiences a product. I like that immediacy. A small change can instantly make something clearer, calmer, faster, or easier to trust.",
+        "Frontend did not feel like a random specialization. It felt like the natural result of how I already thought, long before I knew what UX even was."
+      ]
+    }
+  ]
+}

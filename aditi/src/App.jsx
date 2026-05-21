@@ -6,6 +6,7 @@ import Projects from "./pages/Projects";
 import ProblemApproach from "./pages/ProblemApproach";
 import RoleFit from "./pages/RoleFit";
 import TechStack from "./pages/TechStack";
+import UxOrigin from "./pages/UxOrigin";
 import WorkExperience from "./pages/WorkExperience";
 import HireMe from "./pages/HireMe";
 
@@ -15,6 +16,7 @@ function App() {
       <Navbar />
       <main>
         <Hero />
+        <UxOrigin />
         <ProblemApproach />
         <WorkExperience />
         <Projects />
