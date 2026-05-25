@@ -33,7 +33,7 @@
       {
         "label": "Education",
         "text": "MS Computer Science · UIC",
-        "detail": "GPA 3.86 · Software Eng, HCI, Distributed Systems"
+        "detail": "GPA 3.86 · HCI, UI/UX Design, Software Eng, Secure Web Apps"
       },
       {
         "label": "Stack",
@@ -47,8 +47,8 @@
       },
       {
         "label": "Researching",
-        "text": "AI, education, and what people believe learning is for",
-        "detail": "Because it matters for what we build."
+        "text": "Game audio, UX, and how sound shapes player emotion",
+        "detail": "Mobile Legends battle music as real-time feedback."
       }
     ],
     "witLine": "// yes, i reviewed this entire page like a PR before shipping it"
