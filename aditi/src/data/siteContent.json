@@ -14,11 +14,11 @@
   "hero": {
     "headline": {
       "role": "Software engineer",
-      "ux": "cares about UX",
-      "ai": "uses AI well enough to keep the answers.",
-      "note": "Also sings. On pitch."
+      "ux": "who cares about UX",
+      "ai": "who uses AI well enough to keep the answers.",
+      "note": "who also sings. On pitch."
     },
-    "subtext": "I have industry experience across healthcare, education, and enterprise teams, building interfaces, synchronization workflows, dashboards, and payment flows that people rely on day to day. I care about clear UX, reliable data flow, and software that still makes sense when the edge cases show up.",
+    "subtext": "I am a 25-year-old woman with strong opinions about anything that makes life harder for no reason. My industry experience spans healthcare, education, and enterprise workflows, where I build tools that make messy systems feel clearer. I am currently researching how music in an online mobile game shapes emotion, attention, and experience.",
     "cards": [
       {
         "label": "Currently",
@@ -47,7 +47,7 @@
       },
       {
         "label": "Researching",
-        "text": "Game audio, UX, and how sound shapes player emotion",
+        "text": "Game audio and player emotion",
         "detail": "Mobile Legends battle music as real-time feedback."
       }
     ],
@@ -55,7 +55,7 @@
   },
   "footer": {
     "eyebrow": "Contact",
-    "title": "Let's build something good.",
+    "title": "If the answer is yes, let's talk.",
     "email": "aditiarunnadig@gmail.com",
     "links": [
       {

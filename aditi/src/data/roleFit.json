@@ -1,7 +1,7 @@
 {
   "eyebrow": "What I am looking for",
   "title": "A role where UX, engineering, and communication all matter.",
-  "intro": "I am especially interested in frontend-focused roles because I love analyzing how people move through a product and building interfaces that make that experience clearer. My HCI coursework strengthened that instinct, and my work has made me even more convinced that good UX is an engineering responsibility too.",
+  "intro": "A professor once told me that by the time someone reaches the conclusion of a research paper, they should already know the answer to the research question. I think about this portfolio the same way. The question is simple: would I be a strong person to hire? By this point, I want the work, choices, and way I think to have already made that answer feel clear.",
   "cards": [
     {
       "title": "Frontend-focused",
@@ -20,5 +20,5 @@
       "description": "I do my best work in good-natured environments where people are serious about quality without being performative, dismissive, or chaotic."
     }
   ],
-  "closing": "The best fit for me is a team that cares about craft, users, maintainable systems, and the humans building them."
+  "closing": "The short version: I am looking for a team where making things easier for people, building maintainable systems, and communicating clearly all matter."
 }

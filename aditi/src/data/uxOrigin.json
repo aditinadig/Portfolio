@@ -1,31 +1,32 @@
 {
   "eyebrow": "Why UX stuck with me",
-  "title": "Small frustrations stay in my head longer than they should.",
-  "dek": "I notice friction before I have language for it. Then I keep picking at it until the experience makes sense.",
+  "title": "I notice when small setups make life easier than expected.",
+  "dek": "Before I knew to call it UX, I was already paying attention to repeated friction, thoughtful shortcuts, and the quiet relief of a design that makes the next step obvious.",
   "panels": [
     {
       "kicker": "The tiny bug IRL",
-      "title": "My extension box had one job.",
+      "title": "I like making my life easier.",
       "paragraphs": [
-        "It kept falling off my bedside table whenever I moved in my sleep. Deeply irritating. So I taped it down, adjusted the placement, and finally stopped thinking about it.",
-        "That is very me. If something feels inconvenient or unnecessarily difficult, my brain refuses to let it stay vague. I start asking: why does this feel annoying, why does this take more effort than it should, and how could this be simpler?"
+        "One tiny example: I use clip hangers for all my denims because folding them every day is annoying, and stacked jeans make my wardrobe messy fast. Clip hangers make the whole thing easier. I can see what I own, pull out what I need, put things back quickly, and the wardrobe still looks clean.",
+        "It is not a dramatic life hack. It is just me noticing that one repeated action had unnecessary friction and changing the setup so it worked better for how I actually live. If something feels inconvenient, I start reverse-engineering the annoyance: what assumption is the design making, where am I doing extra work, and how can this be simpler?"
       ],
-      "pullQuote": "Over time, I realized this way of thinking had a name: UX.",
-      "afterQuote": "Spacing changes readability. Button placement changes behavior. One confusing interaction can make an entire product feel broken even when the code is technically working. That changed how I looked at software: not as just code, but as a series of decisions shaping someone's experience moment by moment."
+      "pullQuote": "Later, I realized there was a name for that instinct: UX.",
+      "afterQuote": "I notice good design too. When an object, space, or interface makes the next step obvious, I appreciate it. The best design quietly removes effort instead of making people adapt around it."
     },
     {
       "kicker": "Humility",
-      "title": "The kind of engineer I want to be.",
+      "title": "That changed what engineering meant to me.",
       "paragraphs": [
-        "It also shaped the kind of engineer I want to be. I respect engineers who can say, \"I don't know yet,\" ask better questions, take feedback without making it weird, and care more about solving the problem correctly than protecting their ego."
+        "Once I started seeing UX everywhere, software stopped feeling like just code. Every spacing choice, button placement, and interaction state shapes how someone experiences the product.",
+        "That is why humility matters to me. Good engineering requires admitting what you do not know yet, asking better questions, listening carefully, and taking feedback seriously. I respect engineers who care more about understanding the problem clearly than sounding like they already have every answer."
       ]
     },
     {
       "kicker": "Why frontend",
-      "title": "It never felt random.",
+      "title": "Frontend is where that instinct has somewhere to go.",
       "paragraphs": [
-        "Every technical decision affects how a real person experiences a product. I like that immediacy. A small change can instantly make something clearer, calmer, faster, or easier to trust.",
-        "Frontend did not feel like a random specialization. It felt like the natural result of how I already thought, long before I knew what UX even was."
+        "Frontend pulls together the things I naturally care about: logic, design, psychology, performance, accessibility, and the tiny moments where a user either feels guided or lost. Every technical decision is close to the person using the product, and I like that immediacy.",
+        "A small change can make something clearer, calmer, faster, or easier to trust. That is why frontend never felt like a random specialization to me. It felt like the natural result of how I already thought, long before I knew what UX even was."
       ]
     }
   ]
