@@ -54,7 +54,7 @@ const TechStack = () => {
 
         <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
           {techStack.columns.map((column, index) => (
-            <motion.article
+            <motion.details
               key={column.title}
               className="skills-category"
               initial={{ opacity: 0, y: 24 }}
@@ -63,13 +63,18 @@ const TechStack = () => {
               viewport={{ once: true, amount: 0.2 }}
               whileHover={{ y: -4 }}
             >
-              <div className="flex items-start justify-between gap-4">
+              <summary className="skills-category-summary">
                 <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-ink/78">
                   {column.title}
                 </h3>
-                <span className="skills-count">{column.items.length}</span>
-              </div>
-              <div className="mt-5 grid gap-2">
+                <span className="skills-category-actions">
+                  <span className="skills-count">{column.items.length}</span>
+                  <span className="skills-toggle-icon" aria-hidden="true">
+                    +
+                  </span>
+                </span>
+              </summary>
+              <div className="skills-category-content">
                 {column.items.map((item, itemIndex) => (
                   <div
                     key={item.label}
@@ -81,7 +86,7 @@ const TechStack = () => {
                   </div>
                 ))}
               </div>
-            </motion.article>
+            </motion.details>
           ))}
         </div>
       </div>

@@ -69,14 +69,6 @@ const ProblemApproach = () => {
                 <p className="mt-4 text-[0.96rem] leading-7 text-ink/72">
                   {stage.summary}
                 </p>
-
-                <div className="mt-5 flex flex-wrap gap-2">
-                  {stage.signals.map((signal) => (
-                    <span key={signal} className="skill-pill">
-                      {signal}
-                    </span>
-                  ))}
-                </div>
               </motion.article>
             ))}
           </div>

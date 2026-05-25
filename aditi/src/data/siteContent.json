@@ -4,21 +4,22 @@
   "availability": "Available",
   "date": "F-1 OPT",
   "nav": [
-    { "label": "Work", "href": "#work" },
-    { "label": "Skills", "href": "#skills" },
+    { "label": "UX", "href": "#ux-origin" },
     { "label": "Approach", "href": "#approach" },
+    { "label": "Work", "href": "#work" },
     { "label": "Projects", "href": "#projects" },
-    { "label": "Research", "href": "#research" },
+    { "label": "About", "href": "#about" },
+    { "label": "Fit", "href": "#fit" },
+    { "label": "Skills", "href": "#skills" },
     { "label": "Contact", "href": "#contact" }
   ],
   "hero": {
     "headline": {
       "role": "Software engineer",
       "ux": "who cares about UX",
-      "ai": "who uses AI well enough to keep the answers.",
-      "note": "who also sings. On pitch."
+      "ai": "who uses AI well enough to keep the answers."
     },
-    "subtext": "I am a 25-year-old woman with strong opinions about anything that makes life harder for no reason. My industry experience spans healthcare, education, and enterprise workflows, where I build tools that make messy systems feel clearer. I am currently researching how music in an online mobile game shapes emotion, attention, and experience.",
+    "subtext": "I am a 25-year-old woman with a low tolerance for things being harder than they need to be. Professionally, that means turning messy healthcare, education, and enterprise workflows into clearer tools. Academically, it means researching how music in an online mobile game can mess with emotion, attention, and experience.",
     "cards": [
       {
         "label": "Currently",
@@ -56,6 +57,10 @@
   "footer": {
     "eyebrow": "Contact",
     "title": "If the answer is yes, let's talk.",
+    "reviewCta": {
+      "label": "Write a review",
+      "href": "mailto:aditiarunnadig@gmail.com?subject=Portfolio%20review"
+    },
     "email": "aditiarunnadig@gmail.com",
     "links": [
       {

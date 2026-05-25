@@ -1,7 +1,13 @@
 {
   "eyebrow": "Why UX stuck with me",
   "title": "I notice when small setups make life easier than expected.",
-  "dek": "Before I knew to call it UX, I was already paying attention to repeated friction, thoughtful shortcuts, and the quiet relief of a design that makes the next step obvious.",
+  "dek": "",
+  "portfolioNote": {
+    "eyebrow": "Case in point",
+    "title": "I designed and developed this portfolio myself.",
+    "text": "AI was part of my workflow, but the decisions were mine. I decided what content to show, where it should appear, which section it belonged under, how each part of me should be categorized, and what frontend elements made the most sense for each kind of information. The whole goal was simple: help someone understand who I am, what I do, and how I think — without making them sit through a 20-minute scroll fest.",
+    "prompt": "So… did it work?"
+  },
   "panels": [
     {
       "kicker": "The tiny bug IRL",

@@ -16,20 +16,23 @@ const AboutMe = () => {
             <p className="eyebrow">{about.eyebrow}</p>
             <h2 className="section-title max-w-xl">{about.title}</h2>
             <p className="max-w-lg text-[1rem] leading-8 text-ink/72">
-              I like work where product behavior, interface clarity, and human context all
-              have to fit together.
+              Because yes, I write code. But I also overthink outfits, track tech gossip,
+              play ranked mobile games, sing on stages, and somehow make all of that feel
+              connected in my head.
             </p>
-            <motion.div
-              className="about-note"
-              initial={{ opacity: 0, y: 18 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.42, delay: 0.08 }}
-              viewport={{ once: true, amount: 0.2 }}
-            >
-              {about.paragraphs.map((paragraph) => (
-                <p key={paragraph}>{paragraph}</p>
-              ))}
-            </motion.div>
+            {about.paragraphs.length > 0 && (
+              <motion.div
+                className="about-note"
+                initial={{ opacity: 0, y: 18 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.42, delay: 0.08 }}
+                viewport={{ once: true, amount: 0.2 }}
+              >
+                {about.paragraphs.map((paragraph) => (
+                  <p key={paragraph}>{paragraph}</p>
+                ))}
+              </motion.div>
+            )}
           </motion.div>
 
           <div>

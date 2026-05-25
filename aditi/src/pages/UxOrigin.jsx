@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import siteContent from "../data/siteContent.json";
 import uxOrigin from "../data/uxOrigin.json";
 
 const UxOrigin = () => {
@@ -41,7 +42,15 @@ const UxOrigin = () => {
           >
             <p className="eyebrow">{uxOrigin.eyebrow}</p>
             <h2 className="section-title max-w-xl">{uxOrigin.title}</h2>
-            <p className="ux-origin-dek">{uxOrigin.dek}</p>
+            {uxOrigin.dek ? <p className="ux-origin-dek">{uxOrigin.dek}</p> : null}
+            <article className="ux-origin-portfolio-note">
+              <p className="ux-origin-kicker">{uxOrigin.portfolioNote.eyebrow}</p>
+              <h3>{uxOrigin.portfolioNote.title}</h3>
+              <p>{uxOrigin.portfolioNote.text}</p>
+              <a href={siteContent.footer.reviewCta.href} className="ux-origin-review-cta">
+                {uxOrigin.portfolioNote.prompt}
+              </a>
+            </article>
           </motion.div>
 
           <div className="ux-origin-scroll" aria-label="Why UX stuck with me cards">

@@ -57,13 +57,15 @@ const Hero = () => {
             >
               {hero.headline.ai}
             </motion.p>
-            <motion.p
-              className="hero-heading-note"
-              variants={fadeUp}
-              custom={0.3}
-            >
-              <em>{hero.headline.note}</em>
-            </motion.p>
+            {hero.headline.note ? (
+              <motion.p
+                className="hero-heading-note"
+                variants={fadeUp}
+                custom={0.3}
+              >
+                <em>{hero.headline.note}</em>
+              </motion.p>
+            ) : null}
           </div>
 
           <motion.p

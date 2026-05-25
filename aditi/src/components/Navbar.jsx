@@ -24,7 +24,7 @@ const Navbar = () => {
           Menu
         </button>
 
-        <ul className="hidden items-center gap-6 text-[0.72rem] uppercase tracking-[0.24em] text-ink/68 lg:flex">
+        <ul className="hidden items-center gap-4 text-[0.68rem] uppercase tracking-[0.22em] text-ink/68 xl:gap-5 lg:flex">
           {siteContent.nav.map((item) => (
             <li key={item.label}>
               <a className="transition duration-200 hover:-translate-y-[1px] hover:text-ink" href={item.href}>

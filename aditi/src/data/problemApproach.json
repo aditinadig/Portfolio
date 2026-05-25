@@ -1,100 +1,118 @@
 {
   "eyebrow": "How I approach a problem",
-  "title": "Think first. Build clearly. Review before shipping.",
-  "intro": "This is the part I care about most. I do not start with tools. I start with the problem, the edge cases, the data flow, and what might break later.",
+  "title": "How I work: bottom-up.",
+  "intro": "When I get a task, I work from the ground up: clarify the requirement, inspect the available data, make the system behavior explicit, implement, verify, and document the decisions.",
   "decisionGuide": [
     {
       "label": "I use AI for",
       "items": [
-        "Building first versions of components from clear specs",
-        "Doing repetitive refactors and cleanup",
-        "Getting first-pass test ideas",
-        "Comparing a few ways to build something",
-        "Drafting documentation for architecture and data flow"
+        "Summarizing requirements",
+        "Structuring available data",
+        "Drafting first versions",
+        "Debugging and edge-case ideas",
+        "Documentation passes"
       ]
     },
     {
       "label": "I do myself",
       "items": [
-        "System and data-flow decisions",
-        "Security-sensitive or risky logic",
-        "Reviewing every generated line before shipping",
-        "Making the final ship decision"
+        "Clarifying open questions",
+        "Choosing what data matters",
+        "Implementation decisions",
+        "Testing, debugging, and final review"
       ]
     }
   ],
   "stages": [
     {
       "id": "understand",
-      "label": "01 Understand",
-      "title": "Understand the real problem first",
-      "summary": "Before I build anything, I make the problem clear. What is actually broken? Who is affected? What matters most here?",
+      "label": "01 Clarify",
+      "title": "Align on requirements",
+      "summary": "I restate the task, clarify open questions, and confirm what done should look like before implementation starts.",
       "details": [
-        "I define the user, the failure point, and where the experience starts to break.",
-        "I separate the visible issue from the real cause.",
-        "I define what success looks like before I build."
+        "I restate the requirement in plain language.",
+        "I flag what I do not understand yet.",
+        "I confirm the expected outcome before moving ahead."
       ],
       "signals": [
-        "What does success look like?",
-        "What can go wrong?",
-        "What matters most here?"
+        "What is the ask?",
+        "What is unclear?",
+        "What does done mean?"
       ],
-      "aiRole": "AI can help me summarize notes, compare options, or draft a checklist.",
-      "myRole": "I decide what problem matters, what tradeoffs matter, and what done actually means."
+      "aiRole": "AI can summarize notes or draft a checklist.",
+      "myRole": "I own the clarification and alignment."
     },
     {
-      "id": "model",
-      "label": "02 Model",
-      "title": "Design the system before the UI",
-      "summary": "I think about data flow first. State, APIs, permissions, and error states come before polish.",
+      "id": "data",
+      "label": "02 Connect",
+      "title": "Inspect the inputs",
+      "summary": "I review the available data, identify useful relationships, and decide what needs to drive the implementation.",
       "details": [
-        "I map where data starts, how it changes, and where it can get out of sync.",
-        "I plan for loading, empty, error, and partial-data states from the start.",
-        "I treat security as part of the build, not cleanup at the end."
+        "I inspect what information already exists.",
+        "I look for relationships and gaps.",
+        "I use AI here if it helps me compare, summarize, or structure faster."
       ],
       "signals": [
-        "What is the source of truth?",
-        "Where can delay or inconsistency show up?",
-        "What should this user never be able to do?"
+        "What data exists?",
+        "What connects?",
+        "What is missing?"
       ],
-      "aiRole": "AI helps me move faster on diagrams, endpoint drafts, schema drafts, and outlines.",
-      "myRole": "I review the structure, catch weak assumptions, and make sure it matches real product behavior."
+      "aiRole": "AI can help summarize, compare, and organize options.",
+      "myRole": "I decide what is actually useful for the task."
     },
     {
       "id": "build",
       "label": "03 Build",
-      "title": "Use AI for speed, not thinking",
-      "summary": "Once the behavior is clear, I use AI to move faster. But only after the constraints, states, and contracts are already defined.",
+      "title": "Implement the solution",
+      "summary": "I gather missing context, choose the right structure, and build the requested behavior in a way that stays reviewable.",
       "details": [
-        "I write prompts from specs, not guesses.",
-        "I use AI for first drafts, repetitive work, refactors, and alternatives.",
-        "I keep the work grounded in clear expectations so the code stays easy to review."
+        "I gather missing context before committing to a direction.",
+        "I build around the real requirement.",
+        "I keep the implementation reviewable."
       ],
       "signals": [
-        "Can I explain every line this tool generated?",
-        "Did the code keep the edge cases right?",
-        "Would I still ship this if my name alone were on it?"
+        "Need more context?",
+        "Matches the ask?",
+        "Reviewable?"
       ],
-      "aiRole": "AI speeds up implementation, repetition, documentation passes, and trying a few options quickly.",
-      "myRole": "I own correctness, clarity, security, and whether the final code should ship."
+      "aiRole": "AI can speed up drafts, debugging, refactors, and alternatives.",
+      "myRole": "I own the implementation choices and quality."
     },
     {
       "id": "review",
-      "label": "04 Review",
-      "title": "Review everything like a PR",
-      "summary": "Generated or not, I review code carefully. I verify behavior, question assumptions, and test the parts most likely to fail.",
+      "label": "04 Test",
+      "title": "Test, debug, fix",
+      "summary": "I manually test edge cases, invalid inputs, missing states, permission gaps, and user-stuck points. When issues show up, I debug, fix, and retest.",
       "details": [
-        "I look for brittle logic, missing states, and shortcuts that only work in ideal cases.",
-        "I test edge cases, bad data paths, and permission boundaries.",
-        "I clean up naming, structure, and UX until the work feels solid."
+        "I test edge cases and bad data paths.",
+        "I check permission and state gaps.",
+        "I debug and retest after fixes."
       ],
       "signals": [
-        "If this breaks, where does it break first?",
-        "What did the happy path hide?",
-        "Is the product clearer now than it was before?"
+        "Bad data?",
+        "State gaps?",
+        "Fixed and retested?"
       ],
-      "aiRole": "AI can suggest tests, point out risky branches, or give a second pass on refactors.",
-      "myRole": "I make the final shipping call. If I cannot explain it, it does not go live."
+      "aiRole": "AI can suggest test cases and risky branches.",
+      "myRole": "I verify, debug, fix, and retest before shipping."
+    },
+    {
+      "id": "document",
+      "label": "05 Document",
+      "title": "Document the handoff",
+      "summary": "After the build works, I document what changed, why it works that way, and anything the next person should not have to rediscover.",
+      "details": [
+        "I write down key decisions and assumptions.",
+        "I explain setup, behavior, and edge cases where needed.",
+        "I keep the handoff clear enough to use later."
+      ],
+      "signals": [
+        "What changed?",
+        "Why this way?",
+        "What should others know?"
+      ],
+      "aiRole": "AI can help turn notes into cleaner documentation.",
+      "myRole": "I make sure the documentation is accurate and useful."
     }
   ]
 }

@@ -1,26 +1,27 @@
 {
   "eyebrow": "About me",
-  "title": "Engineer. Singer. Mobile gamer.",
-  "paragraphs": [
-    "I also keep myself unusually up to date. Reddit, TLDR, engineering discussions, product chatter, release notes, and AI tooling shifts are part of how I track a tech world that changes faster than most advice can keep up with.",
-    "Outside work, I play Mobile Legends: Bang Bang, a mobile team strategy battle game, at Mythic rank with 2000+ expertise. I mostly play Beatrix, which is very on-brand: positioning, timing, fast reads, and committing only when the angle is right."
-  ],
+  "title": "A quick peek outside the resume.",
+  "paragraphs": [],
   "values": [
     {
-      "title": "Full-circle ownership",
-      "description": "UX, logic, data flow, performance, documentation, and polish all have to make sense before something ships."
+      "title": "Chronically online, usefully",
+      "description": "I use Reddit, Instagram, and TLDR for all kinds of information: trends, opinions, niche rabbit holes, product chatter, what people are quietly annoyed by, and yes, technical stuff too. Adding this point here to showcase my excellent work-life balance."
     },
     {
-      "title": "Structure and soul",
-      "description": "Code with logic. Design with emotion. Both matter. That is what creates real connection between a product and a person."
+      "title": "Mobile Legends brain",
+      "description": "Outside work, I play Mobile Legends: Bang Bang, a mobile team strategy battle game, at Mythic rank with 2500+ expertise. I mostly play Beatrix, which is very on-brand: positioning, timing, fast reads, and committing only when the angle is right."
     },
     {
-      "title": "Clarity over complexity",
-      "description": "If it needs a paragraph to explain, it needs a redesign. Interfaces and code that make sense at a glance."
+      "title": "Singer on stage and screen",
+      "description": "I am a singer and I also do music production. I have participated in reality show competitions, sung playback for films, short films, and dramas, won 100+ awards across competitions, and performed on 100+ live stages."
     },
     {
-      "title": "Security from line one",
-      "description": "Input validation, RBAC, rate limits, and permission boundaries belong in the design, not in cleanup."
+      "title": "Fashion is serious business",
+      "description": "I love and live for fashion: clothes, shoes, bags, makeup, and the whole outfit as a complete idea. I sew outfits myself too, and yes, I own a sewing machine."
+    },
+    {
+      "title": "Recognized for showing up fully",
+      "description": "After 12th grade, I received the Best All-Rounder Award. After undergrad, I received the Best Outgoing Student Award and Cultural Ambassador Award. At Oracle, I received an Employee Recognition Award."
     }
   ]
 }
