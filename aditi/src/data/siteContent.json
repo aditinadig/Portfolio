@@ -22,9 +22,9 @@
     "subtext": "I am a 25-year-old woman with a low tolerance for things being harder than they need to be. Professionally, that means turning messy healthcare, education, and enterprise workflows into clearer tools. Academically, it means researching how music in an online mobile game can mess with emotion, attention, and experience.",
     "cards": [
       {
-        "label": "Currently",
+        "label": "Latest",
         "text": "Web Developer · UI Health",
-        "detail": "React apps, Node.js sync workflows, dashboards, and healthcare data reliability."
+        "detail": "Node.js sync pipelines, React workflows, dashboards, and healthcare data reliability."
       },
       {
         "label": "Previously",
@@ -39,12 +39,12 @@
       {
         "label": "Stack",
         "text": "React · TypeScript · Node.js · REST",
-        "detail": "+ Chart.js, Stripe, Figma, Copilot, MCP, and performance tuning"
+        "detail": "+ Chart.js, Stripe, Figma, Copilot, Claude Code, MCP, and performance tuning"
       },
       {
         "label": "Also",
         "text": "Singer · Mobile Legends player",
-        "detail": "Mythic rank · Beatrix main · 2000+ expertise · 100+ singing wins"
+        "detail": "Mythic rank · Beatrix main · 2500+ expertise · 100+ singing wins"
       },
       {
         "label": "Researching",

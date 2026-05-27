@@ -6,23 +6,24 @@
       "company": "UI Health",
       "role": "Web Developer",
       "type": "Part-time",
-      "date": "Sept 2025 – Present",
+      "date": "Sept 2025 – May 2026",
       "location": "Chicago, IL, USA",
-      "overview": "UI Health manages healthcare and academic operations that depend on faculty, residency, scheduling, and departmental data staying accurate and synchronized across internal systems and public-facing platforms. I build web applications and synchronization workflows that keep that information reliable for patients, staff, and students.",
+      "overview": "UI Health manages healthcare and academic operations across multiple internal systems. Faculty, residency, scheduling, and departmental data need to stay accurate and synchronized across all of them.",
       "responsibilities": [
-        "Contributing to a Node.js-based synchronization workflow that pulls faculty, residency, and scheduling data through REST APIs to validate records, detect inconsistencies, and reduce fragmented manual updates across disconnected healthcare systems.",
-        "Modernizing legacy scheduling, faculty management, residency, and academic event workflows into React-based applications using specification-driven development.",
-        "Improving accessibility, WCAG compliance, reusable component architecture, and cross-browser reliability across clinical and academic workflows.",
-        "Improving rendering performance and operational reliability using reusable hooks, state optimization, memoization, debounced search and filter workflows, lazy loading, and recovery handling for inconsistent API responses.",
-        "Building Chart.js dashboards and reusable workflow components that help departments monitor scheduling conflicts, residency coverage, and faculty operations."
+        "Extended and maintained a Node.js sync pipeline across multiple systems, adding validation, handling edge cases, and supporting new data types and systems.",
+        "Modernized legacy patient appointment scheduling, event registration, and academic registration workflows into React applications using specification-driven development.",
+        "Delivered better UX, WCAG-compliant accessibility, and reliable cross-browser performance across healthcare and academic workflows.",
+        "Improved frontend performance using memoization, lazy loading, debounced search and filter workflows, and graceful handling of inconsistent API responses.",
+        "Built Chart.js dashboards to help departments monitor scheduling conflicts, residency coverage, and faculty operations.",
+        "Accelerated development across workflows using Claude Code for code generation, debugging, and navigating large existing codebases."
       ],
       "technologies": [
         "React",
         "Node.js",
         "JavaScript",
         "Chart.js",
+        "Claude Code",
         "Figma",
-        "GitHub Copilot",
         "REST APIs",
         "CMS",
         "WCAG",
@@ -35,6 +36,7 @@
         "Accessibility",
         "Performance",
         "AI-assisted development",
+        "Claude Code",
         "Content automation",
         "Data synchronization",
         "Dashboards"
@@ -46,13 +48,12 @@
       "type": "Intern",
       "date": "May 2025 – Aug 2025",
       "location": "Chicago, IL, USA",
-      "overview": "LPS Health is a cardiovascular health and wellness platform focused on preventive care, educational content, community engagement, and donations. The organization needed reliable digital workflows for events, seminars, donations, and engagement, so I led a full-cycle website rebuild within a three-month internship.",
+      "overview": "LPS Health is a cardiovascular health and wellness platform focused on preventive care, educational content, community engagement, and donations. The organization needed reliable digital workflows, so I led a full-cycle website rebuild within a three-month internship.",
       "responsibilities": [
-        "Replaced a legacy frontend system with a modern React architecture, redesigning registration, educational, and donation workflows into centralized production-ready user experiences within a three-month timeline.",
+        "Replaced a legacy frontend with a modern React architecture as the sole developer in three months, using specification-driven development with GitHub Copilot and Claude to deliver the full rebuild independently.",
         "Improved Lighthouse accessibility score from 40 to 80 and reduced page load time by 70% using lazy loading, image optimization, frontend caching strategies, debounced form handling, state optimization, and accessibility-focused redesign decisions.",
         "Built secure Stripe Checkout workflows with validation, session management, payment recovery handling, and rate-limiting safeguards to improve donation reliability and prevent invalid transaction states.",
-        "Managed CI/CD pipelines through GitHub and Netlify to automate build and deployment processes.",
-        "Used Google Analytics insights to redesign registration and donation flows, improving workflow completion, engagement, SEO visibility, and frontend usability."
+        "Used Google Analytics to track bounce rates and time on page across health articles, identify underperforming content, and monitor search term data to improve SEO visibility."
       ],
       "technologies": [
         "React",
@@ -63,7 +64,9 @@
         "GitHub",
         "Netlify",
         "Lazy loading",
-        "Lighthouse"
+        "Lighthouse",
+        "GitHub Copilot",
+        "Claude"
       ],
       "tags": [
         "Nonprofit",
@@ -72,7 +75,7 @@
         "Analytics",
         "Performance",
         "Accessibility",
-        "CI/CD",
+        "AI-assisted development",
         "Sole developer"
       ]
     },
@@ -84,12 +87,11 @@
       "location": "Bengaluru, Karnataka, India",
       "overview": "Oracle Fusion Cloud builds enterprise applications that support large-scale business operations. I contributed to two Berkshire Hathaway Energy products: BHE-HCM for payroll, scheduling, employee records, and absence management, and BHE-CX Services for field service, work orders, asset maintenance, and inspections.",
       "responsibilities": [
-        "Built Redwood-style enterprise interfaces in Oracle Visual Builder Studio for BHE-HCM and BHE-CX workflows including payroll approvals, employee scheduling, absence management, work orders, inspections, and asset-maintenance operations using Oracle Fusion REST APIs.",
-        "Developed reusable frontend components for HCM and CX modules used across enterprise teams for employee records, scheduling systems, approval workflows, inspection forms, and operational dashboards.",
-        "Engineered API integration layers with structured validation, RBAC-aware handling, and secure REST interactions across distributed Oracle Fusion modules.",
-        "Collaborated with backend and QA teams during Agile Scrum release cycles to debug cross-module workflow failures.",
-        "Resolved 100+ production issues across frontend and API layers, improving reliability and operational stability.",
-        "Received an Employee Recognition Award for rapidly mastering Oracle VBS and being selected to support the BHE-HCM product team."
+        "Built Redwood-style enterprise interfaces for BHE-HCM and BHE-CX workflows including payroll approvals, employee scheduling, absence management, work orders, inspections, and asset maintenance operations.",
+        "Supported daily workflows for employees and field service teams across a large-scale energy organization.",
+        "Built reusable components for HCM and CX workflows that were adopted across enterprise projects, ensuring UI consistency and cutting redundant development work.",
+        "Engineered API integration layers with structured validation and secure REST interactions across distributed Oracle Fusion modules.",
+        "Collaborated with backend and QA teams during Agile Scrum release cycles to debug cross-module workflow failures and resolve 100+ production issues across frontend and API layers."
       ],
       "technologies": [
         "Oracle VBS/VBCS",

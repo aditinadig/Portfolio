@@ -42,10 +42,11 @@
       "context": "UIC coursework",
       "overview": "Coordinating music rehearsals through group chats creates missed updates, unclear ownership, and too much manual follow-up. As a singer who has dealt with that firsthand, I built Cue as a role-based rehearsal coordination platform for singers and musicians.",
       "responsibilities": [
-        "Conducted user interviews to understand rehearsal coordination gaps caused by group chats and scattered planning workflows.",
-        "Designed wireframes and high-fidelity Figma prototypes using HCI and UX principles to improve rehearsal planning workflows.",
-        "Developed a React-based platform with role-aware workflows, structured state management, and synchronized updates using Socket.IO and REST APIs.",
-        "Exploring Spotify Web API and Web Playback SDK integrations so users can play rehearsal songs directly inside Cue for smoother preparation."
+        "Built a music rehearsal coordination platform for performers after personally experiencing how unstructured planning made sessions chaotic and inefficient.",
+        "Led end-to-end UX research through user interviews and functional requirement definition, then validated decisions through cognitive walkthroughs with real users.",
+        "Made design decisions grounded in HCI principles including recognition over recall, progressive disclosure, and error prevention.",
+        "Iterated through multiple sketch evaluations to balance clarity, minimalism, and cognitive load.",
+        "Developed the platform in React with role-aware workflows and real-time sync through Socket.IO and REST APIs, using spec-driven development with Claude Code."
       ],
       "technologies": [
         "React",
@@ -54,7 +55,9 @@
         "REST APIs",
         "Figma",
         "HCI principles",
+        "Cognitive walkthroughs",
         "Usability testing",
+        "Claude Code",
         "Spotify Web API",
         "Web Playback SDK"
       ],
@@ -71,7 +74,7 @@
       "links": [
         {
           "label": "GitHub repo",
-          "href": "https://github.com/aditinadig/music-rehearsal-platform.git"
+          "href": "https://github.com/aditinadig/music-rehearsal-platform"
         }
       ]
     },
@@ -83,10 +86,10 @@
       "overview": "Mobile Legends: Bang Bang changes battle music during high-pressure gameplay moments, and those audio shifts can shape how players feel momentum, pressure, intensity, and flow. This study examines adaptive battle music as a real-time feedback system from a UX and HCI perspective.",
       "responsibilities": [
         "Conducting an independent UX and HCI research study on how adaptive battle music in Mobile Legends: Bang Bang shapes player emotion and gameplay experience.",
-        "Creating an observational dataset by tracking how battle background music changes during team fights, enemy wipes, Lord fights, comeback moments, and base-defense situations.",
-        "Linking audio transitions to emotional reactions during matches to study how sound affects perceived gameplay momentum and pressure.",
-        "Bringing a UX-focused perspective shaped by attention to small design choices and how they influence emotion and experience.",
-        "Combining long-term ranked player experience with musical sensitivity as a singer to analyze pacing, rhythm, and emotional shifts in sound."
+        "Creating an observational dataset by tracking how battle BGM changes during gameplay events including kills, enemy wipes, comeback moments, and high-pressure fights.",
+        "Linking audio transitions to emotional reactions during matches to study how sound affects perceived gameplay momentum, pressure, and intensity.",
+        "Bringing a unique research lens as both a long-term ranked player and a trained singer, combining firsthand gameplay experience with sensitivity to how sound, rhythm, and emotion interact during high-stakes moments.",
+        "Exploring how adaptive battle music functions as an unspoken feedback layer during matches."
       ],
       "technologies": [
         "UX research",

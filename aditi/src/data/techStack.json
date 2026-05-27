@@ -29,13 +29,11 @@
       "title": "AI & tooling",
       "items": [
         { "label": "GitHub Copilot", "primary": true },
+        { "label": "Claude Code", "primary": true },
         { "label": "Prompt engineering", "primary": true },
         { "label": "Specification-driven development", "primary": true },
         { "label": "LLM API integration" },
         { "label": "MCP", "primary": true },
-        { "label": "GitHub" },
-        { "label": "GitHub Actions" },
-        { "label": "Netlify" },
         { "label": "Oracle VBS/VBCS" }
       ]
     },
@@ -49,7 +47,9 @@
         { "label": "MongoDB" },
         { "label": "AWS" },
         { "label": "Docker" },
-        { "label": "Kubernetes" }
+        { "label": "Kubernetes" },
+        { "label": "GitHub Actions" },
+        { "label": "Netlify" }
       ]
     },
     {
