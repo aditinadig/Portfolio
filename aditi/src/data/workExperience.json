@@ -8,19 +8,26 @@
       "type": "Part-time",
       "date": "Sept 2025 – May 2026",
       "location": "Chicago, IL, USA",
-      "overview": "UI Health manages healthcare and academic operations across multiple internal systems. Faculty, residency, scheduling, and departmental data need to stay accurate and synchronized across all of them.",
+      "overview": "UI Health manages healthcare and academic operations across multiple internal systems. Faculty, scheduling, registration, and departmental data need to stay accurate, synchronized, and usable for the people running those workflows every day.",
       "responsibilities": [
-        "Extended and maintained a Node.js sync pipeline across multiple systems, adding validation, handling edge cases, and supporting new data types and systems.",
-        "Modernized legacy patient appointment scheduling, event registration, and academic registration workflows into React applications using specification-driven development.",
-        "Delivered better UX, WCAG-compliant accessibility, and reliable cross-browser performance across healthcare and academic workflows.",
-        "Improved frontend performance using memoization, lazy loading, debounced search and filter workflows, and graceful handling of inconsistent API responses.",
-        "Built Chart.js dashboards to help departments monitor scheduling conflicts, residency coverage, and faculty operations.",
-        "Accelerated development across workflows using Claude Code for code generation, debugging, and navigating large existing codebases."
+        "Led frontend development while managing a junior engineer, owning technical decisions across a React and Redux institutional platform for scheduling, registration, faculty management, and real-time dashboards serving 100+ daily active users.",
+        "Built an event-driven sync pipeline with Node.js, Celery, and Redis across 5+ systems, processing 1000+ records weekly with 0 downstream errors.",
+        "Migrated 20+ legacy workflows across 20+ pages into React, adding ESLint and TypeScript rules while delivering WCAG-compliant interfaces for 300+ faculty and staff.",
+        "Built 20+ reusable MUI wrapper components across two microfrontend apps, standardizing frontend architecture and reducing duplicate UI work.",
+        "Optimized data fetching with TanStack Query and server-side caching to improve performance across high-traffic scheduling and faculty management systems.",
+        "Shipped real-time Chart.js dashboards with memoization and lazy loading, eliminating render bottlenecks for department-facing operational views.",
+        "Used Claude Code for codebase navigation, debugging, code generation, and documentation to reduce delivery time without compromising quality."
       ],
       "technologies": [
         "React",
+        "Redux",
+        "TypeScript",
         "Node.js",
         "JavaScript",
+        "Celery",
+        "Redis",
+        "MUI",
+        "TanStack Query",
         "Chart.js",
         "Claude Code",
         "Figma",
@@ -35,9 +42,11 @@
         "Healthcare",
         "Accessibility",
         "Performance",
+        "Technical leadership",
         "AI-assisted development",
         "Claude Code",
-        "Content automation",
+        "Microfrontends",
+        "Event-driven architecture",
         "Data synchronization",
         "Dashboards"
       ]
@@ -48,19 +57,25 @@
       "type": "Intern",
       "date": "May 2025 – Aug 2025",
       "location": "Chicago, IL, USA",
-      "overview": "LPS Health is a cardiovascular health and wellness platform focused on preventive care, educational content, community engagement, and donations. The organization needed reliable digital workflows, so I led a full-cycle website rebuild within a three-month internship.",
+      "overview": "LPS Health is a cardiovascular health and wellness platform focused on preventive care, educational content, community engagement, and donations. The organization needed reliable digital workflows, so I led a full-cycle rebuild across frontend, backend, analytics, and deployment within a three-month internship.",
       "responsibilities": [
-        "Replaced a legacy frontend with a modern React architecture as the sole developer in three months, using specification-driven development with GitHub Copilot and Claude to deliver the full rebuild independently.",
-        "Improved Lighthouse accessibility score from 40 to 80 and reduced page load time by 70% using lazy loading, image optimization, frontend caching strategies, debounced form handling, state optimization, and accessibility-focused redesign decisions.",
-        "Built secure Stripe Checkout workflows with validation, session management, payment recovery handling, and rate-limiting safeguards to improve donation reliability and prevent invalid transaction states.",
-        "Used Google Analytics to track bounce rates and time on page across health articles, identify underperforming content, and monitor search term data to improve SEO visibility."
+        "Rebuilt a legacy product from scratch as the sole developer, shipping a React, Tailwind CSS, Node.js, and PostgreSQL architecture independently in three months using GitHub Copilot.",
+        "Improved Lighthouse from 40 to 80, cut load time by 70% through lazy loading, image optimization, and caching, and drove a 30% traffic increase through Google Analytics-informed SEO improvements.",
+        "Built a 10+ component design system across two brands, defining color tokens, spacing, and usage rules reused consistently across both platforms.",
+        "Designed and deployed secure REST API endpoints with pagination, caching, SQL query optimization, and rate limiting for event listings, donation workflows, and campaign pages.",
+        "Integrated Sentry for real-time error tracking, achieved 80% Jest coverage, and set up Netlify CI/CD for same-day hotfixes."
       ],
       "technologies": [
         "React",
         "Tailwind CSS",
         "JavaScript",
+        "Node.js",
+        "PostgreSQL",
+        "REST APIs",
         "Stripe API",
         "Google Analytics",
+        "Sentry",
+        "Jest",
         "GitHub",
         "Netlify",
         "Lazy loading",
@@ -75,23 +90,26 @@
         "Analytics",
         "Performance",
         "Accessibility",
+        "Design systems",
+        "Testing",
+        "CI/CD",
         "AI-assisted development",
         "Sole developer"
       ]
     },
     {
       "company": "Oracle",
-      "role": "Cloud Analyst · Frontend Developer",
+      "role": "Cloud Analyst · Technical Consultant",
       "type": "Full-time",
       "date": "Aug 2022 – Jun 2024",
       "location": "Bengaluru, Karnataka, India",
-      "overview": "Oracle Fusion Cloud builds enterprise applications that support large-scale business operations. I contributed to two Berkshire Hathaway Energy products: BHE-HCM for payroll, scheduling, employee records, and absence management, and BHE-CX Services for field service, work orders, asset maintenance, and inspections.",
+      "overview": "Oracle Fusion Cloud builds enterprise applications that support large-scale business operations. I worked with Berkshire Hathaway Energy stakeholders across operational systems, Oracle Fusion modules, frontend components, middleware, and API integrations.",
       "responsibilities": [
-        "Built Redwood-style enterprise interfaces for BHE-HCM and BHE-CX workflows including payroll approvals, employee scheduling, absence management, work orders, inspections, and asset maintenance operations.",
-        "Supported daily workflows for employees and field service teams across a large-scale energy organization.",
-        "Built reusable components for HCM and CX workflows that were adopted across enterprise projects, ensuring UI consistency and cutting redundant development work.",
-        "Engineered API integration layers with structured validation and secure REST interactions across distributed Oracle Fusion modules.",
-        "Collaborated with backend and QA teams during Agile Scrum release cycles to debug cross-module workflow failures and resolve 100+ production issues across frontend and API layers."
+        "Engaged directly with Berkshire Hathaway Energy stakeholders to gather requirements and translate business needs into production-ready interfaces.",
+        "Architected and maintained a standalone REST API middleware service on OCI, coordinating data synchronization across 10+ enterprise integrations between BHE operational systems and Oracle Fusion Cloud.",
+        "Delivered 20+ enterprise-grade Oracle VBS/VBCS components with documented usage rules and design tokens, adopted across 4+ modules.",
+        "Reduced redundant development effort across cross-functional teams of 10 to 20 developers, QA engineers, and consultants by standardizing reusable component patterns.",
+        "Resolved 100+ production issues across frontend, middleware, and API layers during Agile Scrum cycles, restoring workflows with minimal disruption."
       ],
       "technologies": [
         "Oracle VBS/VBCS",
@@ -99,6 +117,8 @@
         "HTML",
         "CSS",
         "REST APIs",
+        "OCI",
+        "Middleware",
         "Oracle Fusion Cloud",
         "Oracle Redwood Design System",
         "Agile Scrum"
@@ -110,6 +130,9 @@
         "Operations management",
         "Oracle Fusion Cloud",
         "Redwood",
+        "OCI",
+        "Middleware",
+        "Distributed systems",
         "Cross-team",
         "Employee Recognition Award"
       ]

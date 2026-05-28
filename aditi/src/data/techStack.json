@@ -22,6 +22,11 @@
         { "label": "Tailwind CSS", "primary": true },
         { "label": "GraphQL" },
         { "label": "Socket.IO" },
+        { "label": "Redux", "primary": true },
+        { "label": "Context API" },
+        { "label": "TanStack Query", "primary": true },
+        { "label": "MUI", "primary": true },
+        { "label": "Express.js" },
         { "label": "Chart.js", "primary": true }
       ]
     },
@@ -31,52 +36,85 @@
         { "label": "GitHub Copilot", "primary": true },
         { "label": "Claude Code", "primary": true },
         { "label": "Prompt engineering", "primary": true },
-        { "label": "Specification-driven development", "primary": true },
-        { "label": "LLM API integration" },
+        { "label": "Specification-based development", "primary": true },
+        { "label": "Cursor" },
         { "label": "MCP", "primary": true },
+        { "label": "ESLint" },
+        { "label": "Prettier" },
         { "label": "Oracle VBS/VBCS" }
       ]
     },
     {
       "title": "Data & infrastructure",
       "items": [
-        { "label": "REST APIs", "primary": true },
         { "label": "PostgreSQL" },
         { "label": "Supabase", "primary": true },
         { "label": "Firebase" },
         { "label": "MongoDB" },
+        { "label": "Redis", "primary": true },
         { "label": "AWS" },
         { "label": "Docker" },
         { "label": "Kubernetes" },
         { "label": "GitHub Actions" },
-        { "label": "Netlify" }
+        { "label": "Netlify" },
+        { "label": "OCI" },
+        { "label": "CI/CD", "primary": true }
       ]
     },
     {
-      "title": "Security, testing & performance",
+      "title": "Testing & quality",
+      "items": [
+        { "label": "Jest", "primary": true },
+        { "label": "Sentry", "primary": true },
+        { "label": "Usability testing" },
+        { "label": "A/B testing" },
+        { "label": "Unit testing" },
+        { "label": "End-to-end testing", "primary": true },
+        { "label": "Lighthouse", "primary": true },
+        { "label": "Debugging", "primary": true },
+        { "label": "Cross-browser testing" }
+      ]
+    },
+    {
+      "title": "Security",
       "items": [
         { "label": "RBAC", "primary": true },
         { "label": "Input validation & sanitization", "primary": true },
         { "label": "Rate limiting", "primary": true },
         { "label": "JWT" },
         { "label": "OAuth2/OIDC" },
-        { "label": "Jest" },
-        { "label": "Usability testing" },
-        { "label": "A/B testing" },
-        { "label": "Lighthouse", "primary": true },
+        { "label": "Session management", "primary": true },
+        { "label": "API security", "primary": true }
+      ]
+    },
+    {
+      "title": "Architecture & systems",
+      "items": [
+        { "label": "REST APIs", "primary": true },
+        { "label": "Microfrontends", "primary": true },
+        { "label": "Event-driven architecture", "primary": true },
+        { "label": "Distributed systems" },
+        { "label": "State management", "primary": true },
+        { "label": "Real-time systems", "primary": true },
         { "label": "Lazy loading", "primary": true },
         { "label": "Memoization" },
-        { "label": "State optimization" }
+        { "label": "Server-side caching", "primary": true }
       ]
     },
     {
       "title": "Design & research",
       "items": [
         { "label": "Figma", "primary": true },
+        { "label": "Figma AI" },
         { "label": "Wireframing" },
         { "label": "HCI", "primary": true },
         { "label": "User interviews" },
-        { "label": "Reflexive Thematic Analysis", "primary": true }
+        { "label": "Reflexive Thematic Analysis", "primary": true },
+        { "label": "Design systems", "primary": true },
+        { "label": "Design tokens" },
+        { "label": "Accessibility (WCAG)", "primary": true },
+        { "label": "Information architecture" },
+        { "label": "User flows" }
       ]
     }
   ]

@@ -40,23 +40,28 @@
       "title": "Cue",
       "type": "HCI",
       "context": "UIC coursework",
-      "overview": "Coordinating music rehearsals through group chats creates missed updates, unclear ownership, and too much manual follow-up. As a singer who has dealt with that firsthand, I built Cue as a role-based rehearsal coordination platform for singers and musicians.",
+      "overview": "Coordinating music rehearsals through group chats creates missed updates, unclear ownership, and too much manual follow-up. As a singer who has dealt with that firsthand, I built Cue as a real-time collaborative platform for musicians to coordinate rehearsals, manage session roles, and sync practice schedules across performers.",
       "responsibilities": [
-        "Built a music rehearsal coordination platform for performers after personally experiencing how unstructured planning made sessions chaotic and inefficient.",
-        "Led end-to-end UX research through user interviews and functional requirement definition, then validated decisions through cognitive walkthroughs with real users.",
+        "Ran user interviews, surveys, and competitor analysis, then synthesized findings into personas and empathy maps to define information architecture, navigation flows, and interaction patterns.",
+        "Validated high-fidelity Figma prototypes through usability testing and cognitive walkthroughs before writing code.",
         "Made design decisions grounded in HCI principles including recognition over recall, progressive disclosure, and error prevention.",
-        "Iterated through multiple sketch evaluations to balance clarity, minimalism, and cognitive load.",
-        "Developed the platform in React with role-aware workflows and real-time sync through Socket.IO and REST APIs, using spec-driven development with Claude Code."
+        "Set up the TypeScript, React, Node.js, and Supabase stack from scratch using Claude Code, owning architecture decisions across Context API state management, role-awareness, and real-time session sync.",
+        "Added usability, unit, and end-to-end test coverage around the core rehearsal coordination flows."
       ],
       "technologies": [
         "React",
         "TypeScript",
+        "Node.js",
+        "Supabase",
+        "Context API",
         "Socket.IO",
         "REST APIs",
         "Figma",
         "HCI principles",
         "Cognitive walkthroughs",
         "Usability testing",
+        "Unit testing",
+        "End-to-end testing",
         "Claude Code",
         "Spotify Web API",
         "Web Playback SDK"
@@ -67,6 +72,8 @@
         "Role-based UI",
         "Real-time",
         "UX",
+        "Information architecture",
+        "Testing",
         "Figma",
         "Singer-built"
       ],
@@ -83,18 +90,19 @@
       "anchorId": "research",
       "type": "Research",
       "context": "Independent research study",
-      "overview": "Mobile Legends: Bang Bang changes battle music during high-pressure gameplay moments, and those audio shifts can shape how players feel momentum, pressure, intensity, and flow. This study examines adaptive battle music as a real-time feedback system from a UX and HCI perspective.",
+      "overview": "Mobile Legends: Bang Bang changes battle music during high-pressure gameplay moments, and those audio shifts can shape player emotion, decisions, perceived momentum, pressure, intensity, and flow. This study examines adaptive battle music as a real-time feedback system from a UX and HCI perspective.",
       "responsibilities": [
-        "Conducting an independent UX and HCI research study on how adaptive battle music in Mobile Legends: Bang Bang shapes player emotion and gameplay experience.",
-        "Creating an observational dataset by tracking how battle BGM changes during gameplay events including kills, enemy wipes, comeback moments, and high-pressure fights.",
-        "Linking audio transitions to emotional reactions during matches to study how sound affects perceived gameplay momentum, pressure, and intensity.",
-        "Bringing a unique research lens as both a long-term ranked player and a trained singer, combining firsthand gameplay experience with sensitivity to how sound, rhythm, and emotion interact during high-stakes moments.",
+        "Designing an HCI research framework and observational dataset to study how adaptive battle music affects player emotion, decisions, and perceived momentum.",
+        "Tracking battle BGM changes during gameplay events including kills, enemy wipes, comeback moments, and high-pressure fights.",
+        "Applying reflexive thematic analysis to surface patterns in how sound, rhythm, and emotional pressure interact during matches.",
+        "Approaching the research as both a long-term ranked competitive player and a formally trained classical singer, bringing a rare dual lens to the study.",
         "Exploring how adaptive battle music functions as an unspoken feedback layer during matches."
       ],
       "technologies": [
         "UX research",
         "HCI",
         "Observational research",
+        "Reflexive thematic analysis",
         "Gameplay analysis",
         "Mobile Legends: Bang Bang",
         "Dynamic game audio"

@@ -24,7 +24,7 @@
       {
         "label": "Latest",
         "text": "Web Developer · UI Health",
-        "detail": "Node.js sync pipelines, React workflows, dashboards, and healthcare data reliability."
+        "detail": "React, Redux, Node.js, Celery, Redis, microfrontends, dashboards, and healthcare data reliability."
       },
       {
         "label": "Previously",
@@ -38,8 +38,8 @@
       },
       {
         "label": "Stack",
-        "text": "React · TypeScript · Node.js · REST",
-        "detail": "+ Chart.js, Stripe, Figma, Copilot, Claude Code, MCP, and performance tuning"
+        "text": "React · TypeScript · Node.js · PostgreSQL",
+        "detail": "+ Redux, TanStack Query, MUI, Supabase, Redis, Stripe, Sentry, Jest, Copilot, Claude Code, and MCP"
       },
       {
         "label": "Also",
