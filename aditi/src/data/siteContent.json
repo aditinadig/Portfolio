@@ -1,6 +1,6 @@
 {
   "name": "Aditi Arun Nadig",
-  "location": "Chicago, IL",
+  "location": "India",
   "availability": "Available",
   "date": "F-1 OPT",
   "nav": [
@@ -24,7 +24,7 @@
       {
         "label": "Latest",
         "text": "Web Developer · UI Health",
-        "detail": "React, Redux, Node.js, Celery, Redis, microfrontends, dashboards, and healthcare data reliability."
+        "detail": "React, Redux, Node.js, Celery, Redis, microfrontends, dashboards, mentoring, and healthcare data reliability."
       },
       {
         "label": "Previously",
@@ -39,7 +39,7 @@
       {
         "label": "Stack",
         "text": "React · TypeScript · Node.js · PostgreSQL",
-        "detail": "+ Redux, TanStack Query, MUI, Supabase, Redis, Stripe, Sentry, Jest, Copilot, Claude Code, and MCP"
+        "detail": "+ Redux, TanStack Query, Supabase, Redis, Stripe, Sentry, Jest, Git, Copilot, Claude Code, and MCP"
       },
       {
         "label": "Also",

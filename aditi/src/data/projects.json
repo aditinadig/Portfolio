@@ -45,8 +45,7 @@
         "Ran user interviews, surveys, and competitor analysis, then synthesized findings into personas and empathy maps to define information architecture, navigation flows, and interaction patterns.",
         "Validated high-fidelity Figma prototypes through usability testing and cognitive walkthroughs before writing code.",
         "Made design decisions grounded in HCI principles including recognition over recall, progressive disclosure, and error prevention.",
-        "Set up the TypeScript, React, Node.js, and Supabase stack from scratch using Claude Code, owning architecture decisions across Context API state management, role-awareness, and real-time session sync.",
-        "Added usability, unit, and end-to-end test coverage around the core rehearsal coordination flows."
+        "Built the TypeScript, React, Node.js, and Supabase platform from scratch, owning architecture decisions around state management, real-time synchronization, testing, scalability, and user experience."
       ],
       "technologies": [
         "React",
@@ -62,7 +61,6 @@
         "Usability testing",
         "Unit testing",
         "End-to-end testing",
-        "Claude Code",
         "Spotify Web API",
         "Web Playback SDK"
       ],
@@ -92,11 +90,10 @@
       "context": "Independent research study",
       "overview": "Mobile Legends: Bang Bang changes battle music during high-pressure gameplay moments, and those audio shifts can shape player emotion, decisions, perceived momentum, pressure, intensity, and flow. This study examines adaptive battle music as a real-time feedback system from a UX and HCI perspective.",
       "responsibilities": [
-        "Designing an HCI research framework and observational dataset to study how adaptive battle music affects player emotion, decisions, and perceived momentum.",
+        "Designing an HCI research study and observational dataset to analyze how adaptive battle music affects player emotion, decisions, and game momentum.",
+        "Studying how sound shapes user experience under pressure during high-stakes gameplay moments.",
         "Tracking battle BGM changes during gameplay events including kills, enemy wipes, comeback moments, and high-pressure fights.",
-        "Applying reflexive thematic analysis to surface patterns in how sound, rhythm, and emotional pressure interact during matches.",
-        "Approaching the research as both a long-term ranked competitive player and a formally trained classical singer, bringing a rare dual lens to the study.",
-        "Exploring how adaptive battle music functions as an unspoken feedback layer during matches."
+        "Approaching the research as both a long-term ranked competitive player and a formally trained classical singer, bringing a rare dual lens to the study."
       ],
       "technologies": [
         "UX research",

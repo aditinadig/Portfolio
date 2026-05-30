@@ -41,6 +41,7 @@
         { "label": "MCP", "primary": true },
         { "label": "ESLint" },
         { "label": "Prettier" },
+        { "label": "Git", "primary": true },
         { "label": "Oracle VBS/VBCS" }
       ]
     },
@@ -96,6 +97,7 @@
         { "label": "Distributed systems" },
         { "label": "State management", "primary": true },
         { "label": "Real-time systems", "primary": true },
+        { "label": "Scalable web applications", "primary": true },
         { "label": "Lazy loading", "primary": true },
         { "label": "Memoization" },
         { "label": "Server-side caching", "primary": true }
@@ -114,7 +116,8 @@
         { "label": "Design tokens" },
         { "label": "Accessibility (WCAG)", "primary": true },
         { "label": "Information architecture" },
-        { "label": "User flows" }
+        { "label": "User flows" },
+        { "label": "Semantic HTML", "primary": true }
       ]
     }
   ]
