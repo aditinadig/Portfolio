@@ -1,65 +1,49 @@
-import { motion } from "framer-motion";
-import about from "../data/values.json";
+import { useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
+
+const facets = [
+  { icon: "♬", title: "Singer", short: "100+ stages", text: "Classical training, playback work, music production, and more than 100 competition wins taught me confidence without losing the ability to listen." },
+  { icon: "⌁", title: "Gamer", short: "Mythic rank", text: "I play Mobile Legends at Mythic rank. Positioning, timing, fast reads, and committing only when the angle is right feel surprisingly familiar." },
+  { icon: "✂", title: "Maker", short: "Yes, I sew", text: "I care about fashion as a complete system—and sew some of my own outfits. Good structure should still leave room for personality." },
+  { icon: "◎", title: "Observer", short: "UX everywhere", text: "I notice needless friction in software, wardrobes, group chats, and everyday objects. Then I start redesigning the setup in my head." },
+];
 
 const AboutMe = () => {
-  return (
-    <section id="about" className="section-shell pb-18 md:pb-28">
-      <div className="section-divider pb-14 pt-6 md:pt-8">
-        <div className="grid gap-10 lg:grid-cols-[minmax(0,0.72fr)_minmax(0,1.28fr)]">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true, amount: 0.2 }}
-            className="space-y-5 lg:sticky lg:top-6"
-          >
-            <p className="eyebrow">{about.eyebrow}</p>
-            <h2 className="section-title max-w-xl">{about.title}</h2>
-            <p className="max-w-lg text-[1rem] leading-8 text-ink/72">
-              Because yes, I write code. But I also overthink outfits, track tech gossip,
-              play ranked mobile games, sing on stages, and somehow make all of that feel
-              connected in my head.
-            </p>
-            {about.paragraphs.length > 0 && (
-              <motion.div
-                className="about-note"
-                initial={{ opacity: 0, y: 18 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.42, delay: 0.08 }}
-                viewport={{ once: true, amount: 0.2 }}
-              >
-                {about.paragraphs.map((paragraph) => (
-                  <p key={paragraph}>{paragraph}</p>
-                ))}
-              </motion.div>
-            )}
-          </motion.div>
+  const [active, setActive] = useState(0);
 
-          <div>
-            <div className="about-values-panel">
-              {about.values.map((value, index) => (
-                <motion.article
-                  key={value.title}
-                  className="about-value-row"
-                  initial={{ opacity: 0, y: 24 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.45, delay: index * 0.07 }}
-                  viewport={{ once: true, amount: 0.2 }}
-                  whileHover={{ x: 4 }}
-                >
-                  <span className="about-value-number">0{index + 1}</span>
-                  <div>
-                    <h3 className="text-lg font-semibold leading-snug">
-                      {value.title}
-                    </h3>
-                    <p className="mt-2 text-[0.95rem] leading-7 text-ink/72">
-                      {value.description}
-                    </p>
-                  </div>
-                </motion.article>
-              ))}
-            </div>
+  return (
+    <section id="about" className="content-section section-shell">
+      <div className="about-grid">
+        <motion.div className="section-heading" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+          <p className="eyebrow">03 / Beyond the résumé</p>
+          <h2 className="section-title">There’s a person behind the pixels.</h2>
+          <p className="section-dek">The same instincts show up in my code, music, games, and clothes: notice the system, find the rhythm, refine the details.</p>
+        </motion.div>
+
+        <div className="facet-explorer">
+          <div className="facet-grid" role="tablist" aria-label="Things about Aditi">
+            {facets.map((item, index) => (
+              <motion.button
+                key={item.title}
+                type="button"
+                role="tab"
+                aria-selected={active === index}
+                className={active === index ? "facet-card active" : "facet-card"}
+                onClick={() => setActive(index)}
+                whileHover={{ y: -4 }}
+              >
+                <span className="facet-icon">{item.icon}</span>
+                <strong>{item.title}</strong>
+                <span>{item.short}</span>
+              </motion.button>
+            ))}
           </div>
+          <AnimatePresence mode="wait">
+            <motion.div key={facets[active].title} className="facet-detail" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -8 }}>
+              <span>0{active + 1}</span>
+              <p>{facets[active].text}</p>
+            </motion.div>
+          </AnimatePresence>
         </div>
       </div>
     </section>

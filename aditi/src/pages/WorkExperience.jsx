@@ -2,26 +2,76 @@ import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import workExperience from "../data/workExperience.json";
 
+const roleVisuals = {
+  "UI Health": {
+    signals: [
+      { theme: "Ownership", title: "End-to-end ownership", detail: "Shaped requirements with organizational leadership and drove the product from decisions through delivery." },
+      { theme: "Technical leadership", title: "Engineering mentorship", detail: "Guided a junior engineer while making product and engineering decisions for a platform serving 100+ daily users." },
+      { theme: "Architecture", title: "Frontend modernization", detail: "Moved 20+ pages to a React SPA and built 20+ reusable components across product modules." },
+      { theme: "Systems thinking", title: "Data automation", detail: "Improved dashboards and data fetching while automating 1,000+ backend record updates." },
+    ],
+    path: ["Leadership requirements", "Centralized event platform", "Accessible daily experience"],
+    ownership: ["End-to-end delivery", "Product requirements", "Technical decisions", "Mentoring"],
+    snapshot: [
+      { label: "Challenge", text: "Centralize medical event operations while replacing a legacy frontend." },
+      { label: "Scope", text: "Product requirements, architecture, delivery, performance, data synchronization, and mentorship." },
+      { label: "Result", text: "A modern platform serving 300+ people, supporting 100+ daily users, and automating 1,000+ updates." },
+    ],
+  },
+  "LPS Health": {
+    signals: [
+      { theme: "Ownership", title: "Solo product delivery", detail: "Delivered the full platform as the sole developer within a three-month internship." },
+      { theme: "Product judgment", title: "Product-driven scope", detail: "Supported mentor recommendations, wellness purchases, community initiatives, analytics, and SEO." },
+      { theme: "Architecture", title: "Reusable architecture", detail: "Built a 10+ component design system and secure APIs with caching, pagination, and rate limiting." },
+      { theme: "Engineering quality", title: "Quality engineering", detail: "Raised Lighthouse from 40 to 80, cut load time by 70%, reached 80% test coverage, and added CI/CD." },
+    ],
+    path: ["Legacy product", "Full-cycle rebuild", "Production launch"],
+    ownership: ["Sole developer", "Product delivery", "Design system", "Quality & analytics"],
+    snapshot: [
+      { label: "Challenge", text: "Replace a legacy healthcare platform across two brands within one internship." },
+      { label: "Scope", text: "Product features, frontend, APIs, analytics, testing, performance, and deployment." },
+      { label: "Result", text: "Shipped in three months, doubled Lighthouse performance, cut load time 70%, and reached 80% test coverage." },
+    ],
+  },
+  Oracle: {
+    signals: [
+      { theme: "Learning agility", title: "Rapid platform mastery", detail: "Mastered Oracle VBS with limited documentation and contributed across two teams." },
+      { theme: "Stakeholder leadership", title: "Client-driven delivery", detail: "Worked directly with BHE stakeholders to define and deliver CX and HCM product experiences." },
+      { theme: "Platform thinking", title: "Cross-team reuse", detail: "Delivered 20+ components used across 4+ modules by teams of 10–20 developers, QA engineers, and consultants." },
+      { theme: "Production reliability", title: "Production reliability", detail: "Architected middleware across 10+ integrations and resolved 100+ frontend, API, and middleware issues." },
+    ],
+    path: ["Stakeholder needs", "Reusable enterprise patterns", "Production operations"],
+    ownership: ["Client discovery", "Product delivery", "API middleware", "Cross-team execution"],
+    snapshot: [
+      { label: "Challenge", text: "Deliver enterprise products on a new platform with limited documentation." },
+      { label: "Scope", text: "Client discovery, reusable UI, integration architecture, documentation, and production support." },
+      { label: "Result", text: "20+ components across 4+ modules, 10+ integrations, and 100+ production issues resolved." },
+    ],
+  },
+};
+
 const WorkExperience = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const activeJob = workExperience.items[activeIndex];
+  const visual = roleVisuals[activeJob.company];
 
   return (
-    <section id="work" className="section-shell pb-18 md:pb-28">
-      <div className="section-divider pb-14 pt-6 md:pt-8">
+    <section id="work" className="content-section section-shell">
+      <div>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true, amount: 0.2 }}
-          className="space-y-5"
+          className="section-heading"
         >
-          <p className="eyebrow">{workExperience.eyebrow}</p>
-          <h2 className="section-title">{workExperience.title}</h2>
+          <p className="eyebrow">01 / {workExperience.eyebrow}</p>
+          <h2 className="section-title">Products shipped. Outcomes delivered.</h2>
+          <p className="section-dek">A track record of taking ownership, improving the experience, and helping teams ship work that holds up in the real world.</p>
         </motion.div>
 
-        <div className="mt-12 grid gap-5 lg:grid-cols-[minmax(18rem,0.42fr)_minmax(0,1fr)] lg:items-start">
-          <div className="grid gap-3 lg:sticky lg:top-6">
+        <div className="experience-layout">
+          <div className="selector-list" role="tablist" aria-label="Work experience">
             {workExperience.items.map((job, index) => {
               const isActive = index === activeIndex;
 
@@ -29,6 +79,8 @@ const WorkExperience = () => {
                 <motion.button
                   key={`${job.company}-${job.date}`}
                   type="button"
+                  role="tab"
+                  aria-selected={isActive}
                   className={`selector-card ${isActive ? "selector-card-active" : ""}`}
                   onClick={() => setActiveIndex(index)}
                   initial={{ opacity: 0, x: -18 }}
@@ -45,7 +97,7 @@ const WorkExperience = () => {
                     <span className="mt-1 block text-xs leading-5 text-ink/58">
                       {job.role}
                     </span>
-                    <span className="mt-2 block text-[0.68rem] uppercase tracking-[0.18em] text-ink/42">
+                    <span className="selector-date">
                       {job.date}
                     </span>
                   </span>
@@ -54,7 +106,7 @@ const WorkExperience = () => {
             })}
           </div>
 
-          <div className="surface-card interactive-panel rounded-[1.6rem] p-5 md:p-6">
+          <div className="detail-panel">
             <AnimatePresence mode="wait">
               <motion.article
                 key={`${activeJob.company}-${activeJob.date}`}
@@ -62,52 +114,65 @@ const WorkExperience = () => {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -12 }}
                 transition={{ duration: 0.28, ease: "easeOut" }}
-                className="space-y-5"
+                className="detail-content"
               >
-                <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
-                  <div className="space-y-3">
+                <div className="detail-header">
+                  <div>
                     <p className="eyebrow">{activeJob.company}</p>
                     <h3 className="text-[clamp(1.7rem,2.6vw,2.65rem)] font-semibold leading-[1.02] tracking-[-0.045em]">
                       {activeJob.role}
                     </h3>
                   </div>
 
-                  <div className="rounded-[1rem] bg-[#fbfaf6] px-3 py-2 text-sm leading-5 text-ink/68 lg:min-w-[15rem]">
+                  <div className="detail-meta">
                     <p>{activeJob.type} · {activeJob.date}</p>
                     <p className="mt-1 text-ink/52">{activeJob.location}</p>
                   </div>
                 </div>
 
-                <div className="rounded-[1rem] bg-white/72 p-3.5 md:p-4">
-                  <p className="eyebrow mb-2">Business overview</p>
-                  <p className="text-[0.98rem] leading-7 text-ink/74">
-                    {activeJob.overview}
-                  </p>
+                <div className="senior-signal-grid" aria-label={`${activeJob.company} senior engineering contributions`}>
+                  {visual.signals.map((signal, index) => (
+                    <motion.div
+                      key={signal.theme}
+                      className={`senior-signal-card senior-signal-card-${index + 1}`}
+                      initial={{ opacity: 0, y: 14 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.3, delay: index * 0.06 }}
+                    >
+                      <div className="senior-signal-topline">
+                        <span>0{index + 1}</span>
+                        <small>{signal.theme}</small>
+                      </div>
+                      <strong>{signal.title}</strong>
+                      <p>{signal.detail}</p>
+                    </motion.div>
+                  ))}
                 </div>
 
-                <div className="rounded-[1rem] bg-white/72 p-3.5 md:p-4">
-                  <p className="eyebrow mb-2">Responsibilities</p>
-                  <ul className="space-y-3 text-[0.98rem] leading-7 text-ink/74">
-                    {activeJob.responsibilities.map((bullet, index) => (
-                      <motion.li
-                        key={bullet}
-                        className="flex gap-3"
-                        initial={{ opacity: 0, x: 12 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.22, delay: index * 0.035 }}
-                      >
-                        <span className="mt-[0.72rem] h-1.5 w-1.5 shrink-0 rounded-full bg-ink/50" />
-                        <span>{bullet}</span>
-                      </motion.li>
+                <div className="role-storyboard">
+                  <p className="eyebrow">Contribution flow</p>
+                  <div className="role-path">
+                    {visual.path.map((step, index) => (
+                      <div className="role-path-step" key={step}>
+                        <span>0{index + 1}</span>
+                        <strong>{step}</strong>
+                        {index < visual.path.length - 1 ? <i aria-hidden="true">→</i> : null}
+                      </div>
                     ))}
-                  </ul>
+                  </div>
                 </div>
 
-                <div className="grid gap-3 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
-                  <div className="rounded-[1rem] bg-white/72 p-3">
-                    <p className="eyebrow mb-2">Technologies</p>
-                    <div className="flex flex-wrap gap-2">
-                      {activeJob.technologies.map((item, index) => (
+                <div className="ownership-row">
+                  <p className="eyebrow">Owned across</p>
+                  <div>
+                    {visual.ownership.map((item) => <span key={item}>{item}</span>)}
+                  </div>
+                </div>
+
+                <div className="role-tools">
+                    <p className="eyebrow">Built with</p>
+                    <div className="chip-row">
+                      {activeJob.technologies.slice(0, 6).map((item, index) => (
                         <motion.span
                           key={item}
                           className="skill-pill"
@@ -120,26 +185,28 @@ const WorkExperience = () => {
                         </motion.span>
                       ))}
                     </div>
-                  </div>
-
-                  <div className="rounded-[1rem] bg-white/72 p-3">
-                    <p className="eyebrow mb-2">Tags</p>
-                    <div className="flex flex-wrap gap-2">
-                      {activeJob.tags.map((item, index) => (
-                        <motion.span
-                          key={item}
-                          className="skill-pill skill-pill-primary"
-                          initial={{ opacity: 0, scale: 0.96 }}
-                          animate={{ opacity: 1, scale: 1 }}
-                          transition={{ duration: 0.18, delay: index * 0.025 }}
-                          whileHover={{ y: -2 }}
-                        >
-                          {item}
-                        </motion.span>
-                      ))}
-                    </div>
-                  </div>
                 </div>
+
+                <details className="more-details role-full-story">
+                  <summary>Open role snapshot <span>+</span></summary>
+                  <div className="role-snapshot">
+                    {visual.snapshot.map((item, index) => (
+                      <div className="snapshot-row" key={item.label}>
+                        <span>0{index + 1}</span>
+                        <strong>{item.label}</strong>
+                        <p>{item.text}</p>
+                      </div>
+                    ))}
+                    {activeJob.technologies.length > 6 ? (
+                      <div className="snapshot-toolbox">
+                        <p className="eyebrow">More tools</p>
+                        <div className="chip-row">
+                          {activeJob.technologies.slice(6).map((item) => <span className="skill-pill" key={item}>{item}</span>)}
+                        </div>
+                      </div>
+                    ) : null}
+                  </div>
+                </details>
               </motion.article>
             </AnimatePresence>
           </div>

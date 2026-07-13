@@ -4,22 +4,18 @@
   "availability": "Available",
   "date": "F-1 OPT",
   "nav": [
-    { "label": "UX", "href": "#ux-origin" },
-    { "label": "Approach", "href": "#approach" },
     { "label": "Work", "href": "#work" },
     { "label": "Projects", "href": "#projects" },
     { "label": "About", "href": "#about" },
-    { "label": "Fit", "href": "#fit" },
-    { "label": "Skills", "href": "#skills" },
-    { "label": "Contact", "href": "#contact" }
+    { "label": "Skills", "href": "#skills" }
   ],
   "hero": {
     "headline": {
-      "role": "Software engineer",
-      "ux": "who cares about UX",
-      "ai": "who uses AI well enough to keep the answers."
+      "role": "Product engineer.",
+      "ux": "Curious. Thoughtful. All in.",
+      "ai": "I turn product goals into experiences people can trust."
     },
-    "subtext": "I am a 25-year-old woman with a low tolerance for things being harder than they need to be. Professionally, that means turning messy healthcare, education, and enterprise workflows into clearer tools. Academically, it means researching how music in an online mobile game can mess with emotion, attention, and experience.",
+    "subtext": "Give me a product problem and I will stay with it from the first question to the final detail. I care about the quality of what ships, the people who use it, and the team building it. I am at my best with curious people who feel the same.",
     "cards": [
       {
         "label": "Latest",

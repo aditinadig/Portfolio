@@ -40,9 +40,7 @@
         { "label": "Cursor" },
         { "label": "MCP", "primary": true },
         { "label": "ESLint" },
-        { "label": "Prettier" },
-        { "label": "Git", "primary": true },
-        { "label": "Oracle VBS/VBCS" }
+        { "label": "Prettier" }
       ]
     },
     {
@@ -96,18 +94,13 @@
         { "label": "Event-driven architecture", "primary": true },
         { "label": "Distributed systems" },
         { "label": "State management", "primary": true },
-        { "label": "Real-time systems", "primary": true },
-        { "label": "Scalable web applications", "primary": true },
-        { "label": "Lazy loading", "primary": true },
-        { "label": "Memoization" },
-        { "label": "Server-side caching", "primary": true }
+        { "label": "Real-time systems", "primary": true }
       ]
     },
     {
       "title": "Design & research",
       "items": [
         { "label": "Figma", "primary": true },
-        { "label": "Figma AI" },
         { "label": "Wireframing" },
         { "label": "HCI", "primary": true },
         { "label": "User interviews" },
@@ -115,9 +108,7 @@
         { "label": "Design systems", "primary": true },
         { "label": "Design tokens" },
         { "label": "Accessibility (WCAG)", "primary": true },
-        { "label": "Information architecture" },
-        { "label": "User flows" },
-        { "label": "Semantic HTML", "primary": true }
+        { "label": "Information architecture" }
       ]
     }
   ]

@@ -1,45 +1,22 @@
 import { motion } from "framer-motion";
 import siteContent from "../data/siteContent.json";
 
-const HireMe = () => {
-  return (
-    <section id="contact" className="section-shell pb-16 md:pb-24">
-      <motion.div
-        className="section-divider pb-10 pt-6"
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-        viewport={{ once: true, amount: 0.2 }}
-      >
-        <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-end">
-          <div className="space-y-4">
-            <p className="eyebrow">{siteContent.footer.eyebrow}</p>
-            <h2 className="section-title max-w-2xl">{siteContent.footer.title}</h2>
-            <a
-              href={`mailto:${siteContent.footer.email}`}
-              className="inline-flex text-sm font-semibold text-ink/72 transition hover:text-ink"
-            >
-              {siteContent.footer.email}
-            </a>
-          </div>
-
-          <div className="flex flex-wrap gap-x-5 gap-y-3 text-sm uppercase tracking-[0.18em] text-ink/72">
-            {siteContent.footer.links.map((link) => (
-              <a
-                key={link.label}
-                href={link.href}
-                target={link.href.startsWith("http") || link.href.endsWith(".pdf") ? "_blank" : undefined}
-                rel={link.href.startsWith("http") || link.href.endsWith(".pdf") ? "noreferrer" : undefined}
-                className="transition hover:text-ink"
-              >
-                {link.label}
-              </a>
-            ))}
-          </div>
+const HireMe = () => (
+  <section id="contact" className="contact-section">
+    <motion.div className="section-shell contact-inner" initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.3 }}>
+      <p className="eyebrow">Have a thoughtful problem?</p>
+      <h2>Let’s make it feel <em>obvious.</em></h2>
+      <a className="contact-email" href={`mailto:${siteContent.footer.email}`}>{siteContent.footer.email}</a>
+      <div className="contact-footer">
+        <p>Designed & built by Aditi · 2026</p>
+        <div>
+          {siteContent.footer.links.map((link) => (
+            <a key={link.label} href={link.href} target="_blank" rel="noreferrer">{link.label}</a>
+          ))}
         </div>
-      </motion.div>
-    </section>
-  );
-};
+      </div>
+    </motion.div>
+  </section>
+);
 
 export default HireMe;

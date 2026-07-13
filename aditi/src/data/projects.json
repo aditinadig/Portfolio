@@ -3,75 +3,37 @@
   "title": "Things I built. Things I actually care about.",
   "items": [
     {
-      "title": "SprintDesk",
-      "anchorId": "projects",
-      "type": "Product",
-      "context": "Personal project",
-      "overview": "Software teams have no shortage of sprint tracking tools, but many are too heavy or too disconnected from where the actual work happens. Engineers lose context moving between GitHub, Jira, Slack, and their calendar. I built SprintDesk as a lightweight, real-time Kanban tracker that brings the right context into one place without asking people to change how they already work.",
-      "responsibilities": [
-        "Built a task management app using React 19, TypeScript, and Supabase with a drag-and-drop Kanban board and full sprint cycle tracking.",
-        "Designed the component system in Figma before writing code, then used specification-driven prompting with GitHub Copilot to implement directly from design specs.",
-        "Built real-time sync with Supabase Realtime so changes appear instantly across users without a refresh.",
-        "Implemented per-user data isolation through row-level security so users only see and interact with their own tasks and boards.",
-        "Built an activity log recording every task move and update for auditability.",
-        "Integrated MCP to connect GitHub, Jira, Slack, and Google Calendar into one workspace."
-      ],
-      "technologies": [
-        "React 19",
-        "TypeScript",
-        "Supabase",
-        "Supabase Realtime",
-        "MCP",
-        "Figma",
-        "GitHub Copilot",
-        "Row-level security"
-      ],
-      "tags": [
-        "Product",
-        "Agile",
-        "Real-time",
-        "MCP integrations",
-        "AI-assisted development",
-        "Spec-driven development",
-        "Drag-and-drop"
-      ]
-    },
-    {
       "title": "Cue",
-      "type": "HCI",
-      "context": "UIC coursework",
-      "overview": "Coordinating music rehearsals through group chats creates missed updates, unclear ownership, and too much manual follow-up. As a singer who has dealt with that firsthand, I built Cue as a real-time collaborative platform for musicians to coordinate rehearsals, manage session roles, and sync practice schedules across performers.",
+      "type": "Live product",
+      "context": "University of Illinois Chicago",
+      "overview": "Cue is a real-time collaboration platform for musicians. I defined the problem through research, shaped the experience through iterative design, validated the interaction model, and translated those decisions into a production application.",
       "responsibilities": [
-        "Ran user interviews, surveys, and competitor analysis, then synthesized findings into personas and empathy maps to define information architecture, navigation flows, and interaction patterns.",
-        "Validated high-fidelity Figma prototypes through usability testing and cognitive walkthroughs before writing code.",
-        "Made design decisions grounded in HCI principles including recognition over recall, progressive disclosure, and error prevention.",
-        "Built the TypeScript, React, Node.js, and Supabase platform from scratch, owning architecture decisions around state management, real-time synchronization, testing, scalability, and user experience."
+        "Designed user-centered workflows for real-time rehearsal coordination.",
+        "Used interviews, surveys, and competitor analysis to create personas, scenarios, and user journeys.",
+        "Explored and refined concepts through sketches and low- and high-fidelity prototypes.",
+        "Applied HCI principles, usability heuristics, and the Gulfs of Execution and Evaluation to improve learnability, efficiency, discoverability, and error prevention.",
+        "Validated navigation and high-fidelity prototypes through cognitive walkthroughs and heuristic evaluations.",
+        "Translated the UX decisions into a production application with Claude Code, TypeScript, React, Node.js, and Supabase."
       ],
       "technologies": [
         "React",
         "TypeScript",
         "Node.js",
         "Supabase",
-        "Context API",
-        "Socket.IO",
-        "REST APIs",
+        "Claude Code",
         "Figma",
         "HCI principles",
         "Cognitive walkthroughs",
-        "Usability testing",
-        "Unit testing",
-        "End-to-end testing",
-        "Spotify Web API",
-        "Web Playback SDK"
+        "Heuristic evaluation",
+        "Prototyping"
       ],
       "tags": [
         "HCI",
         "User research",
-        "Role-based UI",
         "Real-time",
         "UX",
         "Information architecture",
-        "Testing",
+        "Product design",
         "Figma",
         "Singer-built"
       ],
@@ -87,13 +49,12 @@
       "title": "Hearing the Battle: How Dynamic Game Audio Shapes Gameplay Experience",
       "anchorId": "research",
       "type": "Research",
-      "context": "Independent research study",
-      "overview": "Mobile Legends: Bang Bang changes battle music during high-pressure gameplay moments, and those audio shifts can shape player emotion, decisions, perceived momentum, pressure, intensity, and flow. This study examines adaptive battle music as a real-time feedback system from a UX and HCI perspective.",
+      "context": "Independent study · Research in progress",
+      "overview": "An independent HCI study investigating how adaptive battle music in Mobile Legends: Bang Bang shapes player emotion, decision-making, and perceived momentum.",
       "responsibilities": [
-        "Designing an HCI research study and observational dataset to analyze how adaptive battle music affects player emotion, decisions, and game momentum.",
-        "Studying how sound shapes user experience under pressure during high-stakes gameplay moments.",
-        "Tracking battle BGM changes during gameplay events including kills, enemy wipes, comeback moments, and high-pressure fights.",
-        "Approaching the research as both a long-term ranked competitive player and a formally trained classical singer, bringing a rare dual lens to the study."
+        "Designed an HCI research framework around observational studies and reflexive thematic analysis.",
+        "Investigating relationships between adaptive audio, player emotion, decisions, and perceived momentum.",
+        "Bringing context from experience as both a long-term player and a trained singer."
       ],
       "technologies": [
         "UX research",

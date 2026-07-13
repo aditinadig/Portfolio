@@ -5,18 +5,19 @@
     {
       "company": "UI Health",
       "role": "Web Developer",
-      "type": "Part-time",
+      "type": "Professional experience",
       "date": "Sept 2025 – May 2026",
       "location": "Chicago, IL, USA",
-      "overview": "UI Health manages healthcare and academic operations across multiple internal systems. Faculty, scheduling, registration, and departmental data need to stay accurate, synchronized, and usable for the people running those workflows every day.",
+      "overview": "Owned end-to-end development of a centralized medical event platform, partnering with organizational leadership on product requirements and technical direction while supporting faculty, residents, and staff.",
       "responsibilities": [
-        "Led frontend development while managing a junior engineer, owning technical decisions across a React and Redux institutional platform for scheduling, registration, faculty management, and real-time dashboards serving 100+ daily active users.",
-        "Built an event-driven sync pipeline with Node.js, Celery, and Redis across 5+ systems, processing 1000+ records weekly with 0 downstream errors.",
-        "Migrated 20+ legacy workflows across 20+ pages into React, adding ESLint and TypeScript rules while delivering WCAG-compliant interfaces for 300+ faculty and staff and achieving 100% CI/CD pipeline success.",
-        "Built 20+ reusable MUI components across two microfrontend applications, standardizing frontend architecture while improving scalability, maintainability, and performance through efficient data fetching and caching.",
-        "Shipped real-time Chart.js dashboards with memoization and lazy loading, eliminating render bottlenecks for department-facing operational views.",
-        "Used Claude Code for code generation, debugging, documentation, and navigating codebases while maintaining code quality and delivery speed.",
-        "Mentored a junior engineer through code reviews and pair programming while helping establish frontend development best practices."
+        "Owned end-to-end development of a centralized medical event platform supporting 100+ daily active users during peak event periods, partnering with leadership to define requirements and drive technical decisions.",
+        "Mentored a junior engineer while translating business requirements into scalable event workflows and analytics dashboards for leadership.",
+        "Modernized 20+ legacy pages into a React SPA with Redux, TypeScript, and Material UI, delivering WCAG-compliant interfaces used by 300+ faculty, residents, and staff.",
+        "Architected 20+ reusable MUI components that standardized UI development across multiple product modules.",
+        "Improved dashboard responsiveness through memoized chart transformations and lazy-loaded Chart.js visualizations.",
+        "Optimized data fetching with TanStack Query and server-side caching to reduce redundant API calls and backend load.",
+        "Automated 1,000+ backend record updates with an event-driven Node.js, Redis, and Celery synchronization pipeline.",
+        "Used Claude Code for legacy codebase navigation, debugging, code generation, and documentation."
       ],
       "technologies": [
         "React",
@@ -28,14 +29,12 @@
         "Redis",
         "MUI",
         "Chart.js",
+        "TanStack Query",
         "Claude Code",
-        "Figma",
-        "REST APIs",
-        "CMS",
         "WCAG",
         "Lazy loading",
         "Memoization",
-        "State optimization"
+        "Server-side caching"
       ],
       "tags": [
         "Healthcare",
@@ -54,16 +53,17 @@
     {
       "company": "LPS Health",
       "role": "Frontend & Workflow Lead",
-      "type": "Intern",
+      "type": "Internship",
       "date": "May 2025 – Aug 2025",
       "location": "Chicago, IL, USA",
-      "overview": "LPS Health is a cardiovascular health and wellness platform focused on preventive care, educational content, community engagement, and donations. The organization needed reliable digital workflows, so I led a full-cycle rebuild across frontend, backend, analytics, and deployment within a three-month internship.",
+      "overview": "Rebuilt a legacy healthcare platform across two brands as the sole developer, supporting personalized mentor recommendations, wellness plan purchases, and community initiatives.",
       "responsibilities": [
-        "Rebuilt a legacy product from scratch as the sole developer, shipping a React, Tailwind CSS, Node.js, and PostgreSQL architecture independently in three months using GitHub Copilot.",
-        "Improved Lighthouse score from 40 to 80 and reduced page load time by 70% through lazy loading, image optimization, caching, and accessibility-focused frontend improvements.",
-        "Built a 10+ component design system across two brands, defining color tokens, spacing, and usage rules reused consistently across both platforms.",
-        "Designed and deployed secure REST API endpoints with pagination, caching, SQL query optimization, and rate limiting for event listings, donation workflows, and campaign pages.",
-        "Integrated Sentry for real-time error tracking, achieved 80% Jest coverage, and set up Netlify CI/CD for same-day hotfixes."
+        "Rebuilt a legacy healthcare platform in three months as the sole developer using React, Tailwind CSS, Node.js, and PostgreSQL across two brands.",
+        "Raised Lighthouse scores from 40 to 80 and reduced load times by 70% through lazy loading, image optimization, and caching.",
+        "Used Google Analytics insights to guide SEO improvements across health articles and campaign pages.",
+        "Built a 10+ component design system with reusable components and standardized design tokens across two brands.",
+        "Built secure REST APIs with pagination, caching, SQL optimization, and rate limiting.",
+        "Integrated Sentry, achieved 80% Jest coverage, and set up Netlify CI/CD to improve reliability and release speed."
       ],
       "technologies": [
         "React",
@@ -72,16 +72,13 @@
         "Node.js",
         "PostgreSQL",
         "REST APIs",
-        "Stripe API",
         "Google Analytics",
         "Sentry",
         "Jest",
         "GitHub",
         "Netlify",
         "Lazy loading",
-        "Lighthouse",
-        "GitHub Copilot",
-        "Claude"
+        "Lighthouse"
       ],
       "tags": [
         "Nonprofit",
@@ -101,15 +98,16 @@
       "company": "Oracle",
       "role": "Cloud Analyst · Technical Consultant",
       "type": "Full-time",
-      "date": "Aug 2022 – Jun 2024",
+      "date": "Aug 2022 – June 2024",
       "location": "Bengaluru, Karnataka, India",
-      "overview": "Oracle Fusion Cloud builds enterprise applications that support large-scale business operations. I worked with Berkshire Hathaway Energy stakeholders across operational systems, Oracle Fusion modules, frontend components, middleware, and API integrations.",
+      "overview": "Worked across two teams as an early Oracle VBS specialist, translating Berkshire Hathaway Energy stakeholder needs into reusable product components, integrations, and production solutions.",
       "responsibilities": [
-        "Collaborated directly with Berkshire Hathaway Energy stakeholders to gather requirements, clarify workflows, and translate business needs into production-ready enterprise solutions.",
-        "Architected and maintained a standalone REST API middleware service on OCI, coordinating data synchronization across 10+ enterprise integrations between BHE operational systems and Oracle Fusion Cloud.",
-        "Delivered 20+ enterprise-grade Oracle VBS/VBCS components with documented usage rules and design tokens, adopted across 4+ modules.",
-        "Reduced redundant development effort across cross-functional teams of 10 to 20 developers, QA engineers, and consultants by standardizing reusable component patterns.",
-        "Resolved 100+ production issues across frontend, middleware, and API layers during Agile Scrum cycles, restoring workflows with minimal disruption."
+        "Became an early Oracle VBS specialist by mastering a newly launched platform with limited documentation and contributing across two teams.",
+        "Worked directly with Berkshire Hathaway Energy stakeholders to gather requirements and build CX and HCM workflows.",
+        "Delivered 20+ reusable Oracle VBS components with documented usage patterns, adopted across 4+ modules by teams of 10–20 developers, QA engineers, and consultants.",
+        "Designed workarounds for undocumented requirements and published reusable knowledge articles for other teams.",
+        "Architected an OCI-hosted REST middleware that synchronized BHE systems with Oracle Fusion Cloud across 10+ integrations.",
+        "Resolved 100+ production issues across frontend, middleware, and API layers during Agile cycles."
       ],
       "technologies": [
         "Oracle VBS/VBCS",
@@ -120,7 +118,6 @@
         "OCI",
         "Middleware",
         "Oracle Fusion Cloud",
-        "Oracle Redwood Design System",
         "Agile Scrum"
       ],
       "tags": [
@@ -133,8 +130,7 @@
         "OCI",
         "Middleware",
         "Distributed systems",
-        "Cross-team",
-        "Employee Recognition Award"
+        "Cross-team"
       ]
     }
   ]

@@ -13,22 +13,23 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="section-shell pb-18 md:pb-28">
+    <section id="projects" className="content-section section-shell">
       <span id="research" className="scroll-anchor" aria-hidden="true" />
-      <div className="section-divider pb-14 pt-6 md:pt-8">
+      <div>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true, amount: 0.2 }}
-          className="space-y-5"
+          className="section-heading"
         >
-          <p className="eyebrow">{projects.eyebrow}</p>
-          <h2 className="section-title projects-title">{projects.title}</h2>
+          <p className="eyebrow">02 / {projects.eyebrow}</p>
+          <h2 className="section-title projects-title">From idea to working product.</h2>
+          <p className="section-dek">A closer look at how I understand a problem, shape a direction, and carry the work through.</p>
         </motion.div>
 
-        <div className="mt-12 grid gap-5 lg:grid-cols-[minmax(18rem,0.38fr)_minmax(0,1fr)] lg:items-start">
-          <div className="grid gap-3 lg:sticky lg:top-6">
+        <div className="experience-layout projects-layout">
+          <div className="selector-list" role="tablist" aria-label="Selected projects">
             {projects.items.map((project, index) => {
               const isActive = index === activeIndex;
 
@@ -36,6 +37,8 @@ const Projects = () => {
                 <motion.button
                   key={project.title}
                   type="button"
+                  role="tab"
+                  aria-selected={isActive}
                   className={`selector-card project-selector ${isActive ? "selector-card-active" : ""}`}
                   onClick={() => setActiveIndex(index)}
                   initial={{ opacity: 0, x: -18 }}
@@ -59,7 +62,7 @@ const Projects = () => {
             })}
           </div>
 
-          <div className="surface-card interactive-panel rounded-[1.6rem] p-5 md:p-6">
+          <div className="detail-panel project-panel">
             <AnimatePresence mode="wait">
               <motion.article
                 key={activeProject.title}
@@ -67,9 +70,9 @@ const Projects = () => {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -12 }}
                 transition={{ duration: 0.28, ease: "easeOut" }}
-                className="space-y-5"
+                className="detail-content"
               >
-                <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
+                <div className="detail-header">
                   <div className="space-y-3">
                     <div className="flex flex-wrap items-center gap-3 text-[0.72rem] uppercase tracking-[0.2em] text-ink/56">
                       <span>{activeProject.type}</span>
@@ -81,8 +84,7 @@ const Projects = () => {
                   </div>
                 </div>
 
-                <div className="rounded-[1rem] bg-white/72 p-3.5 md:p-4">
-                  <p className="eyebrow mb-2">Project overview</p>
+                <div className="project-overview">
                   <p className="text-[0.98rem] leading-7 text-ink/74">
                     {activeProject.overview}
                   </p>
@@ -105,18 +107,18 @@ const Projects = () => {
                   </div>
                 ) : null}
 
-                <div className="rounded-[1rem] bg-white/72 p-3.5 md:p-4">
-                  <p className="eyebrow mb-2">Responsibilities</p>
-                  <ul className="space-y-3 text-[0.98rem] leading-7 text-ink/74">
-                    {activeProject.responsibilities.map((item, index) => (
+                <div className="impact-block">
+                  <p className="eyebrow">What I did</p>
+                  <ul>
+                    {activeProject.responsibilities.slice(0, 3).map((item, index) => (
                       <motion.li
                         key={item}
-                        className="flex gap-3"
+                        className="impact-item"
                         initial={{ opacity: 0, x: 12 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.22, delay: index * 0.035 }}
                       >
-                        <span className="mt-[0.72rem] h-1.5 w-1.5 shrink-0 rounded-full bg-ink/50" />
+                        <span className="impact-number">0{index + 1}</span>
                         <span>{item}</span>
                       </motion.li>
                     ))}
@@ -127,7 +129,7 @@ const Projects = () => {
                   <div className="rounded-[1rem] bg-white/72 p-3">
                     <p className="eyebrow mb-2">Technologies</p>
                     <div className="flex flex-wrap gap-2">
-                      {activeProject.technologies.map((item, index) => (
+                      {activeProject.technologies.slice(0, 6).map((item, index) => (
                         <motion.span
                           key={item}
                           className="skill-pill"
@@ -145,7 +147,7 @@ const Projects = () => {
                   <div className="rounded-[1rem] bg-white/72 p-3">
                     <p className="eyebrow mb-2">Tags</p>
                     <div className="flex flex-wrap gap-2">
-                      {activeProject.tags.map((tag, index) => (
+                      {activeProject.tags.slice(0, 4).map((tag, index) => (
                         <motion.span
                           key={tag}
                           className="skill-pill skill-pill-primary"

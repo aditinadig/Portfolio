@@ -8,21 +8,20 @@ const TechStack = () => {
     .slice(0, 12);
 
   return (
-    <section id="skills" className="section-shell pb-18 md:pb-28">
-      <div className="section-divider pb-14">
+    <section id="skills" className="content-section section-shell">
+      <div>
         <div className="grid gap-10 pt-6 md:pt-8 lg:grid-cols-[minmax(0,0.72fr)_minmax(0,1.28fr)] lg:items-end">
           <motion.div
-            className="space-y-5"
+            className="section-heading"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
             viewport={{ once: true, amount: 0.2 }}
           >
-            <p className="eyebrow">{techStack.eyebrow}</p>
-            <h2 className="section-title">{techStack.title}</h2>
+            <p className="eyebrow">04 / {techStack.eyebrow}</p>
+            <h2 className="section-title">Tools, not trophies.</h2>
             <p className="max-w-lg text-[1rem] leading-7 text-ink/70">
-              The tools I reach for most are the ones that help me keep UI, data,
-              security, and product behavior understandable.
+              I choose what makes the product clear, reliable, and maintainable. Open a category for the full inventory.
             </p>
           </motion.div>
 
