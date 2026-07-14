@@ -84,6 +84,17 @@ const Projects = () => {
                   </div>
                 </div>
 
+                {activeProject.image ? (
+                  <motion.figure
+                    className="project-visual"
+                    initial={{ opacity: 0, scale: 0.985 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.35, ease: "easeOut" }}
+                  >
+                    <img src={activeProject.image} alt={activeProject.imageAlt ?? `${activeProject.title} project preview`} />
+                  </motion.figure>
+                ) : null}
+
                 <div className="project-overview">
                   <p className="text-[0.98rem] leading-7 text-ink/74">
                     {activeProject.overview}
@@ -107,61 +118,68 @@ const Projects = () => {
                   </div>
                 ) : null}
 
-                <div className="impact-block">
-                  <p className="eyebrow">What I did</p>
-                  <ul>
-                    {activeProject.responsibilities.slice(0, 3).map((item, index) => (
-                      <motion.li
-                        key={item}
-                        className="impact-item"
-                        initial={{ opacity: 0, x: 12 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.22, delay: index * 0.035 }}
-                      >
-                        <span className="impact-number">0{index + 1}</span>
-                        <span>{item}</span>
-                      </motion.li>
-                    ))}
-                  </ul>
-                </div>
+                <details className="project-details-disclosure">
+                  <summary>Explore project details <span>+</span></summary>
+                  <div className="project-details-body">
+                    <div className="impact-block">
+                      <p className="eyebrow">{activeProject.process ? "HCI process" : "What I did"}</p>
+                      {activeProject.process ? (
+                        <div className="project-process-grid">
+                          {activeProject.process.map((item, index) => (
+                            <motion.article
+                              key={item.label}
+                              className="project-process-step"
+                              initial={{ opacity: 0, y: 10 }}
+                              animate={{ opacity: 1, y: 0 }}
+                              transition={{ duration: 0.22, delay: index * 0.045 }}
+                            >
+                              <span>0{index + 1}</span>
+                              <div>
+                                <strong>{item.label}</strong>
+                                <p>{item.text}</p>
+                              </div>
+                            </motion.article>
+                          ))}
+                        </div>
+                      ) : (
+                        <ul>
+                          {activeProject.responsibilities.slice(0, 3).map((item, index) => (
+                            <motion.li
+                              key={item}
+                              className="impact-item"
+                              initial={{ opacity: 0, x: 12 }}
+                              animate={{ opacity: 1, x: 0 }}
+                              transition={{ duration: 0.22, delay: index * 0.035 }}
+                            >
+                              <span className="impact-number">0{index + 1}</span>
+                              <span>{item}</span>
+                            </motion.li>
+                          ))}
+                        </ul>
+                      )}
+                    </div>
 
-                <div className="grid gap-3 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
-                  <div className="rounded-[1rem] bg-white/72 p-3">
-                    <p className="eyebrow mb-2">Technologies</p>
-                    <div className="flex flex-wrap gap-2">
-                      {activeProject.technologies.slice(0, 6).map((item, index) => (
-                        <motion.span
-                          key={item}
-                          className="skill-pill"
-                          initial={{ opacity: 0, scale: 0.96 }}
-                          animate={{ opacity: 1, scale: 1 }}
-                          transition={{ duration: 0.18, delay: index * 0.025 }}
-                          whileHover={{ y: -2 }}
-                        >
-                          {item}
-                        </motion.span>
-                      ))}
+                    <div className="project-detail-groups">
+                      <div>
+                        <p className="eyebrow">Technologies</p>
+                        <div className="chip-row">
+                          {activeProject.technologies.slice(0, 6).map((item) => (
+                            <span key={item} className="skill-pill">{item}</span>
+                          ))}
+                        </div>
+                      </div>
+
+                      <div>
+                        <p className="eyebrow">Themes</p>
+                        <div className="chip-row">
+                          {activeProject.tags.slice(0, 4).map((tag) => (
+                            <span key={tag} className="skill-pill skill-pill-primary">{tag}</span>
+                          ))}
+                        </div>
+                      </div>
                     </div>
                   </div>
-
-                  <div className="rounded-[1rem] bg-white/72 p-3">
-                    <p className="eyebrow mb-2">Tags</p>
-                    <div className="flex flex-wrap gap-2">
-                      {activeProject.tags.slice(0, 4).map((tag, index) => (
-                        <motion.span
-                          key={tag}
-                          className="skill-pill skill-pill-primary"
-                          initial={{ opacity: 0, scale: 0.96 }}
-                          animate={{ opacity: 1, scale: 1 }}
-                          transition={{ duration: 0.18, delay: index * 0.025 }}
-                          whileHover={{ y: -2 }}
-                        >
-                          {tag}
-                        </motion.span>
-                      ))}
-                    </div>
-                  </div>
-                </div>
+                </details>
               </motion.article>
             </AnimatePresence>
           </div>

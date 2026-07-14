@@ -136,8 +136,24 @@ button:focus-visible, a:focus-visible, summary:focus-visible { outline: 3px soli
 .snapshot-toolbox { display: grid; gap: .65rem; margin-top: .35rem; padding-top: .8rem; border-top: 1px solid var(--line); }
 .project-overview { border-left: 4px solid var(--coral); padding-left: 1rem; }
 .project-overview p:last-child { margin: .5rem 0 0; color: #3e4b42; line-height: 1.6; }
+.project-panel { min-height: 0; }
+.project-visual { overflow: hidden; max-height: 20rem; margin: 0; border: 1px solid var(--line); border-radius: 1rem; background: #fbf6f2; box-shadow: 0 12px 28px rgba(23,33,25,.07); }
+.project-visual img { display: block; width: 100%; height: 100%; max-height: 20rem; aspect-ratio: 16 / 9; object-fit: cover; object-position: center; }
 .project-link-bar { display: flex; flex-wrap: wrap; gap: .55rem; }
 .project-link { border-radius: 999px; background: var(--ink); color: white; padding: .65rem .85rem; font-size: .7rem; font-weight: 800; }
+.project-details-disclosure { border-top: 1px solid var(--line); padding-top: 1rem; }
+.project-details-disclosure summary { display: flex; align-items: center; justify-content: space-between; cursor: pointer; list-style: none; font-size: .78rem; font-weight: 800; }
+.project-details-disclosure summary::-webkit-details-marker { display: none; }
+.project-details-disclosure summary span { display: grid; place-items: center; width: 1.7rem; height: 1.7rem; border-radius: 50%; background: var(--purple); transition: transform .2s ease; }
+.project-details-disclosure[open] summary span { transform: rotate(45deg); }
+.project-details-body { display: grid; gap: 1.25rem; padding-top: 1rem; }
+.project-process-grid { display: grid; gap: .6rem; }
+.project-process-step { display: grid; grid-template-columns: 2rem minmax(0,1fr); gap: .75rem; border: 1px solid var(--line); border-radius: .8rem; background: rgba(255,255,255,.55); padding: .8rem; }
+.project-process-step > span { display: grid; place-items: center; width: 2rem; height: 2rem; border-radius: 50%; background: var(--ink); color: var(--acid); font-size: .58rem; font-weight: 800; }
+.project-process-step strong { font-size: .8rem; letter-spacing: .04em; text-transform: uppercase; }
+.project-process-step p { margin: .35rem 0 0; color: var(--muted); font-size: .8rem; line-height: 1.5; }
+.project-detail-groups { display: grid; align-items: start; gap: 1rem; }
+.project-detail-groups > div { display: grid; align-self: start; gap: .65rem; border-radius: .8rem; background: rgba(244,241,233,.55); padding: .8rem; }
 .scroll-anchor { scroll-margin-top: 7rem; }
 
 /* About */
@@ -202,6 +218,8 @@ button:focus-visible, a:focus-visible, summary:focus-visible { outline: 3px soli
   .role-path { grid-template-columns: repeat(3, minmax(0,1fr)); }
   .role-path-step { grid-template-columns: 2rem 1fr auto; min-height: 5rem; }
   .role-path-step i { position: absolute; z-index: 2; right: -.95rem; transform: none; }
+  .project-process-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+  .project-detail-groups { grid-template-columns: repeat(2, minmax(0,1fr)); }
   .about-grid { grid-template-columns: minmax(0,.8fr) minmax(26rem,1.2fr); align-items: start; }
   .facet-grid { grid-template-columns: repeat(4, 1fr); }
   .facet-card { min-height: 11rem; }

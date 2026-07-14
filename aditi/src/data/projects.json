@@ -6,7 +6,27 @@
       "title": "Cue",
       "type": "Live product",
       "context": "University of Illinois Chicago",
+      "image": "/images/cue.png",
+      "imageAlt": "Cue collaborative music rehearsal platform landing page and rehearsal interface",
       "overview": "Cue is a real-time collaboration platform for musicians. I defined the problem through research, shaped the experience through iterative design, validated the interaction model, and translated those decisions into a production application.",
+      "process": [
+        {
+          "label": "Research",
+          "text": "Used interviews, surveys, and competitor analysis to define the design challenges and create personas, scenarios, and user journeys."
+        },
+        {
+          "label": "Design",
+          "text": "Mapped rehearsal workflows, information architecture, and navigation through sketches and low- and high-fidelity prototypes."
+        },
+        {
+          "label": "Evaluate",
+          "text": "Applied usability heuristics and the Gulfs of Execution and Evaluation, then validated flows through cognitive walkthroughs and heuristic evaluation."
+        },
+        {
+          "label": "Build",
+          "text": "Translated the validated UX decisions into a production application using Claude Code, TypeScript, React, Node.js, and Supabase."
+        }
+      ],
       "responsibilities": [
         "Designed user-centered workflows for real-time rehearsal coordination.",
         "Used interviews, surveys, and competitor analysis to create personas, scenarios, and user journeys.",
