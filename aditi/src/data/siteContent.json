@@ -19,8 +19,8 @@
     "cards": [
       {
         "label": "Latest",
-        "text": "Web Developer · UI Health",
-        "detail": "React, Redux, Node.js, Celery, Redis, microfrontends, dashboards, mentoring, and healthcare data reliability."
+        "text": "Frontend Engineer · UI Health",
+        "detail": "React, Redux, TypeScript, Material UI, TanStack Query, Node.js, Celery, Redis, dashboards, and healthcare data reliability."
       },
       {
         "label": "Previously",
@@ -30,12 +30,12 @@
       {
         "label": "Education",
         "text": "MS Computer Science · UIC",
-        "detail": "GPA 3.86 · HCI, UI/UX Design, Software Eng, Secure Web Apps"
+        "detail": "Aug 2024 – May 2026 · GPA 9.3 · HCI, UI/UX Design, Software Engineering, Secure Web Apps"
       },
       {
         "label": "Stack",
         "text": "React · TypeScript · Node.js · PostgreSQL",
-        "detail": "+ Redux, TanStack Query, Supabase, Redis, Stripe, Sentry, Jest, Git, Copilot, Claude Code, and MCP"
+        "detail": "+ Redux, TanStack Query, Supabase, Redis, Sentry, Jest, Claude Code Sonnet 5, OpenAI Codex GPT-5, and MCP"
       },
       {
         "label": "Also",

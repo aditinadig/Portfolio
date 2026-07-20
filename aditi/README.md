@@ -19,7 +19,7 @@ I build from structure first.
 
 Before implementation, I care about the source of truth, failure states, permissions, API boundaries, and what happens when data is delayed, empty, malformed, or inconsistent. The frontend matters, but I do not treat UI polish as separate from system behavior. A clean interface is only useful if the workflow underneath it is reliable.
 
-I use AI tools such as GitHub Copilot, Codex, and Claude for speed: scaffolding, repetitive refactors, first-pass test ideas, documentation drafts, and comparing implementation options. Architecture, security-sensitive logic, data-flow decisions, naming, and the final shipping call stay with me.
+I use AI tools such as Claude Code and OpenAI Codex for speed: scaffolding, repetitive refactors, first-pass test ideas, documentation drafts, and comparing implementation options. Architecture, security-sensitive logic, data-flow decisions, naming, and the final shipping call stay with me.
 
 ## Tech Stack
 

@@ -4,11 +4,11 @@
   "items": [
     {
       "company": "UI Health",
-      "role": "Web Developer",
+      "role": "Frontend Engineer",
       "type": "Professional experience",
       "date": "Sept 2025 – May 2026",
       "location": "Chicago, IL, USA",
-      "overview": "Owned end-to-end development of a centralized medical event platform, partnering with organizational leadership on product requirements and technical direction while supporting faculty, residents, and staff.",
+      "overview": "Owned end-to-end development of a centralized medical event platform supporting 100+ daily active users during peak event periods, partnering with leadership on product workflows and technical priorities while mentoring a junior engineer.",
       "responsibilities": [
         "Owned end-to-end development of a centralized medical event platform supporting 100+ daily active users during peak event periods, partnering with leadership to define requirements and drive technical decisions.",
         "Mentored a junior engineer while translating business requirements into scalable event workflows and analytics dashboards for leadership.",
@@ -17,7 +17,7 @@
         "Improved dashboard responsiveness through memoized chart transformations and lazy-loaded Chart.js visualizations.",
         "Optimized data fetching with TanStack Query and server-side caching to reduce redundant API calls and backend load.",
         "Automated 1,000+ backend record updates with an event-driven Node.js, Redis, and Celery synchronization pipeline.",
-        "Used Claude Code for legacy codebase navigation, debugging, code generation, and documentation."
+        "Used Claude Code with Sonnet 4.5 for legacy codebase navigation, debugging, code generation, and documentation."
       ],
       "technologies": [
         "React",
@@ -30,7 +30,7 @@
         "MUI",
         "Chart.js",
         "TanStack Query",
-        "Claude Code",
+        "Claude Code · Sonnet 4.5",
         "WCAG",
         "Lazy loading",
         "Memoization",
@@ -96,7 +96,7 @@
     },
     {
       "company": "Oracle",
-      "role": "Cloud Analyst · Technical Consultant",
+      "role": "Cloud Analyst · Technical Consultant — Frontend",
       "type": "Full-time",
       "date": "Aug 2022 – June 2024",
       "location": "Bengaluru, Karnataka, India",

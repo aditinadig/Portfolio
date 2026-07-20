@@ -8,11 +8,11 @@
       "context": "University of Illinois Chicago",
       "image": "/images/cue.png",
       "imageAlt": "Cue collaborative music rehearsal platform landing page and rehearsal interface",
-      "overview": "Cue is a real-time collaboration platform for musicians. I defined the problem through research, shaped the experience through iterative design, validated the interaction model, and translated those decisions into a production application.",
+      "overview": "Cue is a collaborative music rehearsal platform. I defined the problem through user and competitor research, shaped the experience through iterative design, validated key flows, and translated those decisions into a functional application.",
       "process": [
         {
           "label": "Research",
-          "text": "Used interviews, surveys, and competitor analysis to define the design challenges and create personas, scenarios, and user journeys."
+          "text": "Used user interviews and competitor research to identify coordination and communication challenges, then created personas and user journeys."
         },
         {
           "label": "Design",
@@ -20,31 +20,28 @@
         },
         {
           "label": "Evaluate",
-          "text": "Applied usability heuristics and the Gulfs of Execution and Evaluation, then validated flows through cognitive walkthroughs and heuristic evaluation."
+          "text": "Evaluated key flows through cognitive walkthroughs, improving learnability, discoverability, efficiency, and accessibility."
         },
         {
           "label": "Build",
-          "text": "Translated the validated UX decisions into a production application using Claude Code, TypeScript, React, Node.js, and Supabase."
+          "text": "Translated the validated UX decisions into a functional React and Supabase application using Claude Code with Sonnet 4.5."
         }
       ],
       "responsibilities": [
         "Designed user-centered workflows for real-time rehearsal coordination.",
-        "Used interviews, surveys, and competitor analysis to create personas, scenarios, and user journeys.",
+        "Conducted user interviews and competitor research, then synthesized findings into design principles, personas, user journeys, and prioritized requirements.",
         "Explored and refined concepts through sketches and low- and high-fidelity prototypes.",
-        "Applied HCI principles, usability heuristics, and the Gulfs of Execution and Evaluation to improve learnability, efficiency, discoverability, and error prevention.",
-        "Validated navigation and high-fidelity prototypes through cognitive walkthroughs and heuristic evaluations.",
-        "Translated the UX decisions into a production application with Claude Code, TypeScript, React, Node.js, and Supabase."
+        "Designed information architecture, navigation, and role-based workflows with clear hierarchy, feedback, and error prevention.",
+        "Evaluated key flows through cognitive walkthroughs to improve learnability, discoverability, efficiency, and accessibility.",
+        "Translated the validated UX decisions into a functional React and Supabase application with Claude Code and Sonnet 4.5."
       ],
       "technologies": [
         "React",
-        "TypeScript",
-        "Node.js",
         "Supabase",
-        "Claude Code",
+        "Claude Code · Sonnet 4.5",
         "Figma",
         "HCI principles",
         "Cognitive walkthroughs",
-        "Heuristic evaluation",
         "Prototyping"
       ],
       "tags": [

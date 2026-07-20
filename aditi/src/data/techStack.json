@@ -33,8 +33,8 @@
     {
       "title": "AI & tooling",
       "items": [
-        { "label": "GitHub Copilot", "primary": true },
-        { "label": "Claude Code", "primary": true },
+        { "label": "Claude Code · Sonnet 5", "primary": true },
+        { "label": "OpenAI Codex · GPT-5", "primary": true },
         { "label": "Prompt engineering", "primary": true },
         { "label": "Specification-based development", "primary": true },
         { "label": "Cursor" },
