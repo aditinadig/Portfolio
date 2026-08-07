@@ -4,50 +4,49 @@
   "items": [
     {
       "company": "UI Health",
-      "role": "Frontend Engineer",
+      "role": "Full-stack Engineer",
       "type": "Professional experience",
       "date": "Sept 2025 – May 2026",
       "location": "Chicago, IL, USA",
-      "overview": "Owned end-to-end development of a centralized medical event platform supporting 100+ daily active users during peak event periods, partnering with leadership on product workflows and technical priorities while mentoring a junior engineer.",
+      "overview": "Led end-to-end development of a centralized medical event platform that scaled to 1,000+ daily active users during peak event periods.",
       "responsibilities": [
-        "Owned end-to-end development of a centralized medical event platform supporting 100+ daily active users during peak event periods, partnering with leadership to define requirements and drive technical decisions.",
-        "Mentored a junior engineer while translating business requirements into scalable event workflows and analytics dashboards for leadership.",
-        "Modernized 20+ legacy pages into a React SPA with Redux, TypeScript, and Material UI, delivering WCAG-compliant interfaces used by 300+ faculty, residents, and staff.",
-        "Architected 20+ reusable MUI components that standardized UI development across multiple product modules.",
-        "Improved dashboard responsiveness through memoized chart transformations and lazy-loaded Chart.js visualizations.",
-        "Optimized data fetching with TanStack Query and server-side caching to reduce redundant API calls and backend load.",
-        "Automated 1,000+ backend record updates with an event-driven Node.js, Redis, and Celery synchronization pipeline.",
-        "Used Claude Code with Sonnet 4.5 for legacy codebase navigation, debugging, code generation, and documentation."
+        "Rebuilt 20+ legacy HTML/PHP pages as a React and Next.js SPA, introducing reusable UI components across five product modules, cutting page load time by 40%, and improving maintainability.",
+        "Reduced redundant API calls and improved rendering speed with TanStack Query, lazy loading, and memoized Chart.js dashboard computations, cutting response time by 30%.",
+        "Built C# and .NET REST APIs with a mapping and transformation layer that unified attendee data from residency, hospital, and admin systems; cached the unified output in Redis to avoid rebuilding it on every request.",
+        "Migrated legacy SQL queries to Entity Framework Core, reducing query-related bugs by 20% and improving maintainability and scalability.",
+        "Deployed on AWS using EC2, PostgreSQL on RDS, S3 for event document uploads, and Lambda for upload processing.",
+        "Improved production reliability and release speed with Jest tests, peer reviews, CloudWatch monitoring, GitHub Actions CI/CD, and Docker, cutting production bugs by 25%.",
+        "Used Claude Code and custom AI workflows to improve code quality and debugging, cutting feature turnaround time from two weeks to four days."
       ],
       "technologies": [
         "React",
-        "Redux",
-        "TypeScript",
-        "Node.js",
-        "JavaScript",
-        "Celery",
+        "Next.js",
+        "C#",
+        ".NET",
+        "Entity Framework Core",
         "Redis",
-        "MUI",
+        "PostgreSQL",
+        "AWS",
+        "Docker",
         "Chart.js",
         "TanStack Query",
-        "Claude Code · Sonnet 4.5",
-        "WCAG",
+        "Jest",
+        "CloudWatch",
+        "GitHub Actions",
+        "Claude Code",
         "Lazy loading",
-        "Memoization",
-        "Server-side caching"
+        "Memoization"
       ],
       "tags": [
         "Healthcare",
-        "Accessibility",
         "Performance",
-        "Technical leadership",
-        "Mentorship",
+        "Full-stack engineering",
         "AI-assisted development",
-        "Claude Code",
-        "Microfrontends",
         "Event-driven architecture",
         "Data synchronization",
-        "Dashboards"
+        "Dashboards",
+        "Cloud infrastructure",
+        "CI/CD"
       ]
     },
     {
@@ -59,6 +58,7 @@
       "overview": "Rebuilt a legacy healthcare platform across two brands as the sole developer, supporting personalized mentor recommendations, wellness plan purchases, and community initiatives.",
       "responsibilities": [
         "Rebuilt a legacy healthcare platform in three months as the sole developer using React, Tailwind CSS, Node.js, and PostgreSQL across two brands.",
+        "Integrated Stripe webhooks for purchase and subscription events, keeping payment status reliably synchronized between Stripe and the platform.",
         "Raised Lighthouse scores from 40 to 80 and reduced load times by 70% through lazy loading, image optimization, and caching.",
         "Used Google Analytics insights to guide SEO improvements across health articles and campaign pages.",
         "Built a 10+ component design system with reusable components and standardized design tokens across two brands.",
@@ -71,6 +71,7 @@
         "JavaScript",
         "Node.js",
         "PostgreSQL",
+        "Stripe",
         "REST APIs",
         "Google Analytics",
         "Sentry",
@@ -90,7 +91,6 @@
         "Design systems",
         "Testing",
         "CI/CD",
-        "AI-assisted development",
         "Sole developer"
       ]
     },

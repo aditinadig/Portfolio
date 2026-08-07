@@ -8,6 +8,7 @@
       "items": [
         { "label": "JavaScript ES6+", "primary": true },
         { "label": "TypeScript", "primary": true },
+        { "label": "C#", "primary": true },
         { "label": "Python" },
         { "label": "SQL" },
         { "label": "HTML/CSS", "primary": true }
@@ -17,14 +18,14 @@
       "title": "Frameworks & libraries",
       "items": [
         { "label": "React", "primary": true },
-        { "label": "Next.js" },
+        { "label": "Next.js", "primary": true },
+        { "label": ".NET", "primary": true },
+        { "label": "Entity Framework" },
         { "label": "Node.js", "primary": true },
         { "label": "Tailwind CSS", "primary": true },
         { "label": "GraphQL" },
         { "label": "Socket.IO" },
         { "label": "Redux", "primary": true },
-        { "label": "Context API" },
-        { "label": "TanStack Query", "primary": true },
         { "label": "MUI", "primary": true },
         { "label": "Express.js" },
         { "label": "Chart.js", "primary": true }
@@ -35,12 +36,10 @@
       "items": [
         { "label": "Claude Code · Sonnet 5", "primary": true },
         { "label": "OpenAI Codex · GPT-5", "primary": true },
-        { "label": "Prompt engineering", "primary": true },
-        { "label": "Specification-based development", "primary": true },
-        { "label": "Cursor" },
         { "label": "MCP", "primary": true },
-        { "label": "ESLint" },
-        { "label": "Prettier" }
+        { "label": "Specification-based development", "primary": true },
+        { "label": "Rapid prototyping", "primary": true },
+        { "label": "AI-assisted UX iteration", "primary": true }
       ]
     },
     {
@@ -51,9 +50,12 @@
         { "label": "Firebase" },
         { "label": "MongoDB" },
         { "label": "Redis", "primary": true },
-        { "label": "AWS" },
+        { "label": "AWS · EC2, Lambda, S3, RDS", "primary": true },
         { "label": "Docker" },
         { "label": "Kubernetes" },
+        { "label": "CloudOps" },
+        { "label": "CloudWatch" },
+        { "label": "Git" },
         { "label": "GitHub Actions" },
         { "label": "Netlify" },
         { "label": "OCI" },
@@ -107,6 +109,7 @@
         { "label": "Reflexive Thematic Analysis", "primary": true },
         { "label": "Design systems", "primary": true },
         { "label": "Design tokens" },
+        { "label": "Interaction design", "primary": true },
         { "label": "Accessibility (WCAG)", "primary": true },
         { "label": "Information architecture" }
       ]

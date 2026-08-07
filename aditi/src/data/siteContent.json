@@ -19,8 +19,8 @@
     "cards": [
       {
         "label": "Latest",
-        "text": "Frontend Engineer · UI Health",
-        "detail": "React, Redux, TypeScript, Material UI, TanStack Query, Node.js, Celery, Redis, dashboards, and healthcare data reliability."
+        "text": "Full-stack Engineer · UI Health",
+        "detail": "React, Next.js, C#/.NET, Entity Framework Core, Redis, AWS, Docker, dashboards, and healthcare data reliability."
       },
       {
         "label": "Previously",
@@ -35,7 +35,7 @@
       {
         "label": "Stack",
         "text": "React · TypeScript · Node.js · PostgreSQL",
-        "detail": "+ Redux, TanStack Query, Supabase, Redis, Sentry, Jest, Claude Code Sonnet 5, OpenAI Codex GPT-5, and MCP"
+        "detail": "+ .NET, Entity Framework, Tailwind CSS, Redis, AWS, Docker, Jest, Claude Code Sonnet 5, OpenAI Codex GPT-5, and MCP"
       },
       {
         "label": "Also",

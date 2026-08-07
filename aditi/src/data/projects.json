@@ -5,7 +5,7 @@
     {
       "title": "Cue",
       "type": "Live product",
-      "context": "University of Illinois Chicago",
+      "context": "University of Illinois at Chicago",
       "image": "/images/cue.png",
       "imageAlt": "Cue collaborative music rehearsal platform landing page and rehearsal interface",
       "overview": "Cue is a collaborative music rehearsal platform. I defined the problem through user and competitor research, shaped the experience through iterative design, validated key flows, and translated those decisions into a functional application.",
@@ -24,7 +24,7 @@
         },
         {
           "label": "Build",
-          "text": "Translated the validated UX decisions into a functional React and Supabase application using Claude Code with Sonnet 4.5."
+          "text": "Designed, prototyped, and built the product with Figma, React, Supabase, and AI-assisted development workflows."
         }
       ],
       "responsibilities": [
@@ -33,12 +33,12 @@
         "Explored and refined concepts through sketches and low- and high-fidelity prototypes.",
         "Designed information architecture, navigation, and role-based workflows with clear hierarchy, feedback, and error prevention.",
         "Evaluated key flows through cognitive walkthroughs to improve learnability, discoverability, efficiency, and accessibility.",
-        "Translated the validated UX decisions into a functional React and Supabase application with Claude Code and Sonnet 4.5."
+        "Designed, prototyped, and built the product using Figma, React, Supabase, and AI-assisted development workflows."
       ],
       "technologies": [
         "React",
         "Supabase",
-        "Claude Code · Sonnet 4.5",
+        "AI-assisted development",
         "Figma",
         "HCI principles",
         "Cognitive walkthroughs",

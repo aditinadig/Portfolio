@@ -5,28 +5,28 @@ import workExperience from "../data/workExperience.json";
 const roleVisuals = {
   "UI Health": {
     signals: [
-      { theme: "Ownership", title: "End-to-end ownership", detail: "Shaped requirements with organizational leadership and drove the product from decisions through delivery." },
-      { theme: "Technical leadership", title: "Engineering mentorship", detail: "Guided a junior engineer while making product and engineering decisions for a platform serving 100+ daily users." },
-      { theme: "Architecture", title: "Frontend modernization", detail: "Moved 20+ pages to a React SPA and built 20+ reusable components across product modules." },
-      { theme: "Systems thinking", title: "Data automation", detail: "Improved dashboards and data fetching while automating 1,000+ backend record updates." },
+      { theme: "Ownership", title: "End-to-end delivery", detail: "Led development of a centralized medical event platform serving 1,000+ daily users during peak events." },
+      { theme: "Modernization", title: "Legacy rebuild", detail: "Moved 20+ HTML/PHP pages to a React and Next.js SPA with reusable components across five modules." },
+      { theme: "Architecture", title: "Unified data services", detail: "Built C# and .NET APIs that unified attendee data and cached the transformed output with Redis." },
+      { theme: "Reliability", title: "Production engineering", detail: "Deployed on AWS and added tests, monitoring, CI/CD, and containers, cutting production bugs by 25%." },
     ],
-    path: ["Leadership requirements", "Centralized event platform", "Accessible daily experience"],
-    ownership: ["End-to-end delivery", "Product requirements", "Technical decisions", "Mentoring"],
+    path: ["Legacy workflows", "Unified full-stack platform", "Reliable event operations"],
+    ownership: ["End-to-end delivery", "Frontend modernization", "Backend services", "AWS deployment"],
     snapshot: [
-      { label: "Challenge", text: "Centralize medical event operations while replacing a legacy frontend." },
-      { label: "Scope", text: "Product requirements, architecture, delivery, performance, data synchronization, and mentorship." },
-      { label: "Result", text: "A modern platform serving 300+ people, supporting 100+ daily users, and automating 1,000+ updates." },
+      { label: "Challenge", text: "Centralize medical event operations while replacing a legacy HTML/PHP application." },
+      { label: "Scope", text: "React and Next.js frontend, C#/.NET services, data transformation, AWS infrastructure, testing, monitoring, and CI/CD." },
+      { label: "Result", text: "A platform supporting 1,000+ peak daily users, with 40% faster page loads, 30% faster responses, and 25% fewer production bugs." },
     ],
   },
   "LPS Health": {
     signals: [
       { theme: "Ownership", title: "Solo product delivery", detail: "Delivered the full platform as the sole developer within a three-month internship." },
-      { theme: "Product judgment", title: "Product-driven scope", detail: "Supported mentor recommendations, wellness purchases, community initiatives, analytics, and SEO." },
+      { theme: "Product judgment", title: "Product-driven scope", detail: "Supported mentor recommendations, wellness purchases, Stripe subscriptions, community initiatives, analytics, and SEO." },
       { theme: "Architecture", title: "Reusable architecture", detail: "Built a 10+ component design system and secure APIs with caching, pagination, and rate limiting." },
       { theme: "Engineering quality", title: "Quality engineering", detail: "Raised Lighthouse from 40 to 80, cut load time by 70%, reached 80% test coverage, and added CI/CD." },
     ],
     path: ["Legacy product", "Full-cycle rebuild", "Production launch"],
-    ownership: ["Sole developer", "Product delivery", "Design system", "Quality & analytics"],
+    ownership: ["Sole developer", "Product delivery", "Payments", "Quality & analytics"],
     snapshot: [
       { label: "Challenge", text: "Replace a legacy healthcare platform across two brands within one internship." },
       { label: "Scope", text: "Product features, frontend, APIs, analytics, testing, performance, and deployment." },
